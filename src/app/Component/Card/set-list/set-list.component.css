@@ -1,0 +1,27 @@
+.set-container{
+    margin-top: 10px;
+}
+
+h1,h3{
+    color: aliceblue;
+    text-align: center;
+}
+.loading{
+    display: flex;
+    margin: auto;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.set-card{
+    max-width: 25%;
+}
+
+.set-card img{
+width: 98%;
+margin: 1%;
+}

@@ -1,0 +1,80 @@
+.card-bg{
+		position:relative;
+		z-index: 1;
+		border-radius:10px;
+		overflow: hidden;
+}
+
+.card-container{
+	position:relative;
+	-webkit-box-shadow: 5px 5px 10px 0px #000000; -moz-box-shadow : 5px 5px
+	10px 0px #000000; -o-box-shadow : 5px 5px 10px 0px #000000; box-shadow
+	: 5px 5px 10px 0px #000000;
+	border-radius:10px;
+	z-index: 2;
+	padding: 5%;
+}
+
+#img{
+	width: 100%;
+	position: relative;
+}
+
+#img img{
+	width: 100%;
+}
+
+.shine .card-container:hover::before {
+	content: '';
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: -500px;
+	width: 70px;
+	height: 100%;
+	transform: skewX(-30deg);
+	/*animation-name: slide;*/
+	animation-name: slide;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+	background: linear-gradient(
+		to right, 
+		rgba(255, 255, 255, 0.13) 0%,
+		rgba(255, 255, 255, 0.13) 77%,
+		rgba(255, 255, 255, 0.5) 92%,
+		rgba(255, 255, 255, 0.0) 100%
+	  );
+	}
+	@keyframes slide {
+	  0% {
+		left: -200px;
+		top: 0;
+	  }
+	  50% {
+		left: 120px;
+		top: 0px;
+	  }
+	  100% {
+		left: 290px;
+		top: 0;
+	  }
+	}
+
+@keyframes slide {
+	100% {
+		left: 125%;
+	}
+
+}
+
+.card-number{
+	position: absolute;
+	top: 57%;
+	right: 0;
+	background-color: aliceblue;
+	border-radius: 50%;
+	border: 1px solid black;
+	height: 25px;
+	width: 25px;
+	text-align: center;
+}

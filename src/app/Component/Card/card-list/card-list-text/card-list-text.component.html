@@ -1,0 +1,48 @@
+<div class="card-list-container-text card-list container-lg">
+	<table class="table">
+		<caption>{{(globalService.isCardListAll ? cardList[0].card.setId : cardService.cardListDetails[0].card.setId)}}</caption>
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Name</th>
+				<th class="d-none d-lg-table-cell ">Rarity</th>
+				<th class="d-none d-lg-table-cell ">Card Type</th>
+				<th class="d-none d-lg-table-cell ">Role</th>
+				<th *ngIf="globalService.isUserCard">Add</th>
+				<th *ngIf="globalService.isUserCard">Buy</th>
+				<th *ngIf="globalService.isCardList">View</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr *ngFor="let cardDet of (globalService.isCardListAll ? cardList : cardService.cardListDetails)"
+				class="{{((cardDet.qty <= 0 && !globalService.isDeck)? 'grey-tr ' : '') + ' tr-' + cardDet.card.color
+			+ (cardService.cardIf(cardDet) ? '' : ' invisible')}}">
+				<td>{{cardDet.card.number.substring(0,3)}}</td>
+				<td>{{cardDet.card.name}}</td>
+				<td class="d-none d-lg-table-cell">{{cardDet.card.rarity}}</td>
+				<td class="d-none d-lg-table-cell">{{cardDet.card.cardType}}</td>
+				<td class="d-none d-lg-table-cell">{{cardDet.card.role}}</td>
+				<td *ngIf="globalService.isUserCard">
+					<div class="card-button text-center">
+						<button *ngIf="globalService.isClassic && cardDet.qty <= 0" class="btn btn-dark" (click)="cardAction.addClassic(cardDet)"> <i class="fas fa-plus"></i></button>
+						<button *ngIf="globalService.isClassic && cardDet.qty > 0" class="btn btn-dark" (click)="cardAction.removeClassic(cardDet)"> <i class="fas fa-minus"></i></button>
+						<button *ngIf="globalService.isDetails" class="btn btn-dark" (click)="cardService.openAdd(cardDet)"> <i class="fas fa-bars"></i></button>
+					</div>
+				</td>
+				<td *ngIf="globalService.isUserCard">
+					<form ngNoForm
+						action="{{'https://www.ebay.it/sch/onepiece tcg ' + cardDet.card.name+ ' ' + cardDet.card.number.substring(0,3)}}"
+						target="_blank">
+						<button class="btn btn-dark" type="submit">
+							<i class="fas fa-shopping-cart"></i>
+						</button>
+					</form>
+				</td>
+				<td *ngIf="globalService.isCardList">
+					<button (click)="cardService.openView(cardDet.card);" class="btn btn-dark">
+						<i class="fas fa-image"></i>
+					</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>

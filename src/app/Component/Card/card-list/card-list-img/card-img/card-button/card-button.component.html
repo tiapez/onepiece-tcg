@@ -1,0 +1,25 @@
+<div class="button-row">
+    <div class="card-button text-center">
+        <button *ngIf="globalService.isClassic" class="btn btn-dark" (click)="offlineAciton.addClassic(cardDet)"> <i class="fas fa-plus"></i></button>
+        <button *ngIf="globalService.isDetails" class="btn btn-dark" (click)="cardService.openAdd(cardDet)"> <i class="fas fa-bars"></i></button>
+        <button *ngIf="globalService.isDeck" class="btn btn-dark" (click)="deckService.createCard(cardDet)"> <i class="fas fa-plus"></i></button>
+    </div>
+    <div class="card-button text-center">
+        <form ngNoForm
+            action="{{'https://www.ebay.it/sch/onepiece tcg ' + cardDet.card.name+ ' ' + cardDet.card.number.substring(0,3)}}"
+            target="_blank">
+            <button class="btn btn-dark" type="submit">
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+        </form>
+    </div>
+    <div class="card-button text-center">
+        <button *ngIf="!globalService.isDeck && !globalService.isClassic" (click)="cardService.openView(cardDet.card);" class="btn btn-dark">
+            <i class="fas fa-image"></i>
+        </button>
+        <button *ngIf="globalService.isDeck" class="btn btn-dark" (click)="deckService.removeDet(cardDet)"> <i class="fas fa-minus"></i></button>
+        <button *ngIf="globalService.isClassic" class="btn btn-dark" (click)="offlineAciton.removeClassic(cardDet)"> <i class="fas fa-minus"></i></button>
+    </div>
+</div>
+
+

@@ -1,0 +1,35 @@
+
+.card-list-container-img{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 10px;
+}
+
+
+.card-div{
+	max-width: 25%;
+	max-height: fit-content;
+}
+
+.card-box {
+	margin: 2%;
+	box-sizing: border-box;
+	-webkit-box-shadow: 5px 5px 10px 0px #000000; -moz-box-shadow : 5px 5px
+	10px 0px #000000; -o-box-shadow : 5px 5px 10px 0px #000000; box-shadow
+	: 5px 5px 10px 0px #000000;
+	border-radius:10px;
+	z-index: 0;
+	background: white;
+}
+
+@media (max-width: 1000px){
+	.card-div{
+		max-width: 50%;
+		max-height: fit-content;
+	}
+	.card-box {
+		margin: 4%;
+	}
+
+	}

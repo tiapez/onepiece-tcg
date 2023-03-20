@@ -1,0 +1,24 @@
+<div class="app">
+    <img class="loading" src="./assets/Img/loading.gif" alt="loading" *ngIf="setCardList.length == 0">
+
+
+    <div *ngFor="let setCard of setCardList">
+
+        <div class="set-container"
+            *ngIf="(setCard.set.name.includes(cardService.filter.setName) || cardService.filter.setName.includes('Any')) && contaFiltro(setCard.cardList)">
+            <h1>{{setCard.set.name}}</h1>
+            <h3>Card: {{setCard.set.nCard}}</h3>
+            <h3 *ngIf="setCard.set.nParallel > 0">Parallel: {{setCard.set.nParallel}}</h3>
+
+            <div class="card-container container-lg">
+                <div class="set-card" *ngFor="let cardDet of setCard.cardList">
+                    <img src="./assets/Img/{{cardDet.card.setId}}/{{cardDet.card.number}}.png"
+                        (click)="cardService.openView(cardDet.card)" alt="{{cardDet.card.name}}"
+                        *ngIf="cardService.cardIf(cardDet)" >
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

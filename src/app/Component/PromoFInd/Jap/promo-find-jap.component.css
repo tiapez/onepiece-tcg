@@ -1,0 +1,53 @@
+.container-lg{
+    color: aliceblue;
+}
+
+a{
+    color: aliceblue;
+}
+
+.row-c{
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;
+}
+.col-c{
+    display: flex;
+    flex-direction: column;  
+    width: 25%;
+    height: auto;
+}
+
+.pic{
+    margin: 5%;
+}
+.pic img{
+    width: 100%;
+}
+
+.text{
+    margin: 5%;
+}
+.text hr{
+    margin-left: 0;
+    margin-right: 0;
+}
+.list p{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0;
+}
+.text .ul{
+    width: 100%;
+    margin: 0;
+}
+
+@media (max-width: 1000px){
+    .col-c{
+        display: flex;
+        flex-direction: column;  
+        width: 50%;
+        height: auto;
+        font-size: smaller;
+    }
+	}

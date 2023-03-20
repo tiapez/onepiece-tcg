@@ -1,0 +1,68 @@
+<div class="container-lg">
+    <h1 class="text-center">{{name}}</h1>
+    <button class="btn btn-light" (click)="goBack()">  <i class="fas fa-undo"> </i> Back </button>
+    <div class="deck-modify-row">
+        <div class="deck-modify-container">
+            <div class="">
+                <p>Deck Name:</p>
+                <input type="text" class="form-control" [(ngModel)]="deck.name">
+            </div>
+        </div>
+        <div class="deck-modify-container">
+            <div class="">
+                <p>Leader:</p>
+                <select class="form-select" name="leader" id="leader" [(ngModel)]="leader" (change)="changeLeader()">
+                    <option *ngFor="let l of deckService.leaderList" value="{{l.id + '/' + l.color}}"> {{l.setId + ' - '
+                        + l.name}} </option>
+                </select>
+            </div>
+        </div>
+        <div class="deck-modify-container">
+            <div class="">
+                <p>Format:</p>
+                <select class="form-select" name="format" id="format" [(ngModel)]="deck.format">
+                    <option value="Global"> Global </option>
+                    <option value="Japanese"> Japanese </option>
+                </select>
+            </div>
+        </div>
+        <div class="deck-modify-container">
+            <div class="">
+                <p>Min. Cond. :</p>
+                <select class="form-select" name="conditions" id="conditions" [(ngModel)]="deck.cond">
+                    <option value="6"> Any </option>
+                    <option value="1">Mint</option>
+                    <option value="2">Near
+                        Mint</option>
+                    <option value="3">Excellent
+                    </option>
+                    <option value="4">Good</option>
+                    <option value="5">Played</option>
+                    <option value="6">Poor</option>
+                </select>
+            </div>
+        </div>
+        <div class="deck-modify-container">
+            <div class="">
+                <p>Desc:</p>
+                <textarea class="form-control" [(ngModel)]="deck.desc"></textarea>
+            </div>
+        </div>
+        <div class="deck-modify-container">
+            <div class="">
+                <p>Note:</p>
+                <textarea class="form-control" [(ngModel)]="deck.note">
+                </textarea>
+            </div>
+        </div>
+        <div class="deck-modify-container">
+            <p>Deck Picture: </p>
+            <img *ngIf="deck.image != null" [src]="'data:image/png;base64,'+deck.image" width="360" alt="deck pic">
+            <input #imageInput type="file" accept="image/*" (change)="imageChange(imageInput)">
+        </div>
+        <div class="deck-modify-container">
+            <button class="btn btn-danger" (click)="deleteDeck()">Delete</button>
+        </div>
+    </div>
+    <button class="btn btn-light" (click)="saveDeck()"> SAVE </button>
+</div>

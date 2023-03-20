@@ -1,0 +1,13 @@
+<div id="{{'card-container-'+cardDet.card.id}}"
+    class="{{ (cardDet.qty <= 0 && globalService.isUserCard ? 'grey-img ' : '') + 'card-bg card-' + cardDet.card.color}}{{cardDet.card.name.includes('Parallel') ? ' shine' : ''}}">
+    <div class="{{'card-container card-' + cardDet.card.role}}">
+        <div id="img">
+            <img class="{{(cardDet.qty <= 0 && globalService.isUserCard ? 'grey-img ' : '')}}"
+                src="./assets/Img/{{cardDet.card.setId}}/{{cardDet.card.number}}.png" 
+                onerror="this.src='assets/Img/default.png';" width="360" 
+                (click)="cardService.openView(cardDet.card)" alt="{{cardDet.card.name}}"/>
+                <div class="card-number">{{cardDet.qty}}</div>
+        </div>
+            <app-card-button *ngIf="globalService.isUserCard || globalService.isDeck" [cardDet]="cardDet"></app-card-button>
+    </div>
+</div>

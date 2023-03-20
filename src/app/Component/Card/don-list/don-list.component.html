@@ -1,0 +1,81 @@
+<div class="container-lg">
+    <h1 class="text-center">DON!!</h1>
+    <div class="row-c">
+
+        <div class="col-c">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/don/1.png')" src="./assets/Img/don/1.png">
+            </div>
+            <div class="text">
+                Normal DON !! Card
+            </div>
+        </div>
+
+        <div class="col-c">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/don/2.png')" src="./assets/Img/don/2.png">
+            </div>
+            <div class="text">
+                Included in every Super Pre Release Deck
+            </div>
+        </div>
+
+        <div class="col-c">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/don/3.png')" src="./assets/Img/don/3.png">
+            </div>
+            <div class="text">
+                Romance Dawn Booster Pack
+            </div>
+        </div>
+
+        <div class="col-c">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/don/4.png')" src="./assets/Img/don/4.png">
+            </div>
+            <div class="text">
+                Paramount War Booster Pack
+            </div>
+        </div>
+
+        <div class="col-c" *ngFor="let s of don">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/don/'+s+'.png')" src="./assets/Img/don/{{s}}.png">
+            </div>
+            <div class="text">
+                Random from DON!! Card Pack Vol.1 obtainable <br>
+                Participating in:
+                <ul>
+                    <li [innerHTML]="o_regional_w_1"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-c">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/don/15.png')" src="./assets/Img/don/15.png">
+            </div>
+            <div class="text">
+                Participating in:
+                <ul>
+                    <li [innerHTML]="o_regional_w_1"></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <h1 class="text-center">DON!! PACK</h1>
+    <div class="row-c">
+        <div class="col-c">
+            <div class="pic">
+                <img src="./assets/Img/don/pack/don_pack.png">
+            </div>
+            <div class="text">
+                DONN!! Card Pack Vol.1
+            </div>
+        </div>
+
+    <ng-template #content>
+        <img src={{src}} style="height: 100%;">
+    </ng-template>
+</div>

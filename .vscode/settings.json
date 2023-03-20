@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/2f0c8abc-cb8b-4ffb-baea-1a79f512158e/AppServices/subscriptions/2f0c8abc-cb8b-4ffb-baea-1a79f512158e/resourceGroups/onepiece-cardgame_group/providers/Microsoft.Web/sites/onepiece-cardgame",
+    "appService.deploySubpath": "docs"
+}

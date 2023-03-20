@@ -1,0 +1,35 @@
+<div class="container-lg">
+
+    <h1>OP03 - Pillard Of Strength</h1>
+    <div class="row-c">
+        <div *ngFor="let s of op_03" class="{{s.includes('pre') ? 'big-pic' : 'pic'}}">
+            <img src="./assets/Img/OP03/{{s}}.png" (click)="open(content,'./assets/Img/OP03/'+s+'.png')">
+        </div>
+    </div>
+    <hr>
+    <h1>ST07 - Big Mom Pirates</h1>
+    <div class="row-c">
+        <div *ngFor="let s of st_07" class="{{s.includes('pre') ? 'big-pic' : 'pic'}}">
+            <img src="./assets/Img/ST07/{{s}}.png" (click)="open(content,'./assets/Img/ST07/'+s+'.png')">
+        </div>
+    </div>
+    <hr>
+    <h1>ST08 - Side Monkey D. Luffy</h1>
+    <div class="row-c">
+        <div *ngFor="let s of st_08" class="{{s.includes('pre') ? 'big-pic' : 'pic'}}">
+            <img src="./assets/Img/ST08/{{s}}.png" (click)="open(content,'./assets/Img/ST08/'+s+'.png')">
+        </div>
+    </div>
+
+    <hr>
+    <h1>ST09 - Side Yamato</h1>
+    <div class="row-c">
+        <div *ngFor="let s of st_09" class="{{s.includes('pre') ? 'big-pic' : 'pic'}}">
+            <img src="./assets/Img/ST09/{{s}}.png" (click)="open(content,'./assets/Img/ST09/'+s+'.png')">
+        </div>
+    </div>
+
+    <ng-template #content >
+                <img src={{src}} style="height: 100%;">
+    </ng-template>
+</div>

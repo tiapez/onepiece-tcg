@@ -1,0 +1,269 @@
+<div class="container-lg">
+    <h1 class="text-center">GLOBAL PROMO</h1>
+    <div class="row-c">
+        <div class="col-c">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/P/001a.png')" src="./assets/Img/P/001a.png">
+            </div>
+
+            <div class="text">
+                Participating in:
+                <ul>
+                    <li>Super Pre Release</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-c">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/P/001b.png')" src="./assets/Img/P/001b.png">
+            </div>
+
+            <div class="text">
+                Winning:
+                <ul>
+                    <li>Super Pre Release</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-c" *ngFor="let s of promo_pack_1">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/P/'+s+'.png')" src="./assets/Img/P/{{s}}.png">
+            </div>
+
+            <div class="text">
+                From Promotion Pack 2022 obtainable <br>
+                Participating in:
+                <ul>
+                    <li [innerHTML]="tutorial"></li>
+                    <li>Super Pre Release</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-c" *ngFor="let s of tournament_pack_1">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/P/'+s+'.png')" src="./assets/Img/P/{{s}}.png">
+            </div>
+
+            <div class="text">
+                Random from Tournament Pack Vol 1 obtainable <br>
+                Participating in:
+                <ul>
+                    <li [innerHTML]="store_tournament_1"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-c" *ngFor="let s of winner_pack_1">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/P/'+s+'.png')" src="./assets/Img/P/{{s}}.png">
+            </div>
+
+            <div class="text">
+                Random from Winner Pack Vol 1 obtainable <br>
+                Participating in:
+                <ul>
+                    <li [innerHTML]="store_tournament_1"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-c" *ngFor="let s of uta_deck">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/P/'+s+'.png')" src="./assets/Img/P/{{s}}.png">
+            </div>
+
+            <div class="text">
+                From Uta's deck obtainable <br>
+                Participating in:
+                <ul>
+                    <li [innerHTML]="store_tournament_1 + 'Only on December'"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-c">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/P/024.png')" src="./assets/Img/P/024.png">
+            </div>
+
+            <div class="text">
+                Participating in:
+                <ul>
+                    <li [innerHTML]="pirates_party_22"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-c" *ngFor="let s of event_pack_1">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/P/'+s+'.png')" src="./assets/Img/P/{{s}}.png">
+            </div>
+
+            <div class="text">
+                Random from Event Pack Vol 1 obtainable <br>
+                Participating in:
+                <ul>
+                    <li [innerHTML]="treasure_cup_22"></li>
+                    <li [innerHTML]="o_regional_w_1"></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="col-c">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/P/ST01-001a.png')" src="./assets/Img/P/ST01-001a.png">
+            </div>
+
+            <div class="text">
+                Top 8:
+                <ul>
+                    <li [innerHTML]="treasure_cup_22"></li>
+                </ul>
+                TOP 2:
+                <ul>
+                    <li [innerHTML]="o_regional_w_1"></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="col-c">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/P/ST01-013.png')" src="./assets/Img/P/ST01-013.png">
+            </div>
+
+            <div class="text">
+                Top 8:
+                <ul>
+                    <li [innerHTML]="treasure_cup_22"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-c">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/P/ST01-004.png')" src="./assets/Img/P/ST01-004.png">
+            </div>
+
+            <div class="text">
+                Top 16:
+                <ul>
+                    <li [innerHTML]="treasure_cup_22"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-c">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/P/ST01-006..png')" src="./assets/Img/P/ST01-006.png">
+            </div>
+
+            <div class="text">
+                Top 64:
+                <ul>
+                    <li [innerHTML]="treasure_cup_22"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-c" *ngFor="let s of regional_pack_p">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/P/'+s+'.png')" src="./assets/Img/P/{{s}}.png">
+            </div>
+            <div class="text">
+                Random from Online Regional Partecipation Pack obtainable <br>
+                Participating in:
+                <ul>
+                    <li [innerHTML]="o_regional_w_1"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-c" *ngFor="let s of regional_pack_f">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/P/'+s+'.png')" src="./assets/Img/P/{{s}}.png">
+            </div>
+            <div class="text">
+                TOP 32:
+                <ul>
+                    <li [innerHTML]="o_regional_w_1"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-c" *ngFor="let s of regional_pack_f">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/P/'+s+'.png')" src="./assets/Img/P/{{s}}.png">
+            </div>
+            <div class="text">
+                Winning:
+                <ul>
+                    <li [innerHTML]="o_regional_w_1"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-c" *ngFor="let s of twentyfifth">
+            <div class="pic">
+                <img (click)="open(content,'./assets/Img/P/'+s+'.png')" src="./assets/Img/P/{{s}}.png">
+            </div>
+            <div class="text">
+                <ul>
+                    <li>Card Collection 25th Anniversary</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 class="text-center">GLOBAL PACK</h1>
+    <div class="row-c">
+        <div class="col-c">
+            <div class="pic">
+                <img src="./assets/Img/P/pack/g_promo_pack_1.png">
+            </div>
+            <div class="text">
+                Promotion Pack 2022 Vol.1
+            </div>
+        </div>
+
+        <div class="col-c">
+            <div class="pic">
+                <img src="./assets/Img/P/pack/g_event_pack_1.png">
+            </div>
+            <div class="text">
+                Event Pack 2022 Vol.1</div>
+        </div>
+
+        <div class="col-c">
+            <div class="pic">
+                <img src="./assets/Img/P/pack/g_tournament_pack_1.png">
+            </div>
+            <div class="text">
+                Torunamente Pack 2022 Vol.1</div>
+        </div>
+
+        <div class="col-c">
+            <div class="pic">
+                <img src="./assets/Img/P/pack/g_winner_pack_1.png">
+            </div>
+            <div class="text">
+                Tournament Winner Pack 2022 Vol.1</div>
+        </div>
+
+        <div class="col-c">
+            <div class="pic">
+                <img src="./assets/Img/P/pack/online_regional_pack.png">
+            </div>
+            <div class="text">
+                Online Regional Partecipation Pack 2022 Vol.1</div>
+        </div>
+    </div>
+
+    <ng-template #content>
+        <img src={{src}} style="height: 100%;">
+    </ng-template>
+</div>

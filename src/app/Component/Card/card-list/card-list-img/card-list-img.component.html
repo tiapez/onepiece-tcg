@@ -1,0 +1,8 @@
+<div class="container-lg card-list-container-img " id="card-list-img">
+	
+	<div class="card-div"  *ngFor="let cardDet of  (globalService.isCardListAll ? cardList : cardService.cardListDetails)">
+		<div class="card-box" *ngIf="cardService.cardIf(cardDet)">
+			<app-card-img [cardDet]="cardDet"></app-card-img>
+		</div>
+	</div>
+</div>

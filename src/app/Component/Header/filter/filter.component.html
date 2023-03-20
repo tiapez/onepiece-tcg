@@ -1,0 +1,166 @@
+<h1 class="deckButton" *ngIf="globalService.isDeck">
+    <button class="btn btn-sm btn-light" (click)="openDeck()">
+        Show Deck
+    </button>
+</h1>
+
+<h1 (click)="openFilter()" class="{{globalService.isDeck ? 'left' : 'center'}}">FILTER
+</h1>
+
+
+
+<div class="sideFilter text-center" [ngStyle]='{ width : filterWidth }'>
+    <a href="javascript:void(0)" class="closebtn" (click)="closeFilter()">&times;</a>
+
+    <form action="/addFilter" class="form-filter justify-content-center" method="POST" id="formFilter">
+        <div class="col-auto button-filter">
+            <select class="form-control form-control-sm" name="setOption" id="setOption"
+                [(ngModel)]="cardService.filter.setOption" (change)="cardService.changeFilter()">
+                <option value="Any/Any" text="{{cardService.filter.setOption.includes('Any/Any') ? 'Set' : 'Any'}}">
+                </option>
+                <option *ngFor="let set of setList" value="{{set.id + '/' + set.name}}"> {{set.name}}</option>
+            </select>
+        </div>
+
+        <div class="col-auto button-filter" *ngIf="!globalService.isUserCard && !globalService.isDeck">
+            <select class="form-control form-control-sm" name="color" id="color" [(ngModel)]="cardService.filter.color">
+                <option value="All" text="{{cardService.filter.color == 'All' ? 'Color' : 'All'}}"></option>
+                <option value="Red">Red</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Purple">Purple</option>
+                <option value="Black">Black</option>
+                <option value="-">Multi</option>
+            </select>
+        </div>
+
+        <div class="col-auto button-filter" *ngIf="!globalService.isUserCard">
+            <select class="form-control form-control-sm" name="role" id="role" [(ngModel)]="cardService.filter.role">
+                <option value="All">
+                    {{cardService.filter.role == 'All' ? 'Role' : 'All'}}
+                </option>
+                <option value="Slash">Slash</option>
+                <option value="Strike">Strike</option>
+                <option value="Ranged">Ranged</option>
+                <option value="Special">Special</option>
+            </select>
+        </div>
+
+        <div class="col-auto button-filter" *ngIf="!globalService.isUserCard">
+            <select class="form-control form-control-sm" name="cardType" id="cardType"
+                [(ngModel)]="cardService.filter.cardType">
+                <option value="All">
+                    {{cardService.filter.cardType == 'All' ? 'Card Type' : 'All'}}
+                </option>
+                <option value="Leader">Leader</option>
+                <option value="Character">Character</option>
+                <option value="Event">Event</option>
+                <option value="Stage">Stage</option>
+            </select>
+        </div>
+
+        <div class="col-auto button-filter" *ngIf="!globalService.isUserCard">
+            <input type="text" placeholder="Type..." id="type" name="type" class="form-control form-control-sm"
+                th:value="${session.filter.type}}" [(ngModel)]="cardService.filter.type">
+        </div>
+
+        <!--
+        <div class="col-auto button-filter">
+            <input type="text" placeholder="Name..." id="name" name="name" class="form-control form-control-sm"
+                th:value="${session.filter.name}}" [(ngModel)]="cardService.filter.name">
+        </div>
+        -->
+        <div class="col-auto button-filter">
+            <select class="form-control form-control-sm" name="rarity" id="rarity"
+                [(ngModel)]="cardService.filter.rarity">
+                <option value="All">
+                    {{cardService.filter.rarity == 'All' ? 'Rarity' : 'All'}}
+                </option>
+                <option value="Common">Common</option>
+                <option value="Uncommon">Uncommon</option>
+                <option value="Rare">Rare</option>
+                <option value="Leader">Leader</option>
+            </select>
+        </div>
+
+        <div class="col-auto button-filter" *ngIf="!globalService.isUserCard">
+            <select class="form-control form-control-sm" name="power" id="power" [(ngModel)]="cardService.filter.power">
+                <option value=-1>
+                    {{cardService.filter.power == -1 ? 'Power' : 'Any'}}
+                </option>
+                <option *ngFor="let n of numberList" value="{{n}}"> {{n}} </option>
+            </select>
+        </div>
+
+        <div class="col-auto button-filter" *ngIf="!globalService.isUserCard">
+            <select class="form-control form-control-sm" name="counter" id="counter"
+                [(ngModel)]="cardService.filter.counter">
+                <option value=-1>
+                    {{cardService.filter.counter == -1 ? 'Counter' : 'Any'}}
+                </option>
+                <option *ngFor="let n of numberList" value="{{n}}"> {{n}} </option>
+            </select>
+        </div>
+
+        <div class="col-auto button-filter" *ngIf="!globalService.isUserCard">
+            <select class="form-control form-control-sm" name="cost" id="cost" [(ngModel)]="cardService.filter.cost">
+                <option value=-1>
+                    {{cardService.filter.cost == -1 ? 'Cost' : 'Any'}}
+                </option>
+                <option *ngFor="let n of numberList" value="{{n/1000}}"> {{n/1000}} </option>
+            </select>
+        </div>
+
+
+        <div class="col-auto button-filter" *ngIf="globalService.isDetails">
+            <select class="form-control form-control-sm" name="conditions" id="conditions"
+                [(ngModel)]="cardService.filter.condition" (ngModelChange)="conta()">
+                <option value="0">
+                    {{cardService.filter.condition == 0 ? 'Min. Cond.' : 'All'}}
+                </option>
+                <option value="1">Mint</option>
+                <option value="2">Near
+                    Mint</option>
+                <option value="3">Excellent
+                </option>
+                <option value="4">Good</option>
+                <option value="5">Played</option>
+                <option value="6">Poor</option>
+            </select>
+        </div>
+
+
+        <div class="col-auto button-filter" *ngIf="globalService.isDetails">
+            <select class="form-control form-control-sm" name="language" id="language"
+                [(ngModel)]="cardService.filter.language" (ngModelChange)="conta()">
+                <option value="All">
+                    {{cardService.filter.language == 'All' ? 'Language' : 'All'}}
+                </option>
+                <option value="ENG">Eng</option>
+                <option value="JAP">Jap</option>
+            </select>
+        </div>
+
+
+        <div class="col-auto button-filter" *ngIf="globalService.isUserCard">
+            <select class="form-control form-control-sm" name="moa" id="moa" [(ngModel)]="cardService.filter.view"
+                (ngModelChange)="conta()">
+                <option value="0">
+                    {{cardService.filter.view == 0 ? 'View' : 'All'}}
+                </option>
+                <option value="1">Owned</option>
+                <option value="2">Missing</option>
+            </select>
+        </div>
+        <div *ngIf="isMobile" class="col-auto button-filter ">
+        </div>
+        <div class="col-auto button-filter" id="button-reset">
+            <button class="btn btn-sm btn-outline-success " (click)="reset()">Reset</button>
+        </div>
+        <div *ngIf="globalService.isDeck && !globalService.isMobile" class="col-auto button-filter">
+            <button class="btn btn-sm btn-light" (click)="openDeck()">
+                Show Deck
+            </button>
+        </div>
+    </form>
+</div>

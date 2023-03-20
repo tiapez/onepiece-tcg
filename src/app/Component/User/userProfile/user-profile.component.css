@@ -1,0 +1,32 @@
+
+.disabled{
+	color: grey !important;
+}
+
+.login-container{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+  max-width:300px;
+
+}
+
+#register{
+  width:100%;	
+}
+
+.validation-message{
+	color: red;
+}
+
+.pp{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.pp img{
+  width: 90%;
+  margin: 5%;
+}

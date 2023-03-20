@@ -1,0 +1,6 @@
+<img class="loading" src="./assets/Img/loading.gif" alt="loading" *ngIf="cardService.cardListDetails.length == 0 && !globalService.isCardListAll">
+
+<div *ngIf="cardService.cardListDetails != []">
+    <app-card-list-img *ngIf="this.globalService.view == '0'" [cardList]="setCardList"></app-card-list-img>
+    <app-card-list-text *ngIf="this.globalService.view == '1'" [cardList]="setCardList"></app-card-list-text>
+</div>

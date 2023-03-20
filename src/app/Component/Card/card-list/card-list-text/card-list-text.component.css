@@ -1,0 +1,93 @@
+.card-list-container-text {
+	border-top: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	color: aliceblue;
+}
+
+.card-list-container-text .table thead {
+	color: white !important;
+
+}
+
+.card-list-container-text .table .tbody {
+	color: black !important;
+
+}
+
+.card-list-container-text .table td {
+	text-align: center;
+}
+
+.card-list-container-text .table th {
+	text-align: center;
+}
+
+.card-list-container-text tbody {
+	background-color: white;
+}
+
+.card-list-container-text tbody td {
+	border-top: 1px solid black !important;
+	border-bottom: 1px solid black !important;
+}
+
+.invisible {
+	display: none;
+}
+
+.grey-tr {
+	background: rgba(0, 0, 0, 0.473) !important;
+}
+
+.tr-Red {
+	background: linear-gradient(rgba(var(--red), 0.9), rgba(var(--red), 0.7));
+}
+
+.tr-Green {
+	background: linear-gradient(rgba(var(--green), 0.9), rgba(var(--green), 0.7));
+}
+
+.tr-Red-Green {
+	background: linear-gradient(rgba(var(--red), 0.8), rgba(var(--green), 0.7));
+}
+
+.tr-Blue {
+	background: linear-gradient(rgba(var(--blue), 0.9), rgba(var(--blue), 0.7));
+}
+
+.tr-Purple {
+	background: linear-gradient(rgba(var(--purple), 0.9), rgba(var(--purple), 0.7));
+}
+
+.tr-Blue-Purple {
+	background: linear-gradient(rgba(var(--blue), 0.8), rgba(34, 0, 107, 0.7));
+}
+
+.tr-Black {
+	background: linear-gradient(rgba(var(--black), 0.8), rgba(var(--black), 0.6));
+	color: aliceblue;
+}
+
+.tr-Yellow {
+	background: linear-gradient(rgba(var(--yellow), 0.9), rgba(var(--yellow), 0.7));
+}
+
+.tr-Red-Black {
+	background: linear-gradient(rgba(var(--red), 0.9), rgba(var(--black), 0.9));
+}
+
+.tr-Green-Blue {
+	background: linear-gradient(rgba(var(--green), 0.9), rgba(var(--blue), 0.9));
+}
+
+.tr-Purple-Black {
+	background: linear-gradient(rgba(var(--purple), 0.9), rgba(var(--black), 0.9));
+}
+@media (max-width: 1000px) {
+	tr {
+		font-size: smaller;
+	}
+
+}

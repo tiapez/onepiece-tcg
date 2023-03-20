@@ -1,0 +1,194 @@
+.container-myside{
+  background: linear-gradient(rgb(16, 94, 221,0.5),rgb(11, 48, 117,0.5));
+  z-index:10;
+  border-bottom: 1px solid black;
+  transition: 0.5;
+}
+
+
+.navbar-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.navbar-brand{
+display: none;
+}
+
+.navbar-brand img{
+  width: 100%;
+}
+.sidenav{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 1%;
+  margin-bottom: 1%;
+}
+
+.sidenav img{
+width: 13%;
+margin-right: 2%;
+}
+
+.sidenav a{
+  color: white;
+  margin-right: 2%;
+  text-decoration: none;
+}
+
+.sidenav .dropdown-menu{
+	background: linear-gradient(#105edd,#0b3075);
+  border: 1px solid black;
+}
+
+.sidenav .dropdown-item:hover{
+	background: none;
+}
+
+.sidenav .dropdown-menu a{
+  margin: 10%;
+}
+
+.navbar-button{
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-button a{
+  display: flex;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
+.navbar-button a:hover{
+color: white !important;
+}
+
+.navbar-button button{
+  margin-right: 5%;
+  display: flex;
+  margin-left: auto;
+}
+
+.navbar-button button i{
+  margin-right: 5%;
+}
+
+.closebtn{
+  display: none;
+}
+.only-mb{
+  display: none;
+}
+
+
+
+/***************************************************************************************************************************************/
+/* GLOBAL *//* GLOBAL *//* GLOBAL *//* GLOBAL *//* GLOBAL *//* GLOBAL *//* GLOBAL *//* GLOBAL *//* GLOBAL *//* GLOBAL *//* GLOBAL */
+/***************************************************************************************************************************************/
+
+
+.validation-message{
+	color: red;
+}
+
+/***************************************************************************************************************************************/
+/* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE */
+/***************************************************************************************************************************************/
+@media (max-width: 1000px){	
+	
+/***************************************************************************************************************************************/
+/* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE *//* MOBILE */
+/***************************************************************************************************************************************/
+.navbar-container{
+  display: block;
+}
+
+.navbar-brand{
+  display: block;
+  width:50%;
+  margin: auto;
+  padding-top:2.5%;
+  padding-bottom:2.5%;
+}
+
+#div-click{
+position: absolute;
+width: 100%;
+height: 75%;
+top: 0;
+left: 0;
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  display: flex;
+  flex-direction: column;
+}
+
+.sidenav img{
+  display: none;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  display: block;
+  transition: 0.3s;
+  margin-right:  auto;
+  margin-left: auto;
+}
+
+.only-dk{
+  display: none !important;
+}
+.only-mb{
+  display: block;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+
+.navbar-brand img{
+	width:100%;
+		padding-top: 2.5%;
+	padding-bottom: 2.5%;
+}
+
+#userLogged{
+	margin: auto;
+}
+
+.navbar-button{
+  margin:auto;
+  flex-direction: column;
+}
+
+.navbar-button button{
+  margin: auto;
+  display: flex;
+  margin-top: 10%;
+}
+
+}

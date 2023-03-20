@@ -1,0 +1,9 @@
+.button-row {
+	display: flex;
+	flex-direction: row;
+	margin-top: 5%;
+}
+
+.card-button{
+	width: 33%;
+}

@@ -1,0 +1,13 @@
+<p>import-card works!</p>
+<div>
+    <p>Open Excel File</p>
+    <input #excellInput type="file" name="files[]" multiple id="jsonFile" accept=".xlsx" (change)="uploadFile($event)" />
+</div>
+<div class='exportExcel'>
+    <p>Save Excel File</p>
+    <button (click)="d2()">Save Excel!</button>
+  </div>
+  <div class='exportExcel'>
+    <p>Download Excel File</p>
+    <button (click)="downloadFile()">Download Excel!</button>
+  </div>

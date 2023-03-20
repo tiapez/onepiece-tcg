@@ -1,0 +1,51 @@
+<div class="container-myside" id="navbar">
+	<div class="container-lg navbar-container  align-items-center">
+		<div class="navbar-brand">
+			<img src="{{'./assets/Img/OP-navbar-'+globalService.navbarImg+'.png'}}" alt="onepiece-logo" (click)="openNav()" />
+		</div>
+		<div id="mySidenav " class="sidenav align-items-center" [ngStyle]='{ width : navbarWidth }'>
+			<img src="{{'./assets/Img/OP-navbar-'+globalService.navbarImg+'.png'}}" alt="onepiece-logo" />
+			<a routerLink="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+			<a routerLink="/" (click)="closeNav()">Home</a>
+			<a routerLink="/cardList" (click)="closeNav()">Card List</a>
+			<a class="dropdown-toggle only-dk" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+				aria-expanded="false">User Card</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<li> <a routerLink="/userCard/classic">Classic</a></li>
+				<li> <a routerLink="/userCard/details">Details</a></li>
+			</ul>
+			<a class="only-mb" routerLink="/userCard/classic" (click)="closeNav()">User Card Classic</a>
+			<a class="only-mb" routerLink="/userCard/details" (click)="closeNav()">User Card Details</a>
+			<a routerLink="/deck"  (click)="closeNav()">Deck </a>  
+			<a class="dropdown-toggle only-dk" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+				aria-expanded="false">Promo</a>
+			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<li> <a routerLink="/promo/global">Global</a></li>
+				<li> <a routerLink="/promo/jap">Japanese</a></li>
+			</ul>
+			<a class="only-mb" routerLink="/promo/global" (click)="closeNav()">Promo Global</a>
+			<a class="only-mb" routerLink="/promo/jap" (click)="closeNav()">Promo Jap</a>
+			<a routerLink="/incoming" (click)="closeNav()">Incoming</a>
+			<a routerLink="/don" (click)="closeNav()">Don!!</a>
+			<div class="navbar-button">
+
+				<button *ngIf="globalService.isCardList" class="btn btn-outline-danger align-items-center"
+					(click)="globalService.changeView(); closeNav();">
+					<i class="fas fa-eye"></i>
+					{{globalService.view == '0' ? 'Text' : 'Img'}}
+				</button>
+
+				<button class="btn btn-outline-success align-items-center" (click)="signUp();closeNav()">
+					<i class="fas fa-user-circle"></i>
+					{{globalService.userLogged.length == 0 ? 'Guest' :' ' + globalService.userLogged |titlecase}}
+				</button>
+
+			</div>
+		</div>
+
+	</div>
+
+</div>
+<div class="container-lg">
+	<app-filter *ngIf="globalService.isCardList || globalService.isCardListAll"></app-filter>
+</div>

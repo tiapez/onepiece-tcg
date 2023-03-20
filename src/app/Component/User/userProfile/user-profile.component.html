@@ -1,0 +1,82 @@
+<div class="container">
+    <div style="color: white;margin: 5%;">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-4">
+                <form>
+                <div class=" pp">
+                    <h3>Profile Picture: </h3>
+                    <img *ngIf="user.image != null" [src]="'data:image/png;base64,'+user.image" width="360" alt="profile pic">
+                    <input #imageInput type="file" accept="image/png" (change)="imageChange(imageInput)">
+                </div>
+                <div>
+                    <h3>User Config: </h3>
+                    <div class="form-row mb-3">
+                        <div class=" ml-auto">
+                            <label for="navbar">Navbar Option: </label>
+                            <select class="form-select" name="navbar" id="navbar" [(ngModel)]="user.navbar">
+                                <option value="Light" [selected]="user.navbar.includes('Light')">Light</option>
+                                <option value="Dark" [selected]="user.navbar.includes('Dark')">Dark</option>
+                                <option value="Cartoon" [selected]="user.navbar.includes('Cartoon')">Cartoon</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row mb-3">
+                        <div class=" ml-auto">
+                            <label for="language">Language Classic: </label>
+                            <select class="form-select" name="language" id="language" [(ngModel)]="user.language">
+                                <option value="Eng" [selected]="user.language.includes('Eng')">Eng</option>
+                                <option value="Jap" [selected]="user.language.includes('Jap')">Jap</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row mb-3">
+                        <div class=" ml-auto">
+                            <label for="condition">Condition Classic: </label>
+                            <select class="form-select" name="conditions" id="conditions" [(ngModel)]="user.condition">
+                                <option value="1" [selected]="user.condition == 1">Mint</option>
+                                <option value="2" [selected]="user.condition == 2">Near
+                                    Mint</option>
+                                <option value="3" [selected]="user.condition == 3">Excellent
+                                </option>
+                                <option value="4" [selected]="user.condition == 4">Good</option>
+                                <option value="5" [selected]="user.condition == 5">Played</option>
+                                <option value="6" [selected]="user.condition == 6">Poor</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn btn-light" (click)="saveUserConfig()">Change!</button>
+                </div>
+            </form>
+            </div>
+            <div class="col-md-2"></div>
+
+            <div class="col-md-4 align-self-center">
+                <h3>User Data: </h3>
+                <div style="font-size: 1.5rem; border: 1px solid white; padding: 5%;">
+                    <div class=" ml-auto">
+                        <p>Username: <span>{{user.username |titlecase}}</span></p>
+                    </div>
+                    <div class=" ml-auto">
+                        <p>Password: <a>Change-Pass</a></p>
+                    </div>
+                    <div class=" ml-auto">
+                        <p>Nickname: <span>{{user.nick |titlecase }}</span></p>
+                    </div>
+                    <div class=" ml-auto">
+                        <p>Mail: <span>{{user.mail}}</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="">
+
+        </div>
+    </div>
+</div>
+
+
+

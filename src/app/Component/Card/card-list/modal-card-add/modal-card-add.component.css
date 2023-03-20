@@ -1,0 +1,12 @@
+.qty-card {
+	width: 20%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+@media (max-width: 1000px) {
+	tr {
+		font-size: smaller;
+	}
+
+}

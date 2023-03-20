@@ -1,0 +1,40 @@
+.container-lg{
+    color: aliceblue;
+}
+
+a{
+    color: aliceblue;
+}
+
+.row-c{
+    display: flex;
+    flex-direction: row;  
+    flex-wrap: wrap;
+}
+.col-c{
+    display: flex;
+    flex-direction: column;  
+    width: 25%;
+    height: auto;
+}
+
+.pic{
+    margin: 5%;
+}
+.pic img{
+    width: 100%;
+}
+
+.text{
+    margin: 5%;
+}
+
+@media (max-width: 1000px){
+    .col-c{
+        display: flex;
+        flex-direction: column;  
+        width: 50%;
+        height: auto;
+        font-size: smaller;
+    }
+	}

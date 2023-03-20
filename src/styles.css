@@ -1,0 +1,127 @@
+/* You can add global styles to this file, and also import other style files */
+
+/***********************************************************************************************/
+/* CARD COLOR                                                                                   */
+/***********************************************************************************************/
+
+body{
+	background: url('./assets/Img/bg-blue.jpg');
+}
+:root{
+	--blue2: rgb(0, 86, 156);
+	--blue: 0, 86, 156;
+
+	--red2: rgb(182, 0, 0);
+	--red : 182, 0, 0;
+
+	--green2: rgb(7,161,0);
+	--green: 7,161,0;
+
+	--purple2: rgb(74, 0, 117);
+	--purple: 74, 0, 117;
+
+	--black2: rgb(0,0,0);
+	--black: 0,0,0;
+
+	--yellow2: rgb(255, 251, 0);
+	--yellow: 255, 251, 0;
+}
+
+
+.grey-img {
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+	filter: grayscale(100%);
+}
+
+.card-Red{
+	background: linear-gradient(rgba(var(--red),0.8),rgba(var(--red),0.7));
+	/*background: linear-gradient(rgba(var(--red),0.8),rgba(var(--red),0.7));*/
+}
+
+.card-Green{
+	background: linear-gradient(rgba(var(--green),0.8),rgba(var(--green),0.7));
+}
+
+.card-Blue{
+	background: linear-gradient(rgba(var(--blue),0.8),rgba(var(--blue),0.7));
+}
+
+.card-Purple{
+	background: linear-gradient(rgba(var(--purple),0.8),rgba(var(--purple),0.7));
+}
+
+.card-Black{
+	background: linear-gradient(rgba(var(--black),0.8),rgba(var(--black),0.7));
+}
+
+.card-Yellow{
+	background: linear-gradient(rgba(var(--yellow),0.8),rgba(var(--yellow),0.7));
+}
+
+
+
+
+
+
+.card-Red-Green{
+	background: linear-gradient(135deg,rgba(var(--green),0.7) 30%,rgba(var(--red),0.7) 60%);
+}
+
+.card-Purple-Blue{
+	background: linear-gradient(135deg,rgba(var(--blue), 0.7) 30%,rgba(var(--purple), 0.7) 60%);
+}
+
+.card-Black-Red{
+	background: linear-gradient(135deg,rgba(var(--red), 0.7) 30%,rgba(var(--black),0.7) 60%);
+}
+
+.card-Green-Blue{
+	background: linear-gradient(135deg,rgba(var(--blue), 0.7)  30%,rgba(var(--green),0.7) 60%);
+}
+
+.card-Purple-Black{
+	background: linear-gradient(135deg,rgba(var(--black), 0.7) 30%, rgba(var(--purple), 0.7) 60%);
+}
+
+
+
+
+.card-Green-Red{
+	background: linear-gradient(135deg,rgba(var(--red),0.7) 30%, rgba(var(--green),0.7) 60%);
+}
+
+.card-Blue-Purple{
+	background: linear-gradient(135deg,rgba(var(--purple), 0.7) 30%, rgba(var(--blue), 0.7) 60%);
+}
+
+.card-Red-Black{
+	background: linear-gradient(135deg,rgba(var(--black), 0.7) 30%,rgba(var(--red),0.7) 60%);
+}
+
+.card-Blue-Green{
+	background: linear-gradient(135deg, rgba(var(--green),0.7) 30%, rgba(var(--blue), 0.7) 60%);
+}
+
+.card-Black-Purple{
+	background: linear-gradient(225deg,rgba(var(--purple), 0.7) 30%,(var(--black), 0.7) 60%);
+}
+
+
+
+
+
+.card-Slash{
+	background: linear-gradient(225deg, rgb(var(--blue)),rgba(var(--yellow), 0) 30%);
+}
+.card-Strike{
+	background: linear-gradient(225deg, rgb(var(--yellow)),rgb(var(--yellow),0) 30%);
+}
+.card-Ranged{
+	background: linear-gradient(225deg, rgb(var(--red)),rgb(var(--yellow),0) 30%);
+}
+.card-Special{
+	background: linear-gradient(225deg, rgb(var(--purple)),rgb(var(--yellow),0) 30%);
+}
+.card-Wisdom{
+	background: linear-gradient(225deg, rgb(var(--green)),rgb(var(--yellow),0) 30%);
+}

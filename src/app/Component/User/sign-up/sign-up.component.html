@@ -1,0 +1,53 @@
+<div class="container" style="color: white;">
+    <h1 class="text-center" style="margin-top: 5%">Register</h1>
+    <div class="login-container text-left">
+        <form class="form-group">
+
+            <div class="form-row mb-3">
+                <div class=" ml-auto">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" required [(ngModel)]="user.username"
+                        name="username" (change)="userValidation()">
+                    <label *ngIf="flagUser1" id="labelErrorUsername" class="validation-message">User Already Exists
+                    </label>
+                    <label *ngIf="flagUser2" id="labelErrorUsername" class="validation-message">User Too Short Or Contains Special Characters </label>
+                </div>
+            </div>
+
+            <div class="form-row mb-3">
+                <div class=" ml-auto">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" required [(ngModel)]="user.password"
+                        name="password" (change)="passValidation()">
+                    <label *ngIf="flagPass" id="labelErrorPassword" class="validation-message">Password must be min. 8
+                        characters. combine number upper and lowercase letters </label>
+                </div>
+            </div>
+
+            <div class="form-row mb-3">
+                <div class=" ml-auto">
+                    <label for="nickname">Nickname</label>
+                    <input type="text" class="form-control" id="nick" required (change)="nickValidation()"
+                        [(ngModel)]="user.nick" name="nick">
+                    <label *ngIf="flagNick1" class="validation-message">Nick Already Exists </label>
+                    <label *ngIf="flagNick2" id="labelErrorUsername" class="validation-message">Nick Too Short Or Contains Special Characters</label>
+                </div>
+            </div>
+
+
+            <div class="form-row mb-3">
+                <div class=" ml-auto">
+                    <label for="mail">E-Mail</label>
+                    <input type="text" class="form-control" id="mail" (change)="mailValidation()" required
+                        [(ngModel)]="user.mail" name="mail">
+                    <label class="validation-message" *ngIf="flagMail2">Mail already exists </label>
+                    <label class="validation-message" *ngIf="flagMail1">Mail Not Valid </label>
+                </div>
+            </div>
+
+
+
+            <button (click)="saveUser()" class="btn btn-light">Sign Up!</button>
+        </form>
+    </div>
+</div>
