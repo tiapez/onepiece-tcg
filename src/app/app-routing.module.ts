@@ -24,7 +24,7 @@ const routes: Routes = [
   {path: "signIn", component: SignInComponent},
   {path: "userProfile", component: UserProfileComponent, canActivate : [AuthGuard]},
   {path: "cardList", component: SetListComponent},
-  {path: "userCard/classic", component: CardListComponent, canActivate : [AuthGuard]},
+  {path: "userCard/classic", component: CardListComponent},
   {path: "userCard/details", component: CardListComponent, canActivate : [AuthGuard]},
   {path: "deck/cardList", component: DeckModifyComponent, canActivate : [AuthGuard]},
   {path: "deck", component: DeckListComponent, canActivate : [AuthGuard]},

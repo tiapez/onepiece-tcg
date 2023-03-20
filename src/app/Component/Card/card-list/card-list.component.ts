@@ -31,9 +31,6 @@ export class CardListComponent {
     this.globalService.changeUrl();
 
     if (this.globalService.isUserCard || this.globalService.isDeck) {
-      if (!this.globalService.isLogged()) {
-        this.router.navigate(['/']);
-      }
       this.cardService.filter = new Filter();
       if (this.globalService.isClassic) {
         this.dataService.getUserCards("OP01");
