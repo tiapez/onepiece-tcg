@@ -19,7 +19,7 @@ import { DataService } from '../Data/data.service';
 export class CardListService {
 
   constructor(private http: HttpClient,
-    private cardDetailsAdapter: CardDetailsAdapter, private globalService: GlobalService, private setCardAdapter: SetCardAdapter, private setAdapter: SetAdapter ,private modalService: NgbModal) { }
+    private cardDetailsAdapter: CardDetailsAdapter, private globalService: GlobalService, private setCardAdapter: SetCardAdapter, private setAdapter: SetAdapter ,private modalService: NgbModal,private dataService : DataService) { }
 
     public cardListDetails: CardDetails[] = [];
     public filter: Filter = new Filter();
@@ -48,7 +48,7 @@ export class CardListService {
 
     if(this.globalService.isClassic){
       this.cardListDetails = [];
-      this.getCardList();
+      this.dataService.getUserCards(this.filter.setId);
     }else{
       if(this.globalService.isDetails){
         this.cardListDetails = [];

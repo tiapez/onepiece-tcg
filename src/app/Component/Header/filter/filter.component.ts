@@ -2,7 +2,7 @@ import { Component} from '@angular/core';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { Filter } from 'src/app/Model/Filter/filter.model';
 import { DeckService } from 'src/app/Service/Implemented/Deck/deck.service';
-import { CardListService } from 'src/app/Service/Implemented/CardList/card-list.service';
+import { CardListService } from 'src/app/Service/Offline/CardList/card-list.service';
 import { GlobalService } from 'src/app/Service/global.service';
 import { Router } from '@angular/router';
 import { Set } from 'src/app/Model/Set/set.model';
@@ -30,12 +30,12 @@ export class FilterComponent {
       this.filterWidth = "100%";
     }
     if(this.globalService.isDeck){
-      this.cardService.getDeckSet(this.deckService.deckSelected.deck.format).subscribe({
-        next : data => {this.setList = data}
-      });
+      // this.cardService.getDeckSet(this.deckService.deckSelected.deck.format).subscribe({
+      //   next : data => {this.setList = data}
+      // });
     }else{
-      this.cardService.getSet().subscribe({
-        next : data => {this.setList = data}
+      this.cardService.getSetList().subscribe({
+        next: data => { this.setList = data }
       });
     }
 

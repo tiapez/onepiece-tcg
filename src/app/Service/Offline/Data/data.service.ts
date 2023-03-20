@@ -105,8 +105,12 @@ export class DataService {
       userCards.push(userCardSet);
     }
 
-    console.log(userCards);
     localStorage.setItem("cardList", JSON.stringify(userCards));
+  }
+
+
+  changeFilter(){
+    this.getUserCards(this.cardService.filter.setId);
   }
 
 }
