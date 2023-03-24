@@ -8,14 +8,7 @@
 			<a routerLink="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
 			<a routerLink="/" (click)="closeNav()">Home</a>
 			<a routerLink="/cardList" (click)="closeNav()">Card List</a>
-			<a class="dropdown-toggle only-dk" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-				aria-expanded="false">User Card</a>
-			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<li> <a routerLink="/userCard/classic">Classic</a></li>
-				<li> <a routerLink="/userCard/details">Details</a></li>
-			</ul>
-			<a class="only-mb" routerLink="/userCard/classic" (click)="closeNav()">User Card Classic</a>
-			<a class="only-mb" routerLink="/userCard/details" (click)="closeNav()">User Card Details</a>
+			<a routerLink="/userCard/classic" (click)="closeNav()">User Card</a>
 			<a routerLink="/deck"  (click)="closeNav()">Deck </a>  
 			<a class="dropdown-toggle only-dk" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
 				aria-expanded="false">Promo</a>
@@ -27,7 +20,7 @@
 			<a class="only-mb" routerLink="/promo/jap" (click)="closeNav()">Promo Jap</a>
 			<a routerLink="/incoming" (click)="closeNav()">Incoming</a>
 			<a routerLink="/don" (click)="closeNav()">Don!!</a>
-			<div class="navbar-button">
+			<!-- <div class="navbar-button">
 
 				<button *ngIf="globalService.isCardList" class="btn btn-outline-danger align-items-center"
 					(click)="globalService.changeView(); closeNav();">
@@ -40,7 +33,7 @@
 					{{globalService.userLogged.length == 0 ? 'Guest' :' ' + globalService.userLogged |titlecase}}
 				</button>
 
-			</div>
+			</div> -->
 		</div>
 
 	</div>

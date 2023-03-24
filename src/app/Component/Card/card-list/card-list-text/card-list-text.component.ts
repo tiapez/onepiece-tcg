@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { CardActionService } from 'src/app/Service/Implemented/CardAction/card-action.service';
-import { CardListService } from 'src/app/Service/Implemented/CardList/card-list.service';
+import { CardActionService2 } from 'src/app/Service/Offline/CardAction/card-action.service';
+import { CardListService } from 'src/app/Service/Offline/CardList/card-list.service';
 import { GlobalService } from 'src/app/Service/global.service';
 import { CardDetails } from 'src/app/Model/CardDetails/card-details.model';
 
@@ -11,7 +11,7 @@ import { CardDetails } from 'src/app/Model/CardDetails/card-details.model';
   styleUrls: ['./card-list-text.component.css']
 })
 export class CardListTextComponent {
-  constructor(public cardService: CardListService, public globalService: GlobalService, public cardAction: CardActionService) { }
+  constructor(public cardService: CardListService, public globalService: GlobalService, public cardAction: CardActionService2) { }
 
   @Input() cardList! : CardDetails[];
   

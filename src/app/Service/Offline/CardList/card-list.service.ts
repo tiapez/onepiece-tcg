@@ -11,7 +11,14 @@ import { Filter } from 'src/app/Model/Filter/filter.model';
 import { Set, SetAdapter } from 'src/app/Model/Set/set.model';
 import { SetCardAdapter, SetCard } from 'src/app/Model/SetCard/set-card.model';
 import { GlobalService } from '../../global.service';
-import { DataService } from '../Data/data.service';
+import { Title } from '@angular/platform-browser';
+import { Router } from '@angular/router';
+import { LocalCard } from 'src/app/Model/LocalCard/local-card.model';
+import { LocalSetCard, LocalSetCardAdapter } from 'src/app/Model/LocalSetCard/local-set-card.model';
+import { User } from 'src/app/Model/User/user.model';
+import { UserData } from 'src/app/Model/UserData/user-data.model';
+import { DeckService } from '../../Implemented/Deck/deck.service';
+
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +26,7 @@ import { DataService } from '../Data/data.service';
 export class CardListService {
 
   constructor(private http: HttpClient,
-    private cardDetailsAdapter: CardDetailsAdapter, private globalService: GlobalService, private setCardAdapter: SetCardAdapter, private setAdapter: SetAdapter ,private modalService: NgbModal,private dataService : DataService) { }
+    private cardDetailsAdapter: CardDetailsAdapter, private globalService: GlobalService, private setCardAdapter: SetCardAdapter, private setAdapter: SetAdapter ,private modalService: NgbModal, private localSetCardAdapter: LocalSetCardAdapter) { }
 
     public cardListDetails: CardDetails[] = [];
     public filter: Filter = new Filter();
@@ -40,6 +47,91 @@ export class CardListService {
     );
   }
 
+  public userSetCards: CardDetails[] = [];
+
+  getUserCards(setId: string) {
+    this.userSetCards = [];
+    var userCard: LocalSetCard = this.retriveUserCard(setId);
+    var setCards: SetCard[] = [];
+    this.getCardList().subscribe({
+      next: data => { setCards = data },
+      complete: () => {
+        console.log(setCards.length);
+        setCards.forEach(set => {
+          if (set.set.id == setId) {
+            var i = 0;
+            set.cardList.forEach(card => {
+              card.qtyMax = 4;
+              if (userCard != null && userCard.cardList.length>i && card.card.id == userCard.cardList[i].id) {
+                card.qty = userCard.cardList[i].qty;
+                i++;
+              } else {
+                card.qty = 0;
+              }
+              this.userSetCards.push(card);
+            })
+          }
+        });
+      }
+    });
+    this.cardListDetails = this.userSetCards;
+  }
+
+
+  retriveUserCard(set: string) {
+    var asd: any = localStorage.getItem("cardList");
+    var json : LocalSetCard[] = JSON.parse(asd);
+    var userCards: LocalSetCard[] = [];
+    var userSetCards: any = null;
+    if (asd != null) {
+      userCards = json.map((item) => this.localSetCardAdapter.adapt(item));
+      userCards.forEach(setCard => {
+        if (setCard.set == set) {
+          userSetCards = setCard;
+        }
+
+      })
+    }
+
+    return userSetCards;
+  }
+
+  saveUserCard(set: string) {
+    var asd: any = localStorage.getItem("cardList");
+    var json : LocalSetCard[] = JSON.parse(asd);
+    var userCards: LocalSetCard[] = [];
+
+    var userCardSet: LocalSetCard = new LocalSetCard();
+    userCardSet.set = set;
+    userCardSet.cardList = [];
+
+    this.cardListDetails.forEach(card => {
+      if (card.qty > 0) {
+        var localCard: LocalCard = new LocalCard();
+        localCard.id = card.card.id;
+        localCard.qty = card.qty;
+        userCardSet.cardList.push(localCard);
+      }
+    });
+
+    if (asd != null) {
+      userCards = json.map((item) => this.localSetCardAdapter.adapt(item));
+      var i : number = 0;
+      var n : number = 0;
+      userCards.forEach(setCard => {
+        if (setCard.set == set) {
+          n=i;
+        }
+        i++;
+      })
+      userCards[n] = userCardSet;
+    } else {
+      userCards.push(userCardSet);
+    }
+
+    localStorage.setItem("cardList", JSON.stringify(userCards));
+  }
+
 
   //FILTRI
   changeFilter() {
@@ -48,7 +140,7 @@ export class CardListService {
 
     if(this.globalService.isClassic){
       this.cardListDetails = [];
-      this.dataService.getUserCards(this.filter.setId);
+      this.getUserCards(this.filter.setId);
     }else{
       if(this.globalService.isDetails){
         this.cardListDetails = [];

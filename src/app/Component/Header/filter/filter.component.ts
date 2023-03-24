@@ -30,9 +30,6 @@ export class FilterComponent {
       this.filterWidth = "100%";
     }
     if(this.globalService.isDeck){
-      // this.cardService.getDeckSet(this.deckService.deckSelected.deck.format).subscribe({
-      //   next : data => {this.setList = data}
-      // });
     }else{
       this.cardService.getSetList().subscribe({
         next: data => { this.setList = data }
@@ -54,9 +51,9 @@ export class FilterComponent {
   reset() {
     if(this.globalService.isCardListAll){
       this.cardService.filter = new Filter();
-      this.cardService.filter.setOption = "Any/Any";
-      this.cardService.filter.setId = "Any";
-      this.cardService.filter.setName = "Any";
+      this.cardService.filter.setOption = "OP01/Romance Dawn";
+      this.cardService.filter.setId = "OP01";
+      this.cardService.filter.setName = "Romance Dawn";
     }else{
       this.cardService.filter = new Filter();
     }

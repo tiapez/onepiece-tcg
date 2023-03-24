@@ -7,7 +7,6 @@ import {Title} from "@angular/platform-browser";
 import { SetCard } from 'src/app/Model/SetCard/set-card.model';
 import { CardDetails } from 'src/app/Model/CardDetails/card-details.model';
 import { Filter } from 'src/app/Model/Filter/filter.model';
-import { DataService } from 'src/app/Service/Offline/Data/data.service';
 
 @Component({
   selector: 'app-card-list',
@@ -18,7 +17,7 @@ export class CardListComponent {
 
 
   constructor(private router: Router, public globalService: GlobalService, public cardService: CardListService,
-    private deckService: DeckService,private titleService:Title,private dataService : DataService) { }
+    private deckService: DeckService,private titleService:Title) { }
 
     @Input() setCardList : CardDetails[] = [];
 
@@ -33,19 +32,9 @@ export class CardListComponent {
     if (this.globalService.isUserCard || this.globalService.isDeck) {
       this.cardService.filter = new Filter();
       if (this.globalService.isClassic) {
-        this.dataService.getUserCards("OP01");
+        this.cardService.getUserCards(this.cardService.filter.setId);
         this.titleService.setTitle("Onepiece TCG - Classic")
       }
-      // if (this.globalService.isDetails) {
-      //   this.cardService.getCardDetails();
-      //   this.titleService.setTitle("Onepiece TCG - Details")
-      // }
-      // if (this.globalService.isDeck) {
-      //   this.cardService.getCardDeck(this.deckService.deckSelected.deck);
-      //   this.cardService.filter.setOption="Any/Any";
-      //   this.cardService.changeFilter();
-      //   this.titleService.setTitle("Onepiece TCG - DeckCard")
-      // }
     } else {
       this.titleService.setTitle("Onepiece TCG - Card List")
     }

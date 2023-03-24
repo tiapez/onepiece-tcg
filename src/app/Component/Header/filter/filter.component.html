@@ -61,7 +61,7 @@
 
         <div class="col-auto button-filter" *ngIf="!globalService.isUserCard">
             <input type="text" placeholder="Type..." id="type" name="type" class="form-control form-control-sm"
-                th:value="${session.filter.type}}" [(ngModel)]="cardService.filter.type">
+                th:value="${session.filter.type}" [(ngModel)]="cardService.filter.type">
         </div>
 
         <!--

@@ -3,7 +3,6 @@ import { CardDetails } from 'src/app/Model/CardDetails/card-details.model';
 import { SetCard } from 'src/app/Model/SetCard/set-card.model';
 import { GlobalService } from 'src/app/Service/global.service';
 import { CardListService } from 'src/app/Service/Offline/CardList/card-list.service';
-import { DataService } from 'src/app/Service/Offline/Data/data.service';
 
 @Component({
   selector: 'app-set-list',
@@ -20,7 +19,7 @@ export class SetListComponent implements OnInit {
       next: data => { this.setCardList = data }
     });
 
-    this.cardService.filter.setOption = "Any/Any";
+    this.cardService.filter.setOption = "OP01/Romance Dawn";
     this.cardService.changeFilter();
     this.globalService.changeUrl();
   }
