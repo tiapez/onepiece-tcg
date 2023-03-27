@@ -25,8 +25,7 @@ import { DeckService } from '../../Implemented/Deck/deck.service';
 })
 export class CardListService {
 
-  constructor(private http: HttpClient,
-    private cardDetailsAdapter: CardDetailsAdapter, private globalService: GlobalService, private setCardAdapter: SetCardAdapter, private setAdapter: SetAdapter ,private modalService: NgbModal, private localSetCardAdapter: LocalSetCardAdapter) { }
+  constructor(private http: HttpClient, private globalService: GlobalService, private setCardAdapter: SetCardAdapter, private setAdapter: SetAdapter ,private modalService: NgbModal, private localSetCardAdapter: LocalSetCardAdapter) { }
 
     public cardListDetails: CardDetails[] = [];
     public filter: Filter = new Filter();

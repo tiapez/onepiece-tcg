@@ -3,7 +3,9 @@ import { Injectable } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 import { map, Observable } from 'rxjs';
 import { Card, CardAdapter } from 'src/app/Model/Card/card.model';
+import { CardDetails } from 'src/app/Model/CardDetails/card-details.model';
 import { Deck } from 'src/app/Model/Deck/deck.model';
+import { DeckCard } from 'src/app/Model/DeckCard/deck-card.model';
 import { UserDeck, UserDeckAdapter } from 'src/app/Model/UserDeck/user-deck.model';
 import { environment } from 'src/environments/environment.prod';
 import { GlobalService } from '../../global.service';
@@ -12,48 +14,95 @@ import { GlobalService } from '../../global.service';
   providedIn: 'root'
 })
 export class DeckIntService {
-  
-  constructor( private userDeckAdapter : UserDeckAdapter, private globalService : GlobalService,
-    private cardAdapter : CardAdapter) { }
 
-  url = environment.apiUrl;
-  private baseUrl = this.url + "/api/deck/";
-  httpParams = new HttpParams().set("nick", this.globalService.getNickCookie());
+  constructor(private http: HttpClient, private userDeckAdapter: UserDeckAdapter, private globalService: GlobalService,
+    private cardAdapter: CardAdapter) { }
 
+  public deckList: UserDeck[] = [];
+  public deckSelected!: UserDeck;
+  public deckListMargin!: any;
+  public deckListHeight!: any;
+  public leaderList!: Card[];
+  public cardListForDeck!: CardDetails[];
 
-
-  getUserDeck(): Observable<UserDeck[]> {
-    const url = `${this.baseUrl}userDecks`;
-    let params = this.httpParams;
-    return this.http.get<UserDeck[]>(url,{params}).pipe(
-      map((data: UserDeck[]) => data.map((item) => this.userDeckAdapter.adapt(item)))
-    );
+  getUserDeck() {
+    var asd: any = localStorage.getItem("deckList");
+    var json: UserDeck[] = JSON.parse(asd);
+    var userDecks: UserDeck[] = [];
+    var userDeck: any = null;
+    if (asd != null) {
+      userDecks = json.map((item) => this.userDeckAdapter.adapt(item));
+    }
   }
 
 
-
-  saveUserDeck(deck : UserDeck) {
-    const url = `${this.baseUrl}saveUserDeck`;
-    return this.http.post(url,deck).pipe();
+  addCard(card: DeckCard) {
+    card.qtyRequired = card.qtyRequired + 1;
+    if (card.qtyRequired > 4)
+      card.qtyRequired = 4;
   }
 
-  saveOnlyDeck(deck : Deck) {
-    const url = `${this.baseUrl}saveOnlyDeck`;
-    let params = this.httpParams;
-    return this.http.post(url,deck,{params}).pipe();
+  removeCard(card: DeckCard) {
+    card.qtyRequired = card.qtyRequired - 1;
+    if (card.qtyRequired <= 0) {
+      this.deckSelected.cardList.forEach((card2, index) => {
+        if (card == card2) {
+          this.deckSelected.cardList.splice(index, 1);
+        }
+      });
+    }
   }
 
-  getLeader() : Observable<Card[]> {
-    const url = `${this.baseUrl}allLeader`;
-    return this.http.get<Card[]>(url).pipe(
-      map((data: Card[]) => data.map((item) => this.cardAdapter.adapt(item)))
-    );
+  addNewCard(card: CardDetails) {
+    let flag = true;
+    this.deckSelected.cardList.forEach(card2 => {
+      if (card.card.id == card2.card.id) {
+        this.addCard(card2);
+        flag = false;
+      }
+    })
+
+    if (flag) {
+      let deckCard = new DeckCard();
+      deckCard.card = card.card;
+      deckCard.qtyRequired = 1;
+      deckCard.qtyOwned = card.qty;
+      this.deckSelected.cardList.push(deckCard);
+    }
   }
 
-  deleteDeck(deckId : number){
-    const url = `${this.baseUrl}deleteDeck`;
-    let params = this.httpParams.set("id",deckId);
-    return this.http.delete(url,{params}).pipe();
+  removeCard0(card: CardDetails) {
+    this.deckSelected.cardList.forEach(card2 => {
+      if (card.card.id == card2.card.id) {
+        this.removeCard(card2);
+      }
+    })
+  }
+
+
+  saveOnlyDeck(deck: Deck) {
+    if (deck.id == null) {
+      var userDeck = new UserDeck();
+      userDeck.deck = deck;
+      userDeck.cardList = [];
+      var id = 0;
+      var asd: any = localStorage.getItem("deckList");
+      if (asd != null) {
+        var json: UserDeck[] = JSON.parse(asd);
+        id = json.length;
+      }
+    }else{
+      var asd: any = localStorage.getItem("deckList");
+      var json: UserDeck[] = JSON.parse(asd);
+      json.ar
+    }
+
+  }
+
+  deleteDeck(deckId: number) {
+    this.deckIntService.deleteDeck(deckId).subscribe({
+      complete: () => this.router.navigate(['/deck'])
+    });
   }
 
 }
