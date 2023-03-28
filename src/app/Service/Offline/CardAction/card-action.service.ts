@@ -13,15 +13,15 @@ export class CardActionService2 {
 
 
   addClassic(card: CardDetails) {
-    this.toastService.addSuccess();
+    //this.toastService.addSuccess();
     card.qty = card.qty + 1;
-    this.cardService.saveUserCard("OP01");
+    this.cardService.saveUserCard(card.card.setId);
   }
 
   removeClassic(card: CardDetails) {
-    this.toastService.removeSuccess();
+    //this.toastService.removeSuccess();
     card.qty = card.qty - 1;
-    this.cardService.saveUserCard("OP01");
+    this.cardService.saveUserCard(card.card.setId);
   }
 
 }

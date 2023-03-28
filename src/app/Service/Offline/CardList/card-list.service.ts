@@ -35,7 +35,7 @@ export class CardListService {
   public setList!: Set[];
   public  setCardList : SetCard[] = [];
 
-  //SERVIZI CARD
+  //SERVIZI JSON
   getSetList(): Observable<Set[]> {
     let json_url = "./assets/Json/setList.json";
     return this.http.get<Set[]>(json_url).pipe(
@@ -50,7 +50,7 @@ export class CardListService {
     );
   }
 
-  getCardList2(set: string){
+  getJsonCardList(set: string){
     let json_url = "./assets/Json/" + set + ".json";
     console.log(json_url);
     this.http.get<Card[]>(json_url).subscribe()
@@ -58,6 +58,7 @@ export class CardListService {
 
   }
 
+  //JSON TO MODEL
   async getSetCardList(){
     this.setCardList = [];
     if (this.filter.setOption.includes('any')) {
@@ -69,7 +70,7 @@ export class CardListService {
           localSetCard.set = set;
         }
       })
-      localSetCard.cardList = await lastValueFrom(this.getCardList2(this.filter.setId));
+      localSetCard.cardList = await lastValueFrom(this.getJsonCardList(this.filter.setId));
       this.setCardList.push(localSetCard);
     }
   }
@@ -78,7 +79,7 @@ export class CardListService {
     this.setCardList = [];
     if (this.filter.setOption.includes('any')) {
     } else {
-      let cardList = await lastValueFrom(this.getCardList2(this.filter.setId));
+      let cardList = await lastValueFrom(this.getJsonCardList(this.filter.setId));
       this.cardListDetails = cardList;
     }
   }
@@ -115,9 +116,29 @@ export class CardListService {
     this.cardListDetails = this.userSetCards;
   }
 
+  async getUserCards2(){
+    this.userSetCards = [];
+    var userCard: LocalSetCard = this.retriveUserCard(this.filter.setId);
+    var i = 0;
+    await this.getCardListFilter();
+
+    this.cardListDetails.forEach(card =>{
+      card.qtyMax = 4;
+              if (userCard != null && userCard.cardList.length > i && card.card.id == userCard.cardList[i].id) {
+                card.qty = userCard.cardList[i].qty;
+                i++;
+              } else {
+                card.qty = 0;
+              }
+              this.userSetCards.push(card);
+    });
+
+    this.cardListDetails = this.userSetCards;
+    console.log(this.cardListDetails);
+  }
 
   retriveUserCard(set: string) {
-    var asd: any = localStorage.getItem("cardList");
+    var asd: any = localStorage.getItem("cardList-"+set);
     var json: LocalSetCard[] = JSON.parse(asd);
     var userCards: LocalSetCard[] = [];
     var userSetCards: any = null;
@@ -127,7 +148,6 @@ export class CardListService {
         if (setCard.set == set) {
           userSetCards = setCard;
         }
-
       })
     }
 
@@ -135,7 +155,7 @@ export class CardListService {
   }
 
   saveUserCard(set: string) {
-    var asd: any = localStorage.getItem("cardList");
+    var asd: any = localStorage.getItem("cardList-"+set);
     var json: LocalSetCard[] = JSON.parse(asd);
     var userCards: LocalSetCard[] = [];
 
@@ -167,7 +187,7 @@ export class CardListService {
       userCards.push(userCardSet);
     }
 
-    localStorage.setItem("cardList", JSON.stringify(userCards));
+    localStorage.setItem("cardList-" + set, JSON.stringify(userCards));
   }
 
 

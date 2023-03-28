@@ -32,7 +32,7 @@ export class CardListComponent {
     if (this.globalService.isUserCard || this.globalService.isDeck) {
       this.cardService.filter = new Filter();
       if (this.globalService.isClassic) {
-        this.cardService.getUserCards(this.cardService.filter.setId);
+        this.cardService.getUserCards2();
         this.titleService.setTitle("Onepiece TCG - Classic")
       }
     } else {

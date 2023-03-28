@@ -114,7 +114,7 @@
 
         <div class="col-auto button-filter" *ngIf="globalService.isDetails">
             <select class="form-control form-control-sm" name="conditions" id="conditions"
-                [(ngModel)]="cardService.filter.condition" (ngModelChange)="conta()">
+                [(ngModel)]="cardService.filter.condition" >
                 <option value="0">
                     {{cardService.filter.condition == 0 ? 'Min. Cond.' : 'All'}}
                 </option>
@@ -132,7 +132,7 @@
 
         <div class="col-auto button-filter" *ngIf="globalService.isDetails">
             <select class="form-control form-control-sm" name="language" id="language"
-                [(ngModel)]="cardService.filter.language" (ngModelChange)="conta()">
+                [(ngModel)]="cardService.filter.language" >
                 <option value="All">
                     {{cardService.filter.language == 'All' ? 'Language' : 'All'}}
                 </option>
@@ -144,7 +144,7 @@
 
         <div class="col-auto button-filter" *ngIf="globalService.isUserCard">
             <select class="form-control form-control-sm" name="moa" id="moa" [(ngModel)]="cardService.filter.view"
-                (ngModelChange)="conta()">
+                >
                 <option value="0">
                     {{cardService.filter.view == 0 ? 'View' : 'All'}}
                 </option>
