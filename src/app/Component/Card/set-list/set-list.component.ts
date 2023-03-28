@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { lastValueFrom } from 'rxjs';
+import { Card } from 'src/app/Model/Card/card.model';
 import { CardDetails } from 'src/app/Model/CardDetails/card-details.model';
 import { SetCard } from 'src/app/Model/SetCard/set-card.model';
 import { GlobalService } from 'src/app/Service/global.service';
@@ -14,30 +16,26 @@ export class SetListComponent implements OnInit {
   constructor(public globalService: GlobalService, public cardService: CardListService) { }
 
   setCardList: SetCard[] = [];
-  ngOnInit(): void {
-    this.cardService.getCardList().subscribe({
-      next: data => { this.setCardList = data }
-    });
+  async ngOnInit() {
+
 
     this.cardService.filter.setOption = "OP01/Romance Dawn";
     this.cardService.changeFilter();
     this.globalService.changeUrl();
+    await this.cardService.getSetCardList();
   }
 
-  contaFiltro(cardList : CardDetails[]){
-    let n  = 0;
+  checkSet(cardList : CardDetails[]){
+    let flag  = false;
     cardList.forEach(card => {
       if(this.cardService.cardIf(card)){
-        n++;
+        flag = true;
         return;
       }
 
     });
-    if(n>0){
-      return true;
-    }else{
-      return false;
-    }
+    return flag;
   }
+
 
 }

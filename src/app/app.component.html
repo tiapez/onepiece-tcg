@@ -1,8 +1,8 @@
 <div class="app">
-    <div class="{{globalService.isCardListAll ? 'header-f' : 'header'}}">
+    <div class="{{globalService.isCardList ? 'header-f' : 'header'}}">
         <app-navbar></app-navbar>
     </div>
-    <div class="{{globalService.isCardListAll ? 'content-f' : 'content'}}">
+    <div class="{{globalService.isCardList ? 'content-f' : 'content'}}">
         <app-toast-container></app-toast-container>
         <router-outlet></router-outlet>
     </div>

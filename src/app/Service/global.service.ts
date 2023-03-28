@@ -56,6 +56,7 @@ export class GlobalService {
 
     if (this.router.url.includes('cardList') && !this.router.url.includes('deck')) {
       this.isCardListAll = true;
+      this.isCardList = true;
     }
   }
 

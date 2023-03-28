@@ -6,6 +6,7 @@ public id! : string;
 public name! : string;
 public nCard! : number;
 public nParallel! : number;
+public format! : string;
 constructor(){}
 }
 
@@ -19,6 +20,7 @@ constructor(){}
         set.name = item.name;
         set.nCard = item.nCard;
         set.nParallel = item.nParallel;
+        set.format = item.format;
         
       return set;
     }

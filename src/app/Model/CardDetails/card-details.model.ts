@@ -39,7 +39,7 @@ export class CardDetailsAdapterVoid implements Adapter<CardDetails> {
     let cd = new CardDetails();
     cd.card = item;
     cd.cardDetails = [];
-    cd.qty = 1;
+    cd.qty = item.qty;
     cd.qtyMax = 1;
     return cd;
   }

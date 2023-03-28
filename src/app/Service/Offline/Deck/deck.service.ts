@@ -13,7 +13,7 @@ import { GlobalService } from '../../global.service';
 @Injectable({
   providedIn: 'root'
 })
-export class DeckIntService {
+export class DeckService {
 
   constructor(private http: HttpClient, private userDeckAdapter: UserDeckAdapter, private globalService: GlobalService,
     private cardAdapter: CardAdapter) { }
@@ -22,7 +22,7 @@ export class DeckIntService {
   public deckSelected!: UserDeck;
   public deckListMargin!: any;
   public deckListHeight!: any;
-  public leaderList!: Card[];
+  public leaderList: Card[] = [];
   public cardListForDeck!: CardDetails[];
 
   getUserDeck() {
@@ -31,8 +31,11 @@ export class DeckIntService {
     var userDecks: UserDeck[] = [];
     var userDeck: any = null;
     if (asd != null) {
+      console.log(json);
       userDecks = json.map((item) => this.userDeckAdapter.adapt(item));
     }
+    
+    this.deckList = userDecks;
   }
 
 
@@ -82,27 +85,41 @@ export class DeckIntService {
 
   saveOnlyDeck(deck: Deck) {
     if (deck.id == null) {
+      var jsonList: UserDeck[] = [];
+      var list: any = localStorage.getItem("deckList");
+      if (list != null) {
+        var jsonList: UserDeck[] = JSON.parse(list);
+        deck.id = jsonList.length;
+      }else{
+        deck.id = 0;
+      }
       var userDeck = new UserDeck();
       userDeck.deck = deck;
       userDeck.cardList = [];
-      var id = 0;
-      var asd: any = localStorage.getItem("deckList");
-      if (asd != null) {
-        var json: UserDeck[] = JSON.parse(asd);
-        id = json.length;
-      }
+      userDeck.leader = deck.leader;
+      jsonList.push(userDeck);
+      localStorage.setItem("deckList",JSON.stringify(jsonList));
     }else{
       var asd: any = localStorage.getItem("deckList");
       var json: UserDeck[] = JSON.parse(asd);
-      json.ar
+      var newList : UserDeck[] = [];
+      json.forEach( userDeck =>{
+          var temp = userDeck;
+          if(userDeck.deck.id == deck.id){
+              temp.deck = deck;
+              temp.cardList = userDeck.cardList;
+              temp.leader = userDeck.leader;
+          }else{
+            temp = userDeck;
+          }
+          newList.push(temp);
+      });
+      localStorage.setItem("deckList",JSON.stringify(newList));
     }
-
+    console.log(deck);
   }
 
   deleteDeck(deckId: number) {
-    this.deckIntService.deleteDeck(deckId).subscribe({
-      complete: () => this.router.navigate(['/deck'])
-    });
   }
 
 }

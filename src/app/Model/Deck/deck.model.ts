@@ -1,10 +1,11 @@
 import { Injectable } from "@angular/core";
 import { Adapter } from "src/app/Adapter/adapter";
+import { Card } from "../Card/card.model";
 
 export class Deck {
   public id!: number;
   public userId!: number;
-  public leader!: number;
+  public leader!: Card;
   public name!: string;
   public color1!: string;
   public color2!: string;
