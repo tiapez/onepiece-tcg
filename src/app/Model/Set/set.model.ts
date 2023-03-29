@@ -7,6 +7,8 @@ public name! : string;
 public nCard! : number;
 public nParallel! : number;
 public format! : string;
+public cardOwned : number = 0;
+public parallelOwned : number = 0;
 constructor(){}
 }
 

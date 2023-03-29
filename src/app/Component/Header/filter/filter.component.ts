@@ -31,9 +31,7 @@ export class FilterComponent {
     }
     if(this.globalService.isDeck){
     }else{
-      this.cardService.getSetList().subscribe({
-        next: data => { this.setList = data }
-      });
+
     }
 
   }

@@ -18,7 +18,7 @@
                 [(ngModel)]="cardService.filter.setOption" (change)="cardService.changeFilter()">
                 <option value="Any/Any" text="{{cardService.filter.setOption.includes('Any/Any') ? 'Set' : 'Any'}}">
                 </option>
-                <option *ngFor="let set of setList" value="{{set.id + '/' + set.name}}"> {{set.name}}</option>
+                <option *ngFor="let set of globalService.constSetList" value="{{set.id + '/' + set.name}}"> {{set.name}}</option>
             </select>
         </div>
 

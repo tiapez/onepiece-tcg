@@ -1,8 +1,20 @@
-<div class="container-lg card-list-container-img " id="card-list-img">
-	
-	<div class="card-div"  *ngFor="let cardDet of  (globalService.isCardListAll ? cardList : cardService.cardListDetails)">
-		<div class="card-box" *ngIf="cardService.cardIf(cardDet)">
-			<app-card-img [cardDet]="cardDet"></app-card-img>
+	<div *ngFor="let setCard of cardService.setCardList">
+
+		<div class="container-lg set-container"
+			*ngIf="(setCard.set.name.includes(cardService.filter.setName) || cardService.filter.setName.includes('Any')) && checkSet(setCard.cardList)">
+			<h1>{{setCard.set.name}}</h1>
+			<h3>Card: {{setCard.set.cardOwned}} / {{setCard.set.nCard}}</h3>
+			<h3 *ngIf="setCard.set.nParallel > 0">Parallel: {{setCard.set.parallelOwned}} / {{setCard.set.nParallel}}</h3>
+<div class=" card-list-container-img " id="card-list-img">
+
+
+
+			<div class="card-div" *ngFor="let cardDet of  (globalService.isCardListAll ? cardList : setCard.cardList)">
+				<div class="card-box" *ngIf="cardService.cardIf(cardDet)">
+					<app-card-img [cardDet]="cardDet"></app-card-img>
+				</div>
+			</div>
+
 		</div>
 	</div>
 </div>

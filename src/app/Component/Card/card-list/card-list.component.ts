@@ -22,7 +22,10 @@ export class CardListComponent {
     @Input() setCardList : CardDetails[] = [];
 
 
-    ngOnInit() {
+    async ngOnInit() {
+      while(this.globalService.constCardSetList.length == 0){
+        await new Promise<void>(resolve => setTimeout(()=>resolve(), 1000)).then(()=>console.log("fired"));
+      }
     if (this.globalService.view == null || this.globalService.view == undefined || this.globalService.view == '') {
       this.globalService.changeView();
     }
@@ -32,7 +35,7 @@ export class CardListComponent {
     if (this.globalService.isUserCard || this.globalService.isDeck) {
       this.cardService.filter = new Filter();
       if (this.globalService.isClassic) {
-        this.cardService.getUserCards2();
+        this.cardService.getUserCardList();
         this.titleService.setTitle("Onepiece TCG - Classic")
       }
     } else {

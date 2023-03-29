@@ -1,24 +1,20 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { Observable, map, lastValueFrom } from 'rxjs';
+import { map, lastValueFrom } from 'rxjs';
 import { ModalCardAddComponent } from 'src/app/Component/Card/card-list/modal-card-add/modal-card-add.component';
 import { ModalCardComponent } from 'src/app/Component/Card/card-list/modal-card-view/modal-card.component';
 import { Card } from 'src/app/Model/Card/card.model';
-import { CardDetails, CardDetailsAdapter, CardDetailsAdapterVoid } from 'src/app/Model/CardDetails/card-details.model';
+import { CardDetails, CardDetailsAdapterVoid } from 'src/app/Model/CardDetails/card-details.model';
 import { Details } from 'src/app/Model/Details/details.model';
 import { Filter } from 'src/app/Model/Filter/filter.model';
 import { Set, SetAdapter } from 'src/app/Model/Set/set.model';
 import { SetCardAdapter, SetCard } from 'src/app/Model/SetCard/set-card.model';
 import { GlobalService } from '../../global.service';
-import { Title } from '@angular/platform-browser';
-import { Router } from '@angular/router';
+
 import { LocalCard } from 'src/app/Model/LocalCard/local-card.model';
 import { LocalSetCard, LocalSetCardAdapter } from 'src/app/Model/LocalSetCard/local-set-card.model';
-import { User } from 'src/app/Model/User/user.model';
-import { UserData } from 'src/app/Model/UserData/user-data.model';
-import { DeckService } from '../../Implemented/Deck/deck.service';
-import { UserDeck } from 'src/app/Model/UserDeck/user-deck.model';
+
 
 
 @Injectable({
@@ -33,112 +29,88 @@ export class CardListService {
   public cardListDetails: CardDetails[] = [];
   public filter: Filter = new Filter();
   public setList!: Set[];
-  public  setCardList : SetCard[] = [];
+  public setCardList: SetCard[] = [];
 
   //SERVIZI JSON
-  getSetList(): Observable<Set[]> {
-    let json_url = "./assets/Json/setList.json";
-    return this.http.get<Set[]>(json_url).pipe(
-      map((data: Set[]) => data.map((item) => this.setAdapter.adapt(item)))
-    );
-  }
 
-  getCardList(): Observable<SetCard[]> {
-    let json_url = "./assets/cardList.json";
-    return this.http.get<SetCard[]>(json_url).pipe(
-      map((data: SetCard[]) => data.map((item) => this.setCardAdapter.adapt(item)))
-    );
-  }
 
-  getJsonCardList(set: string){
+  getJsonCardList(set: string) {
     let json_url = "./assets/Json/" + set + ".json";
-    console.log(json_url);
     this.http.get<Card[]>(json_url).subscribe()
-    return this.http.get<Card[]>(json_url).pipe(map ((data : Card[]) => data.map((item) => this.cardAdapter.adapt(item))));
-
+    return this.http.get<Card[]>(json_url).pipe(map((data: Card[]) => data.map((item) => this.cardAdapter.adapt(item))));
   }
 
   //JSON TO MODEL
-  async getSetCardList(){
+  async getSetCardList() {
+    console.log('getSetCardList');
     this.setCardList = [];
-    if (this.filter.setOption.includes('any')) {
+    let localSetCard: SetCard;
+    if (this.filter.setOption.toLowerCase().includes('any')) {
+      this.globalService.constSetList.forEach(async set => {
+        let list: CardDetails[];
+        list = await lastValueFrom(this.getJsonCardList(set.id));
+        let temp: SetCard = new SetCard();
+        temp.set = set;
+        temp.cardList = list;
+        this.setCardList.push(temp);
+      })
     } else {
-      let localSetCard: SetCard = new SetCard();
-      let setList = await lastValueFrom(this.getSetList());
-      setList.forEach(set =>{
-        if(set.id == this.filter.setId){
+      localSetCard = new SetCard();
+      this.globalService.constSetList.forEach(set => {
+        if (set.id == this.filter.setId) {
           localSetCard.set = set;
         }
       })
       localSetCard.cardList = await lastValueFrom(this.getJsonCardList(this.filter.setId));
       this.setCardList.push(localSetCard);
     }
+
   }
 
-  async getCardListFilter(){
+  async getUserCardList() {
+    console.log('getUserCardList');
     this.setCardList = [];
-    if (this.filter.setOption.includes('any')) {
-    } else {
-      let cardList = await lastValueFrom(this.getJsonCardList(this.filter.setId));
-      this.cardListDetails = cardList;
-    }
+    this.cardListDetails = [];
+
+    this.globalService.constCardSetList.forEach(setCard => {
+      var temp = new SetCard();
+      temp = this.getUserCardsBySet(setCard, setCard.set.id);
+      this.setCardList.push(temp);
+    })
+
   }
 
 
-
-  public userSetCards: CardDetails[] = [];
-
-  getUserCards(setId: string) {
-    this.userSetCards = [];
-    var userCard: LocalSetCard = this.retriveUserCard(setId);
-    var setCards: SetCard[] = [];
-    this.getCardList().subscribe({
-      next: data => { setCards = data },
-      complete: () => {
-        console.log(setCards.length);
-        setCards.forEach(set => {
-          if (set.set.id == setId) {
-            var i = 0;
-            set.cardList.forEach(card => {
-              card.qtyMax = 4;
-              if (userCard != null && userCard.cardList.length > i && card.card.id == userCard.cardList[i].id) {
-                card.qty = userCard.cardList[i].qty;
-                i++;
-              } else {
-                card.qty = 0;
-              }
-              this.userSetCards.push(card);
-            })
-          }
-        });
-      }
-    });
-    this.cardListDetails = this.userSetCards;
-  }
-
-  async getUserCards2(){
-    this.userSetCards = [];
-    var userCard: LocalSetCard = this.retriveUserCard(this.filter.setId);
+  getUserCardsBySet(setCard: SetCard, id: string) {
+    let userSetCards: SetCard = new SetCard();
+    userSetCards.set = setCard.set;
+    userSetCards.set.cardOwned = 0;
+    userSetCards.set.parallelOwned = 0;
+    userSetCards.cardList = [];
+    var userCard: LocalSetCard = this.retriveUserCard(id);
     var i = 0;
-    await this.getCardListFilter();
 
-    this.cardListDetails.forEach(card =>{
+    setCard.cardList.forEach(card => {
       card.qtyMax = 4;
-              if (userCard != null && userCard.cardList.length > i && card.card.id == userCard.cardList[i].id) {
-                card.qty = userCard.cardList[i].qty;
-                i++;
-              } else {
-                card.qty = 0;
-              }
-              this.userSetCards.push(card);
+      if (userCard != null && userCard.cardList.length > i && card.card.id == userCard.cardList[i].id) {
+        card.qty = userCard.cardList[i].qty;
+        i++;
+        if (card.card.name.toLowerCase().includes('parallel')) {
+          userSetCards.set.parallelOwned++;
+        } else {
+          userSetCards.set.cardOwned++;
+        }
+      } else {
+        card.qty = 0;
+      }
+      userSetCards.cardList.push(card);
     });
 
-    this.cardListDetails = this.userSetCards;
-    console.log(this.cardListDetails);
+    return userSetCards;
   }
 
   retriveUserCard(set: string) {
-    var asd: any = localStorage.getItem("cardList-"+set);
+    var asd: any = localStorage.getItem("cardList-" + set);
     var json: LocalSetCard[] = JSON.parse(asd);
     var userCards: LocalSetCard[] = [];
     var userSetCards: any = null;
@@ -155,7 +127,7 @@ export class CardListService {
   }
 
   saveUserCard(set: string) {
-    var asd: any = localStorage.getItem("cardList-"+set);
+    var asd: any = localStorage.getItem("cardList-" + set);
     var json: LocalSetCard[] = JSON.parse(asd);
     var userCards: LocalSetCard[] = [];
 
@@ -163,12 +135,16 @@ export class CardListService {
     userCardSet.set = set;
     userCardSet.cardList = [];
 
-    this.cardListDetails.forEach(card => {
-      if (card.qty > 0) {
-        var localCard: LocalCard = new LocalCard();
-        localCard.id = card.card.id;
-        localCard.qty = card.qty;
-        userCardSet.cardList.push(localCard);
+    this.setCardList.forEach(setCard => {
+      if (setCard.set.id == set) {
+        setCard.cardList.forEach(card => {
+          if (card.qty > 0) {
+            var localCard: LocalCard = new LocalCard();
+            localCard.id = card.card.id;
+            localCard.qty = card.qty;
+            userCardSet.cardList.push(localCard);
+          }
+        })
       }
     });
 
@@ -195,14 +171,16 @@ export class CardListService {
   changeFilter() {
     this.filter.setName = this.filter.setOption.split('/')[1];
     this.filter.setId = this.filter.setOption.split('/')[0];
-    this.getSetCardList();
+
+    if (this.globalService.isCardListAll) {
+      this.getSetCardList();
+    }
     if (this.globalService.isClassic) {
       this.cardListDetails = [];
-      this.getUserCards(this.filter.setId);
+      this.getUserCardList();
     } else {
       if (this.globalService.isDetails) {
         this.cardListDetails = [];
-        this.getCardList();
       }
     }
   }

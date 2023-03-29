@@ -19,6 +19,8 @@ export class AppComponent {
     // console.debug = function (): void { };
     // console.warn = function (): void { };
     // console.info = function (): void { };
+    this.globalService.setCardList();
+    this.globalService.setSetList();
   }
 
 

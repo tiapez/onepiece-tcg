@@ -23,6 +23,15 @@
 	background: white;
 }
 
+.set-container{
+    margin-top: 10px;
+}
+
+h1,h3{
+    color: aliceblue;
+    text-align: center;
+}
+
 @media (max-width: 1000px){
 	.card-div{
 		max-width: 50%;
@@ -33,3 +42,4 @@
 	}
 
 	}
+

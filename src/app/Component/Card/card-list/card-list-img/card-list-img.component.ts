@@ -13,5 +13,16 @@ export class CardListImgComponent {
 
   @Input() cardList! : CardDetails[];
 
+  checkSet(cardList : CardDetails[]){
+    let flag  = false;
+    cardList.forEach(card => {
+      if(this.cardService.cardIf(card)){
+        flag = true;
+        return;
+      }
 
+    });
+    return flag;
+  }
+  
 }
