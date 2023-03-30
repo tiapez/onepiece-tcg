@@ -4,6 +4,8 @@ import { Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { Observable, map, lastValueFrom } from 'rxjs';
+import { Card } from '../Model/Card/card.model';
+import { CardDetailsAdapterVoid } from '../Model/CardDetails/card-details.model';
 import { Set, SetAdapter } from '../Model/Set/set.model';
 import { SetCard, SetCardAdapter } from '../Model/SetCard/set-card.model';
 import { CryptServiceImpl } from './Utility/CryptImpl/crypt-impl.service';
@@ -15,7 +17,7 @@ export class GlobalService {
 
   constructor(private http: HttpClient, private setCardAdapter: SetCardAdapter,
     private setAdapter: SetAdapter, private router: Router, private cookieService: CookieService,
-    private deviceService: DeviceDetectorService, private cryptService: CryptServiceImpl) { }
+    private deviceService: DeviceDetectorService, private cryptService: CryptServiceImpl,private cardAdapter: CardDetailsAdapterVoid) { }
 
   public userLogged!: string;
   public navbarImg!: string;
@@ -113,6 +115,11 @@ export class GlobalService {
     );
   }
 
+  getJsonCardList(set: string) {
+    let json_url = "./assets/Json/" + set + ".json";
+    this.http.get<Card[]>(json_url).subscribe()
+    return this.http.get<Card[]>(json_url).pipe(map((data: Card[]) => data.map((item) => this.cardAdapter.adapt(item))));
+  }
 
   async setSetList() {
     this.constSetList = await lastValueFrom(this.getSetList());
@@ -122,4 +129,13 @@ export class GlobalService {
     this.constCardSetList = await lastValueFrom(this.getCardList());
   }
 
+  async setConstant(){
+    this.constSetList = await lastValueFrom(this.getSetList());
+    this.constSetList.forEach(async set =>{
+      let setCard = new SetCard();
+      setCard.set = set;
+      setCard.cardList = await lastValueFrom(this.getJsonCardList(set.id));
+      this.constCardSetList.push(setCard);
+    })
+  }
 }

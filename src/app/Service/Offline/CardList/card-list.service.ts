@@ -11,11 +11,9 @@ import { Filter } from 'src/app/Model/Filter/filter.model';
 import { Set, SetAdapter } from 'src/app/Model/Set/set.model';
 import { SetCardAdapter, SetCard } from 'src/app/Model/SetCard/set-card.model';
 import { GlobalService } from '../../global.service';
-
 import { LocalCard } from 'src/app/Model/LocalCard/local-card.model';
 import { LocalSetCard, LocalSetCardAdapter } from 'src/app/Model/LocalSetCard/local-set-card.model';
-
-
+import {Clipboard} from '@angular/cdk/clipboard';
 
 @Injectable({
   providedIn: 'root'
@@ -24,12 +22,13 @@ export class CardListService {
 
   constructor(private http: HttpClient, private globalService: GlobalService, private setCardAdapter: SetCardAdapter,
     private setAdapter: SetAdapter, private modalService: NgbModal, private localSetCardAdapter: LocalSetCardAdapter,
-    private cardAdapter: CardDetailsAdapterVoid) { }
+    private cardAdapter: CardDetailsAdapterVoid,private clipboard: Clipboard) { }
 
   public cardListDetails: CardDetails[] = [];
   public filter: Filter = new Filter();
   public setList!: Set[];
   public setCardList: SetCard[] = [];
+  public missingSetCardList: SetCard[] = [];
 
   //SERVIZI JSON
 
@@ -92,7 +91,7 @@ export class CardListService {
 
     setCard.cardList.forEach(card => {
       card.qtyMax = 4;
-      if (userCard != null && userCard.cardList.length > i && card.card.id == userCard.cardList[i].id) {
+      if (userCard != undefined && userCard.cardList.length > i && card.card.id == userCard.cardList[i].id) {
         card.qty = userCard.cardList[i].qty;
         i++;
         if (card.card.name.toLowerCase().includes('parallel')) {
@@ -110,26 +109,16 @@ export class CardListService {
   }
 
   retriveUserCard(set: string) {
-    var asd: any = localStorage.getItem("cardList-" + set);
-    var json: LocalSetCard[] = JSON.parse(asd);
-    var userCards: LocalSetCard[] = [];
-    var userSetCards: any = null;
-    if (asd != null) {
-      userCards = json.map((item) => this.localSetCardAdapter.adapt(item));
-      userCards.forEach(setCard => {
-        if (setCard.set == set) {
-          userSetCards = setCard;
-        }
-      })
+    var json: any = localStorage.getItem("cardList-" + set);
+    var userCardJson!: LocalSetCard;
+    if (json != null) {
+      userCardJson = JSON.parse(json);
     }
 
-    return userSetCards;
+    return userCardJson;
   }
 
   saveUserCard(set: string) {
-    var asd: any = localStorage.getItem("cardList-" + set);
-    var json: LocalSetCard[] = JSON.parse(asd);
-    var userCards: LocalSetCard[] = [];
 
     var userCardSet: LocalSetCard = new LocalSetCard();
     userCardSet.set = set;
@@ -148,23 +137,51 @@ export class CardListService {
       }
     });
 
-    if (asd != null) {
-      userCards = json.map((item) => this.localSetCardAdapter.adapt(item));
-      var i: number = 0;
-      var n: number = 0;
-      userCards.forEach(setCard => {
-        if (setCard.set == set) {
-          n = i;
-        }
-        i++;
-      })
-      userCards[n] = userCardSet;
-    } else {
-      userCards.push(userCardSet);
-    }
 
-    localStorage.setItem("cardList-" + set, JSON.stringify(userCards));
+    localStorage.setItem("cardList-" + set, JSON.stringify(userCardSet));
   }
+
+  retriveMissingCard(userSetCards: SetCard){
+    var s : string = "";
+    s = s.concat(userSetCards.set.id + " - " + userSetCards.set.name);
+    userSetCards.cardList.forEach(card =>{
+      if(card.qty == 0){
+        s = s.concat('\n\r');
+        s = s.concat(card.card.number.substring(0,3) + " " + card.card.name)
+      }
+    })
+    console.log(s);
+    this.clipboard.copy(s);
+  }
+
+  async completeBaseSet(set: string) {
+    let setCardList: CardDetails[] = await lastValueFrom(this.getJsonCardList(set));
+    var userCard: LocalSetCard = new LocalSetCard();
+    userCard.set = set;
+    userCard.cardList = [];
+    var userCardLocal: LocalSetCard;
+
+    var json: any = localStorage.getItem("cardList-" + set);
+    userCardLocal = JSON.parse(json);
+    var i = 0;
+
+
+    setCardList.forEach(card => {
+      let temp: LocalCard = new LocalCard;
+      if (json != null && card.card.id == userCardLocal.cardList[i].id) {
+        temp = userCardLocal.cardList[i];
+        i++;
+      } else {
+        temp.id = card.card.id;
+        temp.qty = 1;
+      }
+      userCard.cardList.push(temp);
+    })
+
+    localStorage.setItem("cardList-" + set, JSON.stringify(userCard));
+    this.getUserCardList();
+  }
+
 
 
   //FILTRI
