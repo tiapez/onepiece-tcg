@@ -1,0 +1,55 @@
+OP03-001 | L | LEADER
+Portgas.D.Ace
+Portgas.D.Ace
+Life5
+Attribute SpecialSpecial
+Power5000
+Counter-
+ColorRed
+TypeWhitebeard Pirates
+Effect
+When this Leader attacks or is attacked, you may trash any number of Event or Stage cards from your hand. This Leader gains +1000 power during this battle for every card trashed.
+Card Set(s)
+-Pillars of Strength- [OP-03]
+
+OP03-001 | L | LEADER
+Portgas.D.Ace (Parallel)
+Portgas.D.Ace (Parallel)
+Life5
+Attribute SpecialSpecial
+Power5000
+Counter-
+ColorRed
+TypeWhitebeard Pirates
+Effect
+When this Leader attacks or is attacked, you may trash any number of Event or Stage cards from your hand. This Leader gains +1000 power during this battle for every card trashed.
+Card Set(s)
+-Pillars of Strength- [OP-03]
+
+OP03-002 | UC | CHARACTER
+Adio
+Adio
+Cost4
+Attribute RangedRanged
+Power5000
+Counter1000
+ColorRed
+TypeODYSSEY
+Effect
+[DON!! x1] [When Attacking] Your opponent cannot activate a [Blocker] Character that has 2000 or less power during this battle.
+Card Set(s)
+-Pillars of Strength- [OP-03]
+
+OP03-003 | R | CHARACTER
+Izo
+Izo
+Cost1
+Attribute RangedRanged
+Power2000
+Counter1000
+ColorRed
+TypeLand of Wano/Whitebeard Pirates
+Effect
+[On Play] Look at 5 cards from the top of your deck; reveal up to 1 card with a type including "Whitebeard Pirates" other than [Izo] and add it to your hand. Then, place the rest at the bottom of your deck in any order.
+Card Set(s)
+-Pillars of Strength- [OP-03]
