@@ -23,6 +23,5 @@ ngAfterViewInit(): void {
     const elements2:any = document.querySelector(".super-card-img");
     VanillaTilt.init(elements2,{glare:true,max:0});
   }
-
 }
 }

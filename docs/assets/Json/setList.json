@@ -21,6 +21,13 @@
         "nParallel": 31
     },
     {
+        "id": "OP04",
+        "name": "Kingdoms of Intrigue",
+        "nCard": 119,
+        "format": "jpn",
+        "nParallel": 30
+    },
+    {
         "id": "P",
         "name": "Promo",
         "nCard": 99,
