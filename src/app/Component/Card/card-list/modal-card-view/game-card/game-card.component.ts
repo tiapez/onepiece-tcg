@@ -52,7 +52,11 @@ export class GameCardComponent {
 
   createDescription() {
     let desc: string = "";
-    let descRows: string[] = this.card.effect.split('@');
+    let descRows: string[];
+    if(this.card.effectIta != null)
+      descRows = this.card.effectIta.split('@');
+    else
+      descRows = this.card.effect.split('@');
 
     descRows.forEach(row => {
       if(row.length <2)

@@ -15,4 +15,8 @@ export class CardImgComponent {
   constructor(public cardService : CardListService,public globalService : GlobalService){}
   @Input() cardDet!:CardDetails;
 
+ngOnInit(){
+  console.log('effect: ' +  this.cardDet.card.effect);
+}
+
 }

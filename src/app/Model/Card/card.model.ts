@@ -18,6 +18,7 @@ export class Card {
   public counter !: number;
   public cost !: number;
   public effect !: string;
+  public effectIta !: string;
   public setId !: string;
   public setName ! : string;
 
@@ -37,6 +38,7 @@ export class Card {
         card.role = item.role;
         card.rarity = item.rarity;
         card.effect = item.effect;
+        card.effectIta = item.effectIta;
         card.setId = item.setId;
         card.cost = item.cost;
         card.counter = item.counter;
