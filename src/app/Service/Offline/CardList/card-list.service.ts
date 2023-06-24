@@ -168,6 +168,8 @@ export class CardListService {
 
     setCardList.forEach(card => {
       let temp: LocalCard = new LocalCard;
+      console.log(card);
+      console.log(userCardLocal);
       if (json != null && card.card.id == userCardLocal.cardList[i].id) {
         temp = userCardLocal.cardList[i];
         i++;
