@@ -1,0 +1,34 @@
+[
+{
+	"number":"001",
+	"effect":"[Activation Main] [Once per Turn] Don!!-3: Place up to one opponent's character with power 3000 or less on the bottom of the owner's deck, and up to one character card with cost 4 or less from your hand, make it appear."
+},
+{
+	"number":"002",
+	"effect":"[Activation Main] [Once per turn] If there are 0 Don!! cards on your field, or if you have 8 or more Don!! cards on your field, up to 1 Don!! to add."
+},
+{
+	"number":"003",
+	"effect":"[During your turn] If you have 4 or more life cards, this leader gets -1000 power.[When attacking] Don!!-1: This leader gains +2000 power during this turn."
+},
+{
+	"number":"004",
+	"effect":"[On Play] If the opponent has a character with power of 5000 or higher, this character gains [Rush] during this turn.(This card can attack on the turn it appears)"
+},
+{
+	"number":"005",
+	"effect":"[Don!!x1] [When attacking] Up to one of your opponent's characters gets -2000 power during this turn."
+},
+{
+	"number":"006",
+	"effect":"[Rush] (This card can attack the turn it appears.)[Once per turn] When the opponent activates [Blocker], KO up to one opponent's character with power 8000 or less."
+},
+{
+	"number":"011",
+	"effect":"[During your turn] [Once per turn] When Don!! on your field is returned to the Don!! deck, this character gains +2000 Power until the start of your next turn."
+},
+{
+	"number":"013",
+	"effect":"[On Play] [When attacking] Don!!-1: Up to one of your leader cards gets +1000 power until the start of your next turn."
+}
+]

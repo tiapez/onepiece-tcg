@@ -1,0 +1,14 @@
+[
+{
+	"number":"001",
+	"effect":"[Don!! x1] [During the opponent's turn] [Once per turn] If your character with power 5000 or higher is KOed, that character will receive -1000 power during this turn instead of being KOed."
+},
+{
+	"number":"041",
+	"effect":"[Activation Main] [Once per turn] You can discard 1 card from your hand: Draw 1 card. @[When attacking] Up to one of your opponent's characters gets -1 cost during this turn."
+},
+{
+	"number":"093",
+	"effect":"[During your opponent's turn] [Once per turn] When your Life becomes 0, add the top card of your deck to your Life. After that, discard 1 card from your hand."
+}
+]
