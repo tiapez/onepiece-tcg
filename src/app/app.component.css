@@ -8,7 +8,7 @@
 }
 
 .header-f{
-    height: 15vh;
+    height: 20vh;
 }
 
 .content{
@@ -18,7 +18,7 @@
 }
 
 .content-f{
-    height: 85vh;
+    height: 80vh;
     overflow-y: auto;
     padding: 1%;
 }

@@ -28,6 +28,13 @@
         "nParallel": 30
     },
     {
+        "id": "OP05",
+        "name": "Awakening of the New Era",
+        "nCard": 119,
+        "format": "jpn",
+        "nParallel": 35
+    },
+    {
         "id": "P",
         "name": "Promo",
         "nCard": 99,
@@ -96,6 +103,13 @@
         "nCard": 15,
         "format": "jpn",
         "nParallel": 0
+    },
+    {
+        "id": "ST10",
+        "name": "The Three Captain",
+        "nCard": 17,
+        "format": "jpn",
+        "nParallel": 2
     }
 ]
 
