@@ -29,11 +29,11 @@ export class CardButtonComponent{
     var setName = "";
     setList.forEach(set => {
       if(set.id == this.cardDet.card.setId){
-        setName =set.name.split(' ').join('-');
+        setName =set.name.split(' ').join('-').split('.').join('');
       }
     });
 
-    var cardName = this.cardDet.card.name.split('.').join('').split(' ').join('-');
+    var cardName = this.cardDet.card.name.split('.').join('').split('"').join('').split(' ').join('-');
     var cardNumber = this.cardDet.card.number.split('_').join('-');
     var cardSet = "-" + this.cardDet.card.setId + "-";
     if(this.cardDet.card.setId != this.cardDet.card.originalSetId)
