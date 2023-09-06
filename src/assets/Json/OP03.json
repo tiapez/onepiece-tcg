@@ -1,36 +1,38 @@
 [{
-    "id": "801",
+    "id": "952",
     "name": "Portgas.D.Ace",
     "color": "Red",
-    "cardType": "Leader",
+    "cardType": "Character",
     "effect": "When this Leader attacks or is attacked, you may trash any number of Event or Stage cards from your hand. This Leader gains +1000 power during this battle for every card trashed.",
     "cost": 5,
     "power": 5000,
     "counter": 0,
     "role": "Special",
-    "number": "001",
+    "number": "001_V1",
     "rarity": "Leader",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Whitebeard Pirates"
 }, {
-    "id": "802",
-    "name": "Portgas.D.Ace (Parallel)",
-    "color": "Red",
-    "cardType": "Leader",
-    "effect": "When this Leader attacks or is attacked, you may trash any number of Event or Stage cards from your hand. This Leader gains +1000 power during this battle for every card trashed.",
-    "cost": 5,
-    "power": 5000,
-    "counter": 0,
-    "role": "Special",
-    "number": "001a",
-    "rarity": "Leader",
-    "setId": "OP03",
-    "type": "Whitebeard Pirates"
-}, {
-    "id": "803",
-    "name": "Adio",
+    "id": "954",
+    "name": "Portgas.D.Ace",
     "color": "Red",
     "cardType": "Character",
+    "effect": "When this Leader attacks or is attacked, you may trash any number of Event or Stage cards from your hand. This Leader gains +1000 power during this battle for every card trashed.",
+    "cost": 5,
+    "power": 5000,
+    "counter": 0,
+    "role": "Special",
+    "number": "001_V2",
+    "rarity": "Leader",
+    "setId": "OP03",
+    "originalSetId": "OP03",
+    "type": "Whitebeard Pirates"
+},{
+    "id": "953",
+    "name": "Adio",
+    "color": "Red",
+    "cardType": "Leader",
     "effect": "/DON!! x1/ /When Attacking/ Your opponent cannot activate a /Blocker/ Character that has 2000 or less power during this battle.",
     "cost": 4,
     "power": 5000,
@@ -39,9 +41,10 @@
     "number": "002",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "ODYSSEY"
-}, {
-    "id": "804",
+},{
+    "id": "802",
     "name": "Izo",
     "color": "Red",
     "cardType": "Character",
@@ -53,9 +56,10 @@
     "number": "003",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Land of Wano/Whitebeard Pirates"
 }, {
-    "id": "805",
+    "id": "803",
     "name": "Curiel",
     "color": "Red",
     "cardType": "Character",
@@ -67,9 +71,10 @@
     "number": "004",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Whitebeard Pirates"
 }, {
-    "id": "806",
+    "id": "804",
     "name": "Thatch",
     "color": "Red",
     "cardType": "Character",
@@ -81,9 +86,10 @@
     "number": "005",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Whitebeard Pirates"
 }, {
-    "id": "807",
+    "id": "805",
     "name": "Speed Jil",
     "color": "Red",
     "cardType": "Character",
@@ -95,9 +101,10 @@
     "number": "006",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Whitebeard Pirates"
 }, {
-    "id": "808",
+    "id": "806",
     "name": "Namule",
     "color": "Red",
     "cardType": "Character",
@@ -109,13 +116,14 @@
     "number": "007",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Fish-Man/Whitebeard Pirates"
 }, {
-    "id": "809",
+    "id": "807",
     "name": "Buggy",
     "color": "Red",
     "cardType": "Character",
-    "effect": "This Character cannot be K.O.'d in battle by &lt;Slash&gt; attribute cards.@/On Play/ Look at 5 cards from the top of your deck; reveal up to 1 red Event and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
+    "effect": "This Character cannot be K.O.'d in battle by <slash> attribute cards.@/On Play/ Look at 5 cards from the top of your deck; reveal up to 1 red Event and add it to your hand. Then, place the rest at the bottom of your deck in any order.</slash>",
     "cost": 1,
     "power": 3000,
     "counter": 0,
@@ -123,9 +131,10 @@
     "number": "008",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Buggy Pirates"
 }, {
-    "id": "810",
+    "id": "808",
     "name": "Haruta",
     "color": "Red",
     "cardType": "Character",
@@ -137,9 +146,10 @@
     "number": "009",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Whitebeard Pirates"
 }, {
-    "id": "811",
+    "id": "809",
     "name": "Fossa",
     "color": "Red",
     "cardType": "Character",
@@ -151,9 +161,10 @@
     "number": "010",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Whitebeard Pirates"
 }, {
-    "id": "812",
+    "id": "810",
     "name": "Blamenco",
     "color": "Red",
     "cardType": "Character",
@@ -165,9 +176,10 @@
     "number": "011",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Whitebeard Pirates"
 }, {
-    "id": "813",
+    "id": "811",
     "name": "Marshall.D.Teach",
     "color": "Red",
     "cardType": "Character",
@@ -179,9 +191,10 @@
     "number": "012",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Whitebeard Pirates"
 }, {
-    "id": "814",
+    "id": "812",
     "name": "Marco",
     "color": "Red",
     "cardType": "Character",
@@ -190,13 +203,14 @@
     "power": 6000,
     "counter": 1000,
     "role": "Special",
-    "number": "013",
+    "number": "013_V1",
     "rarity": "Super Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Whitebeard Pirates"
 }, {
-    "id": "815",
-    "name": "Marco (Parallel)",
+    "id": "813",
+    "name": "Marco",
     "color": "Red",
     "cardType": "Character",
     "effect": "/Your Turn/ /On Play/ K.O. up to 1 of your opponent's Characters with 3000 power or less.@/On K.O./ You may trash 1 Event from your hand: You may play this Character card from your trash rested.",
@@ -204,12 +218,13 @@
     "power": 6000,
     "counter": 1000,
     "role": "Special",
-    "number": "013a",
+    "number": "013_V2",
     "rarity": "Super Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Whitebeard Pirates"
 }, {
-    "id": "816",
+    "id": "814",
     "name": "Monkey.D.Garp",
     "color": "Red",
     "cardType": "Character",
@@ -221,9 +236,10 @@
     "number": "014",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Navy"
 }, {
-    "id": "817",
+    "id": "815",
     "name": "Lim",
     "color": "Red",
     "cardType": "Character",
@@ -235,12 +251,13 @@
     "number": "015",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "ODYSSEY"
 }, {
-    "id": "818",
+    "id": "816",
     "name": "Flame Emperor",
     "color": "Red",
-    "cardType": "Event",
+    "cardType": "Character",
     "effect": "/Main/ If your Leader is [Portgas.D.Ace], K.O. up to 1 of your opponent's Characters with 8000 power or less, and your Leader gains /Double Attack/ and +3000 power during this turn.@(This card deals 2 damage.)@/Trigger/ K.O. up to 1 of your opponent's Characters with 6000 power or less.",
     "cost": 7,
     "power": 0,
@@ -249,13 +266,14 @@
     "number": "016",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Whitebeard Pirates"
 }, {
-    "id": "819",
+    "id": "817",
     "name": "Cross Fire",
     "color": "Red",
     "cardType": "Event",
-    "effect": "/Main///Counter/ If your Leader's type includes (Whitebeard Pirates), give up to 1 of your opponent's Characters −4000 power during this turn.@@/Trigger/ Activate this card's [Main] effect.",
+    "effect": "/Main///Counter/ If your Leader's type includes (Whitebeard Pirates), give up to 1 of your opponent's Characters −4000 power during this turn.@/Trigger/ Activate this card's [Main] effect.",
     "cost": 2,
     "power": 0,
     "counter": 0,
@@ -263,9 +281,10 @@
     "number": "017",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Whitebeard Pirates"
 }, {
-    "id": "820",
+    "id": "818",
     "name": "Fire Fist",
     "color": "Red",
     "cardType": "Event",
@@ -274,13 +293,14 @@
     "power": 0,
     "counter": 0,
     "role": "",
-    "number": "018",
+    "number": "018_V1",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Whitebeard Pirates"
 }, {
-    "id": "821",
-    "name": "Fire Fist (Parallel)",
+    "id": "819",
+    "name": "Fire Fist",
     "color": "Red",
     "cardType": "Event",
     "effect": "/Main/ You may trash 1 Event from your hand: K.O. up to 1 of your opponent's Characters with 5000 power or less and up to 1 of your opponent's Characters with 4000 power or less.@/Trigger/ K.O. up to 1 of your opponent's Characters with 5000 power or less.",
@@ -288,16 +308,17 @@
     "power": 0,
     "counter": 0,
     "role": "",
-    "number": "018a",
+    "number": "018_V2",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Whitebeard Pirates"
 }, {
-    "id": "822",
+    "id": "820",
     "name": "Fiery Doll",
     "color": "Red",
     "cardType": "Event",
-    "effect": "/Main/ Your Leader gains +4000 power during this turn.@/Trigger/ Give up to 1 of your opponent's Leader or Character cards -10000 power during this turn.",
+    "effect": "/Main/ Your Leader gains +4000 power during this turn.@/Trigger/ Give up to 1 of your opponent's Leader or Character cards −10000 power during this turn.",
     "cost": 2,
     "power": 0,
     "counter": 0,
@@ -305,12 +326,13 @@
     "number": "019",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Whitebeard Pirates"
 }, {
-    "id": "823",
+    "id": "821",
     "name": "Striker",
     "color": "Red",
-    "cardType": "Stage",
+    "cardType": "Event",
     "effect": "/Activate: Main/ ② (You may rest the specified number of DON!! cards in your cost area.) You may rest this Stage: If your Leader is [Portgas.D.Ace], look at 5 cards from the top of your deck; reveal up to 1 Event and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
     "cost": 1,
     "power": 0,
@@ -319,9 +341,25 @@
     "number": "020",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Whitebeard Pirates"
 }, {
-    "id": "824",
+    "id": "822",
+    "name": "Kuro",
+    "color": "Green",
+    "cardType": "Stage",
+    "effect": "/Activate: Main/ ③ (You may rest the specified number of DON!! cards in your cost area.) You may rest 2 of your {East Blue} type Characters: Set this Leader as active, and rest up to 1 of your opponent's Characters with a cost of 5 or less.",
+    "cost": 5,
+    "power": 5000,
+    "counter": 0,
+    "role": "Slash",
+    "number": "021_V1",
+    "rarity": "Leader",
+    "setId": "OP03",
+    "originalSetId": "OP03",
+    "type": "East Blue/Black Cat Pirates"
+}, {
+    "id": "823",
     "name": "Kuro",
     "color": "Green",
     "cardType": "Leader",
@@ -330,26 +368,13 @@
     "power": 5000,
     "counter": 0,
     "role": "Slash",
-    "number": "021",
+    "number": "021_V2",
     "rarity": "Leader",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue/Black Cat Pirates"
 }, {
-    "id": "825",
-    "name": "Kuro (Parallel)",
-    "color": "Green",
-    "cardType": "Leader",
-    "effect": "/Activate: Main/ ③ (You may rest the specified number of DON!! cards in your cost area.) You may rest 2 of your {East Blue} type Characters: Set this Leader as active, and rest up to 1 of your opponent's Characters with a cost of 5 or less.",
-    "cost": 5,
-    "power": 5000,
-    "counter": 0,
-    "role": "Slash",
-    "number": "021a",
-    "rarity": "Leader",
-    "setId": "OP03",
-    "type": "East Blue/Black Cat Pirates"
-}, {
-    "id": "826",
+    "id": "824",
     "name": "Arlong",
     "color": "Green/Yellow",
     "cardType": "Leader",
@@ -358,13 +383,14 @@
     "power": 5000,
     "counter": 0,
     "role": "Slash",
-    "number": "022",
+    "number": "022_V1",
     "rarity": "Leader",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Fish-Man/East Blue/Arlong Pirates"
 }, {
-    "id": "827",
-    "name": "Arlong (Parallel)",
+    "id": "825",
+    "name": "Arlong",
     "color": "Green/Yellow",
     "cardType": "Leader",
     "effect": "/DON!! x2/ /When Attacking/ ① (You may rest the specified number of DON!! cards in your cost area.): Play up to 1 Character card with a cost of 4 or less and a [Trigger] from your hand.",
@@ -372,15 +398,16 @@
     "power": 5000,
     "counter": 0,
     "role": "Slash",
-    "number": "022a",
+    "number": "022_V2",
     "rarity": "Leader",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Fish-Man/East Blue/Arlong Pirates"
 }, {
-    "id": "828",
+    "id": "826",
     "name": "Alvida",
     "color": "Green",
-    "cardType": "Character",
+    "cardType": "Leader",
     "effect": "-",
     "cost": 1,
     "power": 3000,
@@ -389,9 +416,10 @@
     "number": "023",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue/Alvida Pirates"
 }, {
-    "id": "829",
+    "id": "827",
     "name": "Gin",
     "color": "Green",
     "cardType": "Character",
@@ -400,13 +428,14 @@
     "power": 5000,
     "counter": 1000,
     "role": "Strike",
-    "number": "024",
+    "number": "024_V1",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue/Krieg Pirates"
 }, {
-    "id": "830",
-    "name": "Gin (Parallel)",
+    "id": "828",
+    "name": "Gin",
     "color": "Green",
     "cardType": "Character",
     "effect": "/On Play/ If your Leader has the {East Blue} type, rest up to 2 of your opponent's Characters with a cost of 4 or less.",
@@ -414,12 +443,13 @@
     "power": 5000,
     "counter": 1000,
     "role": "Strike",
-    "number": "024a",
+    "number": "024_V2",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue/Krieg Pirates"
 }, {
-    "id": "831",
+    "id": "829",
     "name": "Krieg",
     "color": "Green",
     "cardType": "Character",
@@ -428,13 +458,14 @@
     "power": 7000,
     "counter": 0,
     "role": "Ranged",
-    "number": "025",
+    "number": "025_V1",
     "rarity": "Super Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue/Krieg Pirates"
 }, {
-    "id": "832",
-    "name": "Krieg (Parallel)",
+    "id": "830",
+    "name": "Krieg",
     "color": "Green",
     "cardType": "Character",
     "effect": "/On Play/ You may trash 1 card from your hand: K.O. up to 2 of your opponent's rested Characters with a cost of 4 or less.@/DON!! x1/ This Character gains /Double Attack/.@(This card deals 2 damage.)",
@@ -442,12 +473,13 @@
     "power": 7000,
     "counter": 0,
     "role": "Ranged",
-    "number": "025a",
+    "number": "025_V2",
     "rarity": "Super Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue/Krieg Pirates"
 }, {
-    "id": "833",
+    "id": "831",
     "name": "Kuroobi",
     "color": "Green",
     "cardType": "Character",
@@ -459,9 +491,10 @@
     "number": "026",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Fish-Man/East Blue/Arlong Pirates"
 }, {
-    "id": "834",
+    "id": "832",
     "name": "Sham",
     "color": "Green",
     "cardType": "Character",
@@ -473,13 +506,14 @@
     "number": "027",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue/Black Cat Pirates"
 }, {
-    "id": "835",
+    "id": "833",
     "name": "Jango",
     "color": "Green",
     "cardType": "Character",
-    "effect": "/On Play/ Choose one:@- Set up to 1 of your {East Blue} type Leader or Character cards with a cost of 6 or less as active.@- Rest this Character and up to 1 of your opponent's Characters.",
+    "effect": "/On Play/ Choose one:@• Set up to 1 of your {East Blue} type Leader or Character cards with a cost of 6 or less as active.@• Rest this Character and up to 1 of your opponent's Characters.",
     "cost": 5,
     "power": 6000,
     "counter": 0,
@@ -487,9 +521,10 @@
     "number": "028",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue/Black Cat Pirates"
 }, {
-    "id": "836",
+    "id": "834",
     "name": "Chew",
     "color": "Green",
     "cardType": "Character",
@@ -501,9 +536,10 @@
     "number": "029",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Fish-Man/East Blue/Arlong Pirates"
 }, {
-    "id": "837",
+    "id": "835",
     "name": "Nami",
     "color": "Green",
     "cardType": "Character",
@@ -515,9 +551,10 @@
     "number": "030",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue/Arlong Pirates"
 }, {
-    "id": "838",
+    "id": "836",
     "name": "Pearl",
     "color": "Green",
     "cardType": "Character",
@@ -529,13 +566,14 @@
     "number": "031",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue/Krieg Pirates"
 }, {
-    "id": "839",
+    "id": "837",
     "name": "Buggy",
     "color": "Green",
     "cardType": "Character",
-    "effect": "This Character cannot be K.O.'d in battle by &lt;Slash&gt; attribute cards.",
+    "effect": "This Character cannot be K.O.'d in battle by <slash> attribute cards.</slash>",
     "cost": 3,
     "power": 5000,
     "counter": 0,
@@ -543,9 +581,10 @@
     "number": "032",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue/Buggy Pirates"
 }, {
-    "id": "840",
+    "id": "838",
     "name": "Hatchan",
     "color": "Green",
     "cardType": "Character",
@@ -557,9 +596,10 @@
     "number": "033",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Fish-Man/East Blue/Arlong Pirates"
 }, {
-    "id": "841",
+    "id": "839",
     "name": "Buchi",
     "color": "Green",
     "cardType": "Character",
@@ -571,9 +611,10 @@
     "number": "034",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue/Black Cat Pirates"
 }, {
-    "id": "842",
+    "id": "840",
     "name": "Momoo",
     "color": "Green",
     "cardType": "Character",
@@ -585,12 +626,13 @@
     "number": "035",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Animal/East Blue"
 }, {
-    "id": "843",
+    "id": "841",
     "name": "Out-of-the-Bag",
     "color": "Green",
-    "cardType": "Event",
+    "cardType": "Character",
     "effect": "/Main/ You may rest 1 of your {East Blue} type Characters: Set up to 1 of your [Kuro] cards as active.@/Trigger/ K.O. up to 1 of your opponent's rested Characters with a cost of 3 or less.",
     "cost": 3,
     "power": 0,
@@ -599,9 +641,10 @@
     "number": "036",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue/Black Cat Pirates"
 }, {
-    "id": "844",
+    "id": "842",
     "name": "Tooth Attack",
     "color": "Green",
     "cardType": "Event",
@@ -613,13 +656,14 @@
     "number": "037",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Fish-Man/East Blue/Arlong Pirates"
 }, {
-    "id": "845",
+    "id": "843",
     "name": "Deathly Poison Gas Bomb MH5",
     "color": "Green",
     "cardType": "Event",
-    "effect": "/Main/ Rest up to 2 of your opponent's Characters with a cost of 2 or less.@@/Trigger/ Rest up to 1 of your opponent's Characters with a cost of 5 or less.",
+    "effect": "/Main/ Rest up to 2 of your opponent's Characters with a cost of 2 or less.@/Trigger/ Rest up to 1 of your opponent's Characters with a cost of 5 or less.",
     "cost": 1,
     "power": 0,
     "counter": 0,
@@ -627,9 +671,10 @@
     "number": "038",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue/Krieg Pirates"
 }, {
-    "id": "846",
+    "id": "844",
     "name": "One, Two, Jango",
     "color": "Green",
     "cardType": "Event",
@@ -641,9 +686,25 @@
     "number": "039",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue/Black Cat Pirates"
 }, {
-    "id": "847",
+    "id": "845",
+    "name": "Nami",
+    "color": "Blue",
+    "cardType": "Event",
+    "effect": "When your deck is reduced to 0, you win the game instead of losing, according to the rules.@/DON!! x1/ When this Leader's attack deals damage to your opponent's Life, you may trash 1 card from the top of your deck.",
+    "cost": 5,
+    "power": 5000,
+    "counter": 0,
+    "role": "Wisdom",
+    "number": "040_V1",
+    "rarity": "Leader",
+    "setId": "OP03",
+    "originalSetId": "OP03",
+    "type": "East Blue"
+}, {
+    "id": "846",
     "name": "Nami",
     "color": "Blue",
     "cardType": "Leader",
@@ -652,26 +713,28 @@
     "power": 5000,
     "counter": 0,
     "role": "Wisdom",
-    "number": "040",
+    "number": "040_V2",
     "rarity": "Leader",
     "setId": "OP03",
+    "originalSetId": "OP03",
+    "type": "East Blue"
+}, {
+    "id": "847",
+    "name": "Usopp",
+    "color": "Blue",
+    "cardType": "Leader",
+    "effect": "/Rush/ (This card can attack on the turn in which it is played.)@/DON!! x1/ When this Character's attack deals damage to your opponent's Life, you may trash 7 cards from the top of your deck.",
+    "cost": 4,
+    "power": 5000,
+    "counter": 0,
+    "role": "Ranged",
+    "number": "041_V1",
+    "rarity": "Super Rare",
+    "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue"
 }, {
     "id": "848",
-    "name": "Nami (Parallel)",
-    "color": "Blue",
-    "cardType": "Leader",
-    "effect": "When your deck is reduced to 0, you win the game instead of losing, according to the rules.@/DON!! x1/ When this Leader's attack deals damage to your opponent's Life, you may trash 1 card from the top of your deck.",
-    "cost": 5,
-    "power": 5000,
-    "counter": 0,
-    "role": "Wisdom",
-    "number": "040a",
-    "rarity": "Leader",
-    "setId": "OP03",
-    "type": "East Blue"
-}, {
-    "id": "849",
     "name": "Usopp",
     "color": "Blue",
     "cardType": "Character",
@@ -680,26 +743,13 @@
     "power": 5000,
     "counter": 0,
     "role": "Ranged",
-    "number": "041",
+    "number": "041_V2",
     "rarity": "Super Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue"
 }, {
-    "id": "850",
-    "name": "Usopp (Parallel)",
-    "color": "Blue",
-    "cardType": "Character",
-    "effect": "/Rush/ (This card can attack on the turn in which it is played.)@/DON!! x1/ When this Character's attack deals damage to your opponent's Life, you may trash 7 cards from the top of your deck.",
-    "cost": 4,
-    "power": 5000,
-    "counter": 0,
-    "role": "Ranged",
-    "number": "041a",
-    "rarity": "Super Rare",
-    "setId": "OP03",
-    "type": "East Blue"
-}, {
-    "id": "851",
+    "id": "849",
     "name": "Usopp's Pirate Crew",
     "color": "Blue",
     "cardType": "Character",
@@ -711,9 +761,10 @@
     "number": "042",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue"
 }, {
-    "id": "852",
+    "id": "850",
     "name": "Gaimon",
     "color": "Blue",
     "cardType": "Character",
@@ -725,9 +776,10 @@
     "number": "043",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue"
 }, {
-    "id": "853",
+    "id": "851",
     "name": "Kaya",
     "color": "Blue",
     "cardType": "Character",
@@ -739,9 +791,10 @@
     "number": "044",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue"
 }, {
-    "id": "854",
+    "id": "852",
     "name": "Carne",
     "color": "Blue",
     "cardType": "Character",
@@ -753,9 +806,10 @@
     "number": "045",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue"
 }, {
-    "id": "855",
+    "id": "853",
     "name": "Genzo",
     "color": "Blue",
     "cardType": "Character",
@@ -767,37 +821,40 @@
     "number": "046",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue"
 }, {
-    "id": "856",
+    "id": "854",
     "name": "Zeff",
     "color": "Blue",
     "cardType": "Character",
-    "effect": "/DON!! x1/ When this Character's attack deals damage to your opponent's Life, you may trash 7 cards from the top of your deck.@/On Play/ You may return up to 1 Character with a cost of 3 or less to the owner's hand, and trash 2 cards from the top of your deck.",
+    "effect": "/DON!! x1/ When this Character's attack deals damage to your opponent's Life, you may trash 7 cards from the top of your deck.@/On Play/ Return up to 1 Character with a cost of 3 or less to the owner's hand, and you may trash 2 cards from the top of your deck.",
     "cost": 5,
     "power": 6000,
     "counter": 1000,
     "role": "Strike",
-    "number": "047",
+    "number": "047_V1",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue"
 }, {
-    "id": "857",
-    "name": "Zeff (Parallel)",
+    "id": "855",
+    "name": "Zeff",
     "color": "Blue",
     "cardType": "Character",
-    "effect": "/DON!! x1/ When this Character's attack deals damage to your opponent's Life, you may trash 7 cards from the top of your deck.@/On Play/ You may return up to 1 Character with a cost of 3 or less to the owner's hand, and trash 2 cards from the top of your deck.",
+    "effect": "/DON!! x1/ When this Character's attack deals damage to your opponent's Life, you may trash 7 cards from the top of your deck.@/On Play/ Return up to 1 Character with a cost of 3 or less to the owner's hand, and you may trash 2 cards from the top of your deck.",
     "cost": 5,
     "power": 6000,
     "counter": 1000,
     "role": "Strike",
-    "number": "047a",
+    "number": "047_V2",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue"
 }, {
-    "id": "858",
+    "id": "856",
     "name": "Nojiko",
     "color": "Blue",
     "cardType": "Character",
@@ -809,9 +866,10 @@
     "number": "048",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue"
 }, {
-    "id": "859",
+    "id": "857",
     "name": "Patty",
     "color": "Blue",
     "cardType": "Character",
@@ -823,9 +881,10 @@
     "number": "049",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue"
 }, {
-    "id": "860",
+    "id": "858",
     "name": "Boodle",
     "color": "Blue",
     "cardType": "Character",
@@ -837,9 +896,10 @@
     "number": "050",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue"
 }, {
-    "id": "861",
+    "id": "859",
     "name": "Bell-mère",
     "color": "Blue",
     "cardType": "Character",
@@ -851,9 +911,10 @@
     "number": "051",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue/Former Navy"
 }, {
-    "id": "862",
+    "id": "860",
     "name": "Merry",
     "color": "Blue",
     "cardType": "Character",
@@ -865,9 +926,10 @@
     "number": "052",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue"
 }, {
-    "id": "863",
+    "id": "861",
     "name": "Yosaku & Johnny",
     "color": "Blue",
     "cardType": "Character",
@@ -879,13 +941,14 @@
     "number": "053",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue"
 }, {
-    "id": "864",
+    "id": "862",
     "name": "Usopp's Rubber Band of Doom!!!",
     "color": "Blue",
-    "cardType": "Event",
-    "effect": "/Counter/ Up to 1 of your Leader or Character cards gains +2000 power during this battle. Then, you may trash 1 card from the top of your deck.@/Trigger/ Draw 1 card, and you may trash 1 card from the top of your deck.",
+    "cardType": "Character",
+    "effect": "/Counter/ Up to 1 of your Leader or Character cards gains +2000 power during this battle. Then, you may trash 1 card from the top of your deck.@/Trigger/ Draw 1 card and you may trash 1 card from the top of your deck.",
     "cost": 1,
     "power": 0,
     "counter": 0,
@@ -893,9 +956,10 @@
     "number": "054",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue/Straw Hat Crew"
 }, {
-    "id": "865",
+    "id": "863",
     "name": "Gum-Gum Giant Gavel",
     "color": "Blue",
     "cardType": "Event",
@@ -907,9 +971,10 @@
     "number": "055",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue/Straw Hat Crew"
 }, {
-    "id": "866",
+    "id": "864",
     "name": "Sanji's Pilaf",
     "color": "Blue",
     "cardType": "Event",
@@ -921,9 +986,10 @@
     "number": "056",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue"
 }, {
-    "id": "867",
+    "id": "865",
     "name": "Three Thousand Worlds",
     "color": "Blue",
     "cardType": "Event",
@@ -935,9 +1001,25 @@
     "number": "057",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "East Blue/Straw Hat Crew"
 }, {
-    "id": "868",
+    "id": "866",
+    "name": "Iceburg",
+    "color": "Purple",
+    "cardType": "Event",
+    "effect": "This Leader cannot attack.@/Activate: Main/ [DON!! −1] (You may return the specified number of DON!! cards from your field to your DON!! deck.) You may rest this Leader: Play up to 1 {Galley-La Company} type Character card with a cost of 5 or less from your hand.",
+    "cost": 5,
+    "power": 5000,
+    "counter": 0,
+    "role": "Wisdom",
+    "number": "058_V1",
+    "rarity": "Leader",
+    "setId": "OP03",
+    "originalSetId": "OP03",
+    "type": "Water Seven/Galley-La Company"
+}, {
+    "id": "867",
     "name": "Iceburg",
     "color": "Purple",
     "cardType": "Leader",
@@ -946,29 +1028,16 @@
     "power": 5000,
     "counter": 0,
     "role": "Wisdom",
-    "number": "058",
+    "number": "058_V2",
     "rarity": "Leader",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Water Seven/Galley-La Company"
 }, {
-    "id": "869",
-    "name": "Iceburg (Parallel)",
-    "color": "Purple",
-    "cardType": "Leader",
-    "effect": "This Leader cannot attack.@/Activate: Main/ [DON!! −1] (You may return the specified number of DON!! cards from your field to your DON!! deck.) You may rest this Leader: Play up to 1 {Galley-La Company} type Character card with a cost of 5 or less from your hand.",
-    "cost": 5,
-    "power": 5000,
-    "counter": 0,
-    "role": "Wisdom",
-    "number": "058a",
-    "rarity": "Leader",
-    "setId": "OP03",
-    "type": "Water Seven/Galley-La Company"
-}, {
-    "id": "870",
+    "id": "868",
     "name": "Kaku",
     "color": "Purple",
-    "cardType": "Character",
+    "cardType": "Leader",
     "effect": "/When Attacking/ [DON!! −1] (You may return the specified number of DON!! cards from your field to your DON!! deck.): This Character gains /Banish/ during this battle.@(When this card deals damage, the target card is trashed without activating its Trigger.)",
     "cost": 5,
     "power": 6000,
@@ -977,9 +1046,10 @@
     "number": "059",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Water Seven/Galley-La Company"
 }, {
-    "id": "871",
+    "id": "869",
     "name": "Kalifa",
     "color": "Purple",
     "cardType": "Character",
@@ -991,9 +1061,10 @@
     "number": "060",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Water Seven/Galley-La Company"
 }, {
-    "id": "872",
+    "id": "870",
     "name": "Kiwi & Mozu",
     "color": "Purple",
     "cardType": "Character",
@@ -1005,9 +1076,10 @@
     "number": "061",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Water Seven/The Franky Family"
 }, {
-    "id": "873",
+    "id": "871",
     "name": "Kokoro",
     "color": "Purple",
     "cardType": "Character",
@@ -1019,9 +1091,10 @@
     "number": "062",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Merfolk/Water Seven"
 }, {
-    "id": "874",
+    "id": "872",
     "name": "Zambai",
     "color": "Purple",
     "cardType": "Character",
@@ -1033,9 +1106,10 @@
     "number": "063",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Water Seven/The Franky Family"
 }, {
-    "id": "875",
+    "id": "873",
     "name": "Tilestone",
     "color": "Purple",
     "cardType": "Character",
@@ -1047,9 +1121,10 @@
     "number": "064",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Water Seven/Galley-La Company"
 }, {
-    "id": "876",
+    "id": "874",
     "name": "Chimney & Gonbe",
     "color": "Purple",
     "cardType": "Character",
@@ -1061,9 +1136,10 @@
     "number": "065",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Animal/Water Seven"
 }, {
-    "id": "877",
+    "id": "875",
     "name": "Paulie",
     "color": "Purple",
     "cardType": "Character",
@@ -1072,13 +1148,14 @@
     "power": 6000,
     "counter": 0,
     "role": "Strike",
-    "number": "066",
+    "number": "066_V1",
     "rarity": "Super Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Water Seven/Galley-La Company"
 }, {
-    "id": "878",
-    "name": "Paulie (Parallel)",
+    "id": "876",
+    "name": "Paulie",
     "color": "Purple",
     "cardType": "Character",
     "effect": "/On Play/ ➁ (You may rest the specified number of DON!! cards in your cost area.): Add up to 1 DON!! card from your DON!! deck and set it as active. Then, if you have 8 or more DON!! cards on your field, K.O. up to 1 of your opponent's Characters with a cost of 4 or less.",
@@ -1086,12 +1163,13 @@
     "power": 6000,
     "counter": 0,
     "role": "Strike",
-    "number": "066a",
+    "number": "066_V2",
     "rarity": "Super Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Water Seven/Galley-La Company"
 }, {
-    "id": "879",
+    "id": "877",
     "name": "Peepley Lulu",
     "color": "Purple",
     "cardType": "Character",
@@ -1103,9 +1181,10 @@
     "number": "067",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Water Seven/Galley-La Company"
 }, {
-    "id": "880",
+    "id": "878",
     "name": "Minozebra",
     "color": "Purple",
     "cardType": "Character",
@@ -1117,9 +1196,10 @@
     "number": "068",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Impel Down/Jailer Beast"
 }, {
-    "id": "881",
+    "id": "879",
     "name": "Minorhinoceros",
     "color": "Purple",
     "cardType": "Character",
@@ -1131,9 +1211,10 @@
     "number": "069",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Impel Down/Jailer Beast"
 }, {
-    "id": "882",
+    "id": "880",
     "name": "Monkey.D.Luffy",
     "color": "Purple",
     "cardType": "Character",
@@ -1145,9 +1226,10 @@
     "number": "070",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Water Seven/Straw Hat Crew"
 }, {
-    "id": "883",
+    "id": "881",
     "name": "Rob Lucci",
     "color": "Purple",
     "cardType": "Character",
@@ -1159,12 +1241,13 @@
     "number": "071",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Water Seven/Galley-La Company"
 }, {
-    "id": "884",
+    "id": "882",
     "name": "Gum-Gum Jet Gatling",
     "color": "Purple",
-    "cardType": "Event",
+    "cardType": "Character",
     "effect": "/Counter/ You may trash 1 card from your hand: Up to 1 of your Leader or Character cards gains +3000 power during this battle.@/Trigger/ Add up to 1 DON!! card from your DON!! deck and set it as active.",
     "cost": 0,
     "power": 0,
@@ -1173,13 +1256,14 @@
     "number": "072",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Water Seven/Straw Hat Crew"
 }, {
-    "id": "885",
+    "id": "883",
     "name": "Hull Dismantler Slash",
     "color": "Purple",
     "cardType": "Event",
-    "effect": "/Main/ DON!! -1 (You may return the specified number of DON!! cards from your field to your DON!! deck.): If your Leader has the {Water Seven} type, K.O. up to 1 of your opponent's Characters with a cost of 2 or less.@/Trigger/ Activate this card's [Main] effect.",
+    "effect": "/Main/ [DON!! −1] (You may return the specified number of DON!! cards from your field to your DON!! deck.): If your Leader has the {Water Seven} type, K.O. up to 1 of your opponent's Characters with a cost of 2 or less.@/Trigger/ Activate this card's [Main] effect.",
     "cost": 1,
     "power": 0,
     "counter": 0,
@@ -1187,13 +1271,14 @@
     "number": "073",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Water Seven/The Franky Family"
 }, {
-    "id": "886",
+    "id": "884",
     "name": "Top Knot",
     "color": "Purple",
     "cardType": "Event",
-    "effect": "/Main/ DON!! -2 (You may return the specified number of DON!! cards from your field to your DON!! deck.): Place up to 1 of your opponent's Characters with a cost of 4 or less at the bottom of the owner's deck.@/Trigger/ Activate this card's [Main] effect.",
+    "effect": "/Main/ [DON!! −2] (You may return the specified number of DON!! cards from your field to your DON!! deck.): Place up to 1 of your opponent's Characters with a cost of 4 or less at the bottom of the owner's deck.@/Trigger/ Activate this card's [Main] effect.",
     "cost": 2,
     "power": 0,
     "counter": 0,
@@ -1201,12 +1286,13 @@
     "number": "074",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Water Seven/Galley-La Company"
 }, {
-    "id": "887",
+    "id": "885",
     "name": "Galley-La Company",
     "color": "Purple",
-    "cardType": "Stage",
+    "cardType": "Event",
     "effect": "/Activate: Main/ You may rest this Stage: If your Leader is [Iceburg], add up to 1 DON!! card from your DON!! deck and rest it.",
     "cost": 3,
     "power": 0,
@@ -1215,9 +1301,25 @@
     "number": "075",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Water Seven/Galley-La Company"
 }, {
-    "id": "888",
+    "id": "886",
+    "name": "Rob Lucci",
+    "color": "Black",
+    "cardType": "Stage",
+    "effect": "/Your Turn/ /Once Per Turn/ You may trash 2 cards from your hand: When your opponent's Character is K.O.'d, set this Leader as active.",
+    "cost": 5,
+    "power": 5000,
+    "counter": 0,
+    "role": "Strike",
+    "number": "076_V1",
+    "rarity": "Leader",
+    "setId": "OP03",
+    "originalSetId": "OP03",
+    "type": "CP9"
+}, {
+    "id": "887",
     "name": "Rob Lucci",
     "color": "Black",
     "cardType": "Leader",
@@ -1226,26 +1328,13 @@
     "power": 5000,
     "counter": 0,
     "role": "Strike",
-    "number": "076",
+    "number": "076_V2",
     "rarity": "Leader",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP9"
 }, {
-    "id": "889",
-    "name": "Rob Lucci (Parallel)",
-    "color": "Black",
-    "cardType": "Leader",
-    "effect": "/Your Turn/ /Once Per Turn/ You may trash 2 cards from your hand: When your opponent's Character is K.O.'d, set this Leader as active.",
-    "cost": 5,
-    "power": 5000,
-    "counter": 0,
-    "role": "Strike",
-    "number": "076a",
-    "rarity": "Leader",
-    "setId": "OP03",
-    "type": "CP9"
-}, {
-    "id": "890",
+    "id": "888",
     "name": "Charlotte Linlin",
     "color": "Black/Yellow",
     "cardType": "Leader",
@@ -1254,13 +1343,14 @@
     "power": 5000,
     "counter": 0,
     "role": "Special",
-    "number": "077",
+    "number": "077_V1",
     "rarity": "Leader",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "The Four Emperors/Big Mom Pirates"
 }, {
-    "id": "891",
-    "name": "Charlotte Linlin (Parallel)",
+    "id": "889",
+    "name": "Charlotte Linlin",
     "color": "Black/Yellow",
     "cardType": "Leader",
     "effect": "/DON!! x2/ /When Attacking/ ② (You may rest the specified number of DON!! cards in your cost area.) You may trash 1 card from your hand: If you have 1 or less Life cards, add up to 1 card from the top of your deck to the top of your Life cards.",
@@ -1268,12 +1358,28 @@
     "power": 5000,
     "counter": 0,
     "role": "Special",
-    "number": "077a",
+    "number": "077_V2",
     "rarity": "Leader",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "The Four Emperors/Big Mom Pirates"
 }, {
-    "id": "892",
+    "id": "890",
+    "name": "Issho",
+    "color": "Black",
+    "cardType": "Leader",
+    "effect": "/DON!! x1/ /Your Turn/ Give all of your opponent's Characters −3 cost.@/On Play/ If your opponent has 6 or more cards in their hand, trash 2 cards from your opponent's hand.",
+    "cost": 8,
+    "power": 9000,
+    "counter": 0,
+    "role": "Slash",
+    "number": "078_V1",
+    "rarity": "Super Rare",
+    "setId": "OP03",
+    "originalSetId": "OP03",
+    "type": "Navy"
+}, {
+    "id": "891",
     "name": "Issho",
     "color": "Black",
     "cardType": "Character",
@@ -1282,26 +1388,13 @@
     "power": 9000,
     "counter": 0,
     "role": "Slash",
-    "number": "078",
+    "number": "078_V2",
     "rarity": "Super Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Navy"
 }, {
-    "id": "893",
-    "name": "Issho (Parallel)",
-    "color": "Black",
-    "cardType": "Character",
-    "effect": "/DON!! x1/ /Your Turn/ Give all of your opponent's Characters −3 cost.@/On Play/ If your opponent has 6 or more cards in their hand, trash 2 cards from your opponent's hand.",
-    "cost": 8,
-    "power": 9000,
-    "counter": 0,
-    "role": "Slash",
-    "number": "078a",
-    "rarity": "Super Rare",
-    "setId": "OP03",
-    "type": "Navy"
-}, {
-    "id": "894",
+    "id": "892",
     "name": "Vergo",
     "color": "Black",
     "cardType": "Character",
@@ -1313,9 +1406,10 @@
     "number": "079",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Navy/Donquixote Pirates"
 }, {
-    "id": "895",
+    "id": "893",
     "name": "Kaku",
     "color": "Black",
     "cardType": "Character",
@@ -1324,13 +1418,14 @@
     "power": 6000,
     "counter": 1000,
     "role": "Slash",
-    "number": "080",
+    "number": "080_V1",
     "rarity": "Super Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP9"
 }, {
-    "id": "896",
-    "name": "Kaku (Parallel)",
+    "id": "894",
+    "name": "Kaku",
     "color": "Black",
     "cardType": "Character",
     "effect": "/On Play/ You may place 2 cards with a type including (CP) from your trash at the bottom of your deck in any order: K.O. up to 1 of your opponent's Characters with a cost of 3 or less.",
@@ -1338,12 +1433,13 @@
     "power": 6000,
     "counter": 1000,
     "role": "Slash",
-    "number": "080a",
+    "number": "080_V2",
     "rarity": "Super Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP9"
 }, {
-    "id": "897",
+    "id": "895",
     "name": "Kalifa",
     "color": "Black",
     "cardType": "Character",
@@ -1352,13 +1448,14 @@
     "power": 4000,
     "counter": 2000,
     "role": "Special",
-    "number": "081",
+    "number": "081_V1",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP9"
 }, {
-    "id": "898",
-    "name": "Kalifa (Parallel)",
+    "id": "896",
+    "name": "Kalifa",
     "color": "Black",
     "cardType": "Character",
     "effect": "/On Play/ Draw 2 cards and trash 2 cards from your hand. Then, give up to 1 of your opponent's Characters −2 cost during this turn.",
@@ -1366,12 +1463,13 @@
     "power": 4000,
     "counter": 2000,
     "role": "Special",
-    "number": "081a",
+    "number": "081_V2",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP9"
 }, {
-    "id": "899",
+    "id": "897",
     "name": "Kumadori",
     "color": "Black",
     "cardType": "Character",
@@ -1383,9 +1481,10 @@
     "number": "082",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP9"
 }, {
-    "id": "900",
+    "id": "898",
     "name": "Corgy",
     "color": "Black",
     "cardType": "Character",
@@ -1397,9 +1496,10 @@
     "number": "083",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "World Government"
 }, {
-    "id": "901",
+    "id": "899",
     "name": "Jerry",
     "color": "Black",
     "cardType": "Character",
@@ -1411,9 +1511,10 @@
     "number": "084",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP6"
 }, {
-    "id": "902",
+    "id": "900",
     "name": "Jabra",
     "color": "Black",
     "cardType": "Character",
@@ -1425,9 +1526,10 @@
     "number": "085",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP9"
 }, {
-    "id": "903",
+    "id": "901",
     "name": "Spandam",
     "color": "Black",
     "cardType": "Character",
@@ -1436,13 +1538,14 @@
     "power": 2000,
     "counter": 1000,
     "role": "Slash",
-    "number": "086",
+    "number": "086_V1",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP9"
 }, {
-    "id": "904",
-    "name": "Spandam (Parallel)",
+    "id": "902",
+    "name": "Spandam",
     "color": "Black",
     "cardType": "Character",
     "effect": "/On Play/ If your Leader's type includes (CP), look at 3 cards from the top of your deck; reveal up to 1 card with a type including (CP) other than [Spandam] and add it to your hand. Then, trash the rest.",
@@ -1450,12 +1553,13 @@
     "power": 2000,
     "counter": 1000,
     "role": "Slash",
-    "number": "086a",
+    "number": "086_V2",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP9"
 }, {
-    "id": "905",
+    "id": "903",
     "name": "Nero",
     "color": "Black",
     "cardType": "Character",
@@ -1467,9 +1571,10 @@
     "number": "087",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP9"
 }, {
-    "id": "906",
+    "id": "904",
     "name": "Fukurou",
     "color": "Black",
     "cardType": "Character",
@@ -1481,9 +1586,10 @@
     "number": "088",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP9"
 }, {
-    "id": "907",
+    "id": "905",
     "name": "Brannew",
     "color": "Black",
     "cardType": "Character",
@@ -1495,9 +1601,10 @@
     "number": "089",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Navy"
 }, {
-    "id": "908",
+    "id": "906",
     "name": "Blueno",
     "color": "Black",
     "cardType": "Character",
@@ -1509,9 +1616,10 @@
     "number": "090",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP9"
 }, {
-    "id": "909",
+    "id": "907",
     "name": "Helmeppo",
     "color": "Black",
     "cardType": "Character",
@@ -1523,9 +1631,10 @@
     "number": "091",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Navy"
 }, {
-    "id": "910",
+    "id": "908",
     "name": "Rob Lucci",
     "color": "Black",
     "cardType": "Character",
@@ -1534,13 +1643,14 @@
     "power": 7000,
     "counter": 0,
     "role": "Strike",
-    "number": "092",
+    "number": "092_V1",
     "rarity": "Super Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP9"
 }, {
-    "id": "911",
-    "name": "Rob Lucci (Parallel)",
+    "id": "909",
+    "name": "Rob Lucci",
     "color": "Black",
     "cardType": "Character",
     "effect": "/On Play/ You may place 2 cards with a type including (CP) from your trash at the bottom of your deck in any order: This Character gains /Rush/ during this turn.@(This card can attack on the turn in which it is played.)",
@@ -1548,12 +1658,13 @@
     "power": 7000,
     "counter": 0,
     "role": "Strike",
-    "number": "092a",
+    "number": "092_V2",
     "rarity": "Super Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP9"
 }, {
-    "id": "912",
+    "id": "910",
     "name": "Wanze",
     "color": "Black",
     "cardType": "Character",
@@ -1565,12 +1676,13 @@
     "number": "093",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP7"
 }, {
-    "id": "913",
+    "id": "911",
     "name": "Air Door",
     "color": "Black",
-    "cardType": "Event",
+    "cardType": "Character",
     "effect": "/Main/ If your Leader's type includes (CP), look at 5 cards from the top of your deck; play up to 1 Character card with a type including (CP) and a cost of 5 or less. Then, trash the rest.@/Trigger/ Play up to 1 black Character card with a cost of 3 or less from your trash.",
     "cost": 4,
     "power": 0,
@@ -1579,13 +1691,14 @@
     "number": "094",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP9"
 }, {
-    "id": "914",
+    "id": "912",
     "name": "Soap Sheep",
     "color": "Black",
     "cardType": "Event",
-    "effect": "/Main/ Give up to 2 of your opponent's Characters -2 cost during this turn.@/Trigger/ Your opponent trashes 1 card from their hand.",
+    "effect": "/Main/ Give up to 2 of your opponent's Characters −2 cost during this turn.@/Trigger/ Your opponent trashes 1 card from their hand.",
     "cost": 1,
     "power": 0,
     "counter": 0,
@@ -1593,9 +1706,10 @@
     "number": "095",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP9"
 }, {
-    "id": "915",
+    "id": "913",
     "name": "Tempest Kick Sky Slicer",
     "color": "Black",
     "cardType": "Event",
@@ -1607,9 +1721,10 @@
     "number": "096",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP9"
 }, {
-    "id": "916",
+    "id": "914",
     "name": "Six King Pistol",
     "color": "Black",
     "cardType": "Event",
@@ -1621,13 +1736,14 @@
     "number": "097",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "CP9"
 }, {
-    "id": "917",
+    "id": "915",
     "name": "Enies Lobby",
     "color": "Black",
-    "cardType": "Stage",
-    "effect": "/Activate: Main/ You may rest this Stage: If your Leader's type includes (CP), give up to 1 of your opponent's Characters -2 cost during this turn.@/Trigger/ Play this card.",
+    "cardType": "Event",
+    "effect": "/Activate: Main/ You may rest this Stage: If your Leader's type includes (CP), give up to 1 of your opponent's Characters −2 cost during this turn.@/Trigger/ Play this card.",
     "cost": 2,
     "power": 0,
     "counter": 0,
@@ -1635,9 +1751,25 @@
     "number": "098",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "World Government"
 }, {
-    "id": "918",
+    "id": "916",
+    "name": "Charlotte Katakuri",
+    "color": "Yellow",
+    "cardType": "Stage",
+    "effect": "/DON!! x1/ /When Attacking/ Look at up to 1 card from the top of your or your opponent's Life cards, and place it at the top or bottom of the Life cards. Then, this Leader gains +1000 power during this battle.",
+    "cost": 5,
+    "power": 5000,
+    "counter": 0,
+    "role": "Strike",
+    "number": "099_V1",
+    "rarity": "Leader",
+    "setId": "OP03",
+    "originalSetId": "OP03",
+    "type": "Big Mom Pirates"
+}, {
+    "id": "917",
     "name": "Charlotte Katakuri",
     "color": "Yellow",
     "cardType": "Leader",
@@ -1646,29 +1778,16 @@
     "power": 5000,
     "counter": 0,
     "role": "Strike",
-    "number": "099",
+    "number": "099_V2",
     "rarity": "Leader",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates"
 }, {
-    "id": "919",
-    "name": "Charlotte Katakuri (Parallel)",
-    "color": "Yellow",
-    "cardType": "Leader",
-    "effect": "/DON!! x1/ /When Attacking/ Look at up to 1 card from the top of your or your opponent's Life cards, and place it at the top or bottom of the Life cards. Then, this Leader gains +1000 power during this battle.",
-    "cost": 5,
-    "power": 5000,
-    "counter": 0,
-    "role": "Strike",
-    "number": "099a",
-    "rarity": "Leader",
-    "setId": "OP03",
-    "type": "Big Mom Pirates"
-}, {
-    "id": "920",
+    "id": "918",
     "name": "Kingbaum",
     "color": "Yellow",
-    "cardType": "Character",
+    "cardType": "Leader",
     "effect": "-@/Trigger/ You may trash 1 card from the top or bottom of your Life cards: Play this card.",
     "cost": 3,
     "power": 5000,
@@ -1677,9 +1796,10 @@
     "number": "100",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates/Homies"
 }, {
-    "id": "921",
+    "id": "919",
     "name": "Camie",
     "color": "Yellow",
     "cardType": "Character",
@@ -1691,9 +1811,10 @@
     "number": "101",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Merfolk"
 }, {
-    "id": "922",
+    "id": "920",
     "name": "Sanji",
     "color": "Yellow",
     "cardType": "Character",
@@ -1705,9 +1826,10 @@
     "number": "102",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "The Vinsmoke Family"
 }, {
-    "id": "923",
+    "id": "921",
     "name": "Bobbin the Disposer",
     "color": "Yellow",
     "cardType": "Character",
@@ -1719,9 +1841,10 @@
     "number": "103",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates"
 }, {
-    "id": "924",
+    "id": "922",
     "name": "Shirley",
     "color": "Yellow",
     "cardType": "Character",
@@ -1733,9 +1856,10 @@
     "number": "104",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Merfolk"
 }, {
-    "id": "925",
+    "id": "923",
     "name": "Charlotte Oven",
     "color": "Yellow",
     "cardType": "Character",
@@ -1747,9 +1871,10 @@
     "number": "105",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates"
 }, {
-    "id": "926",
+    "id": "924",
     "name": "Charlotte Opera",
     "color": "Yellow",
     "cardType": "Character",
@@ -1761,9 +1886,10 @@
     "number": "106",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates"
 }, {
-    "id": "927",
+    "id": "925",
     "name": "Charlotte Galette",
     "color": "Yellow",
     "cardType": "Character",
@@ -1775,9 +1901,10 @@
     "number": "107",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates"
 }, {
-    "id": "928",
+    "id": "926",
     "name": "Charlotte Cracker",
     "color": "Yellow",
     "cardType": "Character",
@@ -1786,13 +1913,14 @@
     "power": 5000,
     "counter": 1000,
     "role": "Slash",
-    "number": "108",
+    "number": "108_V1",
     "rarity": "Super Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates"
 }, {
-    "id": "929",
-    "name": "Charlotte Cracker (Parallel)",
+    "id": "927",
+    "name": "Charlotte Cracker",
     "color": "Yellow",
     "cardType": "Character",
     "effect": "/DON!! x1/ If you have less Life cards than your opponent, this Character gains /Double Attack/ and +1000 power.@(This card deals 2 damage.)@/Trigger/ You may trash 1 card from your hand: Play this card.",
@@ -1800,12 +1928,13 @@
     "power": 5000,
     "counter": 1000,
     "role": "Slash",
-    "number": "108a",
+    "number": "108_V2",
     "rarity": "Super Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates"
 }, {
-    "id": "930",
+    "id": "928",
     "name": "Charlotte Chiffon",
     "color": "Yellow",
     "cardType": "Character",
@@ -1817,9 +1946,10 @@
     "number": "109",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates"
 }, {
-    "id": "931",
+    "id": "929",
     "name": "Charlotte Smoothie",
     "color": "Yellow",
     "cardType": "Character",
@@ -1831,9 +1961,10 @@
     "number": "110",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates"
 }, {
-    "id": "932",
+    "id": "930",
     "name": "Charlotte Praline",
     "color": "Yellow",
     "cardType": "Character",
@@ -1845,9 +1976,10 @@
     "number": "111",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Merfolk/The Sun Pirates"
 }, {
-    "id": "933",
+    "id": "931",
     "name": "Charlotte Pudding",
     "color": "Yellow",
     "cardType": "Character",
@@ -1856,13 +1988,14 @@
     "power": 2000,
     "counter": 1000,
     "role": "Wisdom",
-    "number": "112",
+    "number": "112_V1",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates"
 }, {
-    "id": "934",
-    "name": "Charlotte Pudding (Parallel)",
+    "id": "932",
+    "name": "Charlotte Pudding",
     "color": "Yellow",
     "cardType": "Character",
     "effect": "/On Play/ Look at 4 cards from the top of your deck; reveal up to 1 [Sanji] or {Big Mom Pirates} type card other than [Charlotte Pudding] and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
@@ -1870,12 +2003,13 @@
     "power": 2000,
     "counter": 1000,
     "role": "Wisdom",
-    "number": "112a",
+    "number": "112_V2",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates"
 }, {
-    "id": "935",
+    "id": "933",
     "name": "Charlotte Perospero",
     "color": "Yellow",
     "cardType": "Character",
@@ -1884,13 +2018,14 @@
     "power": 5000,
     "counter": 0,
     "role": "Special",
-    "number": "113",
+    "number": "113_V1",
     "rarity": "Super Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates"
 }, {
-    "id": "936",
-    "name": "Charlotte Perospero (Parallel)",
+    "id": "934",
+    "name": "Charlotte Perospero",
     "color": "Yellow",
     "cardType": "Character",
     "effect": "/On K.O./ Look at 3 cards from the top of your deck; reveal up to 1 {Big Mom Pirates} type card and add it to your hand. Then, place the rest at the bottom of your deck in any order.@/Trigger/ You may trash 1 card from your hand: Play this card.",
@@ -1898,12 +2033,13 @@
     "power": 5000,
     "counter": 0,
     "role": "Special",
-    "number": "113a",
+    "number": "113_V2",
     "rarity": "Super Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates"
 }, {
-    "id": "937",
+    "id": "935",
     "name": "Charlotte Linlin",
     "color": "Yellow",
     "cardType": "Character",
@@ -1912,13 +2048,14 @@
     "power": 12000,
     "counter": 0,
     "role": "Special",
-    "number": "114",
+    "number": "114_V1",
     "rarity": "Super Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "The Four Emperors/Big Mom Pirates"
 }, {
-    "id": "938",
-    "name": "Charlotte Linlin (Parallel)",
+    "id": "936",
+    "name": "Charlotte Linlin",
     "color": "Yellow",
     "cardType": "Character",
     "effect": "/On Play/ If your Leader has the {Big Mom Pirates} type, add up to 1 card from the top of your deck to the top of your Life cards. Then, trash up to 1 card from the top of your opponent's Life cards.",
@@ -1926,12 +2063,13 @@
     "power": 12000,
     "counter": 0,
     "role": "Special",
-    "number": "114a",
+    "number": "114_V2",
     "rarity": "Super Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "The Four Emperors/Big Mom Pirates"
 }, {
-    "id": "939",
+    "id": "937",
     "name": "Streusen",
     "color": "Yellow",
     "cardType": "Character",
@@ -1943,9 +2081,10 @@
     "number": "115",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates"
 }, {
-    "id": "940",
+    "id": "938",
     "name": "Shirahoshi",
     "color": "Yellow",
     "cardType": "Character",
@@ -1957,9 +2096,10 @@
     "number": "116",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Merfolk"
 }, {
-    "id": "941",
+    "id": "939",
     "name": "Napoleon",
     "color": "Yellow",
     "cardType": "Character",
@@ -1971,12 +2111,13 @@
     "number": "117",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates/Homies"
 }, {
-    "id": "942",
+    "id": "940",
     "name": "Ikoku Sovereignty",
     "color": "Yellow",
-    "cardType": "Event",
+    "cardType": "Character",
     "effect": "/Counter/ Up to 1 of your Leader or Character cards gains +5000 power during this battle.@/Trigger/ You may trash 2 cards from your hand: Add up to 1 card from the top of your deck to the top of your Life cards.",
     "cost": 2,
     "power": 0,
@@ -1985,9 +2126,10 @@
     "number": "118",
     "rarity": "Uncommon",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "The Four Emperors/Big Mom Pirates"
 }, {
-    "id": "943",
+    "id": "941",
     "name": "Buzz Cut Mochi",
     "color": "Yellow",
     "cardType": "Event",
@@ -1999,9 +2141,10 @@
     "number": "119",
     "rarity": "Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates"
 }, {
-    "id": "944",
+    "id": "942",
     "name": "Tropical Torment",
     "color": "Yellow",
     "cardType": "Event",
@@ -2013,9 +2156,10 @@
     "number": "120",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates"
 }, {
-    "id": "945",
+    "id": "943",
     "name": "Thunder Bolt",
     "color": "Yellow",
     "cardType": "Event",
@@ -2027,7 +2171,38 @@
     "number": "121",
     "rarity": "Common",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "The Four Emperors/Big Mom Pirates"
+}, {
+    "id": "944",
+    "name": "Sogeking",
+    "color": "Blue",
+    "cardType": "Event",
+    "effect": "Also treat this card's name as [Usopp] according to the rules.@/On Play/ Return up to 1 Character with a cost of 6 or less to the owner's hand. Then, draw 2 cards and trash 2 cards from your hand.",
+    "cost": 7,
+    "power": 6000,
+    "counter": 1000,
+    "role": "Ranged",
+    "number": "122_V1",
+    "rarity": "Secret Rare",
+    "setId": "OP03",
+    "originalSetId": "OP03",
+    "type": "Sniper Island"
+}, {
+    "id": "945",
+    "name": "Sogeking",
+    "color": "Blue",
+    "cardType": "Character",
+    "effect": "Also treat this card's name as [Usopp] according to the rules.@/On Play/ Return up to 1 Character with a cost of 6 or less to the owner's hand. Then, draw 2 cards and trash 2 cards from your hand.",
+    "cost": 7,
+    "power": 6000,
+    "counter": 1000,
+    "role": "Ranged",
+    "number": "122_V2",
+    "rarity": "Secret Rare",
+    "setId": "OP03",
+    "originalSetId": "OP03",
+    "type": "Sniper Island"
 }, {
     "id": "946",
     "name": "Sogeking",
@@ -2038,40 +2213,13 @@
     "power": 6000,
     "counter": 1000,
     "role": "Ranged",
-    "number": "122",
+    "number": "122_V3",
     "rarity": "Secret Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Sniper Island"
 }, {
     "id": "947",
-    "name": "Sogeking (Parallel)",
-    "color": "Blue",
-    "cardType": "Character",
-    "effect": "Also treat this card's name as [Usopp] according to the rules.@/On Play/ Return up to 1 Character with a cost of 6 or less to the owner's hand. Then, draw 2 cards and trash 2 cards from your hand.",
-    "cost": 7,
-    "power": 6000,
-    "counter": 1000,
-    "role": "Ranged",
-    "number": "122a",
-    "rarity": "Secret Rare",
-    "setId": "OP03",
-    "type": "Sniper Island"
-}, {
-    "id": "948",
-    "name": "Sogeking (Parallel)",
-    "color": "Blue",
-    "cardType": "Character",
-    "effect": "Also treat this card's name as [Usopp] according to the rules.@/On Play/ Return up to 1 Character with a cost of 6 or less to the owner's hand. Then, draw 2 cards and trash 2 cards from your hand.",
-    "cost": 7,
-    "power": 6000,
-    "counter": 1000,
-    "role": "Ranged",
-    "number": "122b",
-    "rarity": "Secret Rare",
-    "setId": "OP03",
-    "type": "Sniper Island"
-}, {
-    "id": "949",
     "name": "Charlotte Katakuri",
     "color": "Yellow",
     "cardType": "Character",
@@ -2080,13 +2228,14 @@
     "power": 8000,
     "counter": 0,
     "role": "Strike",
-    "number": "123",
+    "number": "123_V1",
     "rarity": "Secret Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates"
 }, {
-    "id": "950",
-    "name": "Charlotte Katakuri (Parallel)",
+    "id": "948",
+    "name": "Charlotte Katakuri",
     "color": "Yellow",
     "cardType": "Character",
     "effect": "/On Play/ Add up to 1 Character with a cost of 8 or less to the top or bottom of the owner's Life cards face-up.",
@@ -2094,15 +2243,16 @@
     "power": 8000,
     "counter": 0,
     "role": "Strike",
-    "number": "123a",
+    "number": "123_V2",
     "rarity": "Secret Rare",
     "setId": "OP03",
+    "originalSetId": "OP03",
     "type": "Big Mom Pirates"
 },{
-    "id": "800",
-    "name": "Eustass Captain Kid (Parallel)",
+    "id": "801",
+    "name": "Eustass \"Captain\" Kid",
     "color": "Green",
-    "cardType": "Character",
+    "cardType": "Leader",
     "effect": "/DON!! x1/ /Opponent's Turn/ If this Character is rested, your opponent cannot attack any card other than the Character [Eustass(Captain)Kid].@/Activate: Main/ /Once Per Turn/ You may rest this Character: Play up to 1 Character card with a cost of 3 or less from your hand.",
     "cost": 8,
     "power": 8000,
@@ -2111,10 +2261,11 @@
     "number": "OP01-051",
     "rarity": "undefined",
     "setId": "OP03",
+    "originalSetId": "OP01",
     "type": "Supernovas/Kid Pirates"
-}, {
-    "id": "951",
-    "name": "Monkey.D.Luffy (Parallel)",
+},  {
+    "id": "949",
+    "name": "Monkey.D.Luffy",
     "color": "Red",
     "cardType": "Character",
     "effect": "/Rush/ (This card can attack on the turn in which it is played.)@/DON!! x2/ /When Attacking/ Your opponent cannot activate /Blocker/ during this battle.",
@@ -2125,10 +2276,11 @@
     "number": "ST01-012",
     "rarity": "undefined",
     "setId": "OP03",
+    "originalSetId": "ST01",
     "type": "Supernovas/Straw Hat Crew"
 }, {
-    "id": "952",
-    "name": "Donquixote Doflamingo (Parallel)",
+    "id": "950",
+    "name": "Donquixote Doflamingo",
     "color": "Blue",
     "cardType": "Character",
     "effect": "/On Play/ Return up to 1 Character with a cost of 7 or less to the owner's hand.",
@@ -2139,10 +2291,11 @@
     "number": "ST03-009",
     "rarity": "undefined",
     "setId": "OP03",
+    "originalSetId": "ST03",
     "type": "The Seven Warlords of the Sea/Donquixote Pirates"
 }, {
-    "id": "953",
-    "name": "Kaido (Parallel)",
+    "id": "951",
+    "name": "Kaido",
     "color": "Purple",
     "cardType": "Character",
     "effect": "/On Play/ [DON!! −5] (You may return the specified number of DON!! cards from your field to your DON!! deck.): K.O. up to 1 of your opponent's Characters with a cost of 6 or less. This Character gains /Rush/ during this turn.@(This card can attack on the turn in which it is played.)",
@@ -2153,5 +2306,6 @@
     "number": "ST04-003",
     "rarity": "undefined",
     "setId": "OP03",
+    "originalSetId": "ST04",
     "type": "The Four Emperors/Animal Kingdom Pirates"
-} ]
+}]

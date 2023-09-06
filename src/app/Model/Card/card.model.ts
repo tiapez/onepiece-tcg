@@ -21,6 +21,7 @@ export class Card {
   public effectIta !: string;
   public setId !: string;
   public setName ! : string;
+  public originalSetId ! : string;
 
 }
 
@@ -45,6 +46,7 @@ export class Card {
         card.power = item.power;
         card.cardType = item.cardType;
         card.type = item.type;
+        card.originalSetId = item.originalSetId;
         return card;
       }
 }

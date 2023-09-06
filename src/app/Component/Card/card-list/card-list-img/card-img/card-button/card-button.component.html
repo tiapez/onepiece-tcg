@@ -14,6 +14,11 @@
         </form>
     </div>
     <div class="card-button text-center">
+            <button class="btn btn-dark" (click)="getCardMarketUrl()">
+                <i class="fas fa-shopping-cart"></i>
+            </button>
+    </div>
+    <div class="card-button text-center">
         <button *ngIf="!globalService.isDeck && !globalService.isClassic" (click)="cardService.openView(cardDet.card);" class="btn btn-dark">
             <i class="fas fa-image"></i>
         </button>
