@@ -49,13 +49,13 @@ export class FilterComponent {
   reset() {
     if(this.globalService.isCardListAll){
       this.cardService.filter = new Filter();
-      this.cardService.filter.setOption = "OP01/Romance Dawn";
-      this.cardService.filter.setId = "OP01";
-      this.cardService.filter.setName = "Romance Dawn";
+      this.cardService.filter.setOption = "OP04/Kingdoms of Intrigue";
+      this.cardService.filter.setId = "OP04";
     }else{
       this.cardService.filter = new Filter();
+      this.cardService.filter.setOption = "OP04/Kingdoms of Intrigue";
     }
-
+    this.cardService.getCardList2();
   }
 
 

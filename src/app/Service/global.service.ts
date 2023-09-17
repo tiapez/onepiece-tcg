@@ -25,6 +25,7 @@ export class GlobalService {
 
   public constCardSetList: SetCard[] = [];
   public constSetList: Set[] = [];
+  public setList: SetCard[] = [];
 
   //FILTRI
   public isCardList: boolean = false;
@@ -138,4 +139,8 @@ export class GlobalService {
       this.constCardSetList.push(setCard);
     })
   }
+
+
+
+
 }

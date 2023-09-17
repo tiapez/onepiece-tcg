@@ -19,10 +19,11 @@ export class SetListComponent implements OnInit {
   async ngOnInit() {
 
 
-    this.cardService.filter.setOption = "OP01/Romance Dawn";
+    this.cardService.filter.setOption = "OP04/Kingdoms of Intrigue";
+    this.cardService.filter.setId = "OP04";
     this.cardService.changeFilter();
     this.globalService.changeUrl();
-    await this.cardService.getSetCardList();
+    this.cardService.getCardList2();
   }
 
   checkSet(cardList : CardDetails[]){
@@ -37,5 +38,6 @@ export class SetListComponent implements OnInit {
     return flag;
   }
 
+  
 
 }

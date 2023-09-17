@@ -30,6 +30,7 @@ export class CardListService {
   public setCardList: SetCard[] = [];
   public missingSetCardList: SetCard[] = [];
 
+
   //SERVIZI JSON
 
 
@@ -45,14 +46,16 @@ export class CardListService {
     this.setCardList = [];
     let localSetCard: SetCard;
     if (this.filter.setOption.toLowerCase().includes('any')) {
-      this.globalService.constSetList.forEach(async set => {
+      // Utilizza Promise.all con map per eseguire le richieste asincrone in parallelo
+      const promises = this.globalService.constSetList.map(async set => {
         let list: CardDetails[];
         list = await lastValueFrom(this.getJsonCardList(set.id));
         let temp: SetCard = new SetCard();
         temp.set = set;
         temp.cardList = list;
-        this.setCardList.push(temp);
-      })
+        return temp;
+      });
+      this.setCardList = await Promise.all(promises);
     } else {
       localSetCard = new SetCard();
       this.globalService.constSetList.forEach(set => {
@@ -60,11 +63,25 @@ export class CardListService {
           localSetCard.set = set;
         }
       })
-      localSetCard.cardList = await lastValueFrom(this.getJsonCardList(this.filter.setId));
+      var cardList = await lastValueFrom(this.getJsonCardList(this.filter.setId));
+      localSetCard.cardList = cardList;
       this.setCardList.push(localSetCard);
     }
-
+    console.log('finish getSetCardList');
   }
+  
+  async getFilteredList(){
+    console.log("start");
+    await this.getSetCardList();
+    console.log(this.setCardList);
+    this.setCardList = this.setCardList.filter(object => {
+      // Inserisci qui la tua condizione di filtro, ad esempio:
+      // return setCard.someProperty === 'valore desiderato';
+      return object.set.id === "OP01";
+    });
+    console.log("end");
+  }
+
 
   async getUserCardList() {
     console.log('getUserCardList');
@@ -247,7 +264,30 @@ export class CardListService {
 
   }
 
+  async getCardList2(){
+    while (!this.globalService.constCardSetList || this.globalService.constCardSetList.length === 0) {
+      await new Promise(resolve => setTimeout(resolve, 100)); // Attendi per 100 millisecondi prima di verificare nuovamente
+    }
+    console.log(this.globalService.constCardSetList.length);
 
+      var setCardList: any = [];
+      var setCard = [];
+      var set;
+      this.globalService.constCardSetList.forEach(object => {
+        if(this.filter.setOption == 'Any/Any' || this.filter.setId == object.set.id){
+          set = object.set;
+          setCard = object.cardList.filter( card =>{
+            return this.cardIf(card);
+          })
+          var a = new SetCard();
+          a.set = set;
+          a.cardList = setCard;
+          setCardList.push(a)
+        }
+      });
+      console.log(setCardList);
+      this.setCardList = setCardList;
+  }
 
 
 }
