@@ -1,8 +1,8 @@
 [{
-	"id": "470",
+	"id": "469",
 	"name": "Nefeltari Vivi",
 	"color": "Red/Blue",
-	"cardType": "Character",
+	"cardType": "Leader",
 	"effect": "This Leader cannot attack.@/Activate: Main/ /Once Per Turn/ ➁ (You may rest the specified number of DON!! cards in your cost area.): Draw 1 card and up to 1 of your Characters gains /Rush/ during this turn.@(This card can attack on the turn in which it is played.)",
 	"cost": 5,
 	"power": 5000,
@@ -14,7 +14,7 @@
 	"originalSetId": "OP04",
 	"type": "Alabasta"
 }, {
-	"id": "471",
+	"id": "470",
 	"name": "Nefeltari Vivi",
 	"color": "Red/Blue",
 	"cardType": "Leader",
@@ -29,10 +29,10 @@
 	"originalSetId": "OP04",
 	"type": "Alabasta"
 }, {
-	"id": "472",
+	"id": "471",
 	"name": "Igaram",
 	"color": "Red",
-	"cardType": "Leader",
+	"cardType": "Character",
 	"effect": "/Activate: Main/ You may rest this Character and give your 1 active Leader −5000 power during this turn: Look at 5 cards from the top of your deck; reveal up to 1 {Alabasta} type card and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
 	"cost": 2,
 	"power": 3000,
@@ -44,7 +44,7 @@
 	"originalSetId": "OP04",
 	"type": "Alabasta"
 }, {
-	"id": "473",
+	"id": "472",
 	"name": "Usopp",
 	"color": "Red",
 	"cardType": "Character",
@@ -59,7 +59,7 @@
 	"originalSetId": "OP04",
 	"type": "Alabasta/Straw Hat Crew"
 }, {
-	"id": "474",
+	"id": "473",
 	"name": "Karoo",
 	"color": "Red",
 	"cardType": "Character",
@@ -74,7 +74,7 @@
 	"originalSetId": "OP04",
 	"type": "Animal/Alabasta"
 }, {
-	"id": "475",
+	"id": "474",
 	"name": "Kung Fu Jugon",
 	"color": "Red",
 	"cardType": "Character",
@@ -89,7 +89,7 @@
 	"originalSetId": "OP04",
 	"type": "Animal/Alabasta"
 }, {
-	"id": "476",
+	"id": "475",
 	"name": "Koza",
 	"color": "Red",
 	"cardType": "Character",
@@ -104,7 +104,7 @@
 	"originalSetId": "OP04",
 	"type": "Alabasta"
 }, {
-	"id": "477",
+	"id": "476",
 	"name": "Sanji",
 	"color": "Red",
 	"cardType": "Character",
@@ -119,7 +119,7 @@
 	"originalSetId": "OP04",
 	"type": "Alabasta/Straw Hat Crew"
 }, {
-	"id": "478",
+	"id": "477",
 	"name": "Chaka",
 	"color": "Red",
 	"cardType": "Character",
@@ -134,7 +134,7 @@
 	"originalSetId": "OP04",
 	"type": "Alabasta"
 }, {
-	"id": "479",
+	"id": "478",
 	"name": "Super Spot-Billed Duck Troops",
 	"color": "Red",
 	"cardType": "Character",
@@ -149,7 +149,7 @@
 	"originalSetId": "OP04",
 	"type": "Animal/Alabasta"
 }, {
-	"id": "480",
+	"id": "479",
 	"name": "Tony Tony.Chopper",
 	"color": "Red",
 	"cardType": "Character",
@@ -164,7 +164,7 @@
 	"originalSetId": "OP04",
 	"type": "Animal/Alabasta/Straw Hat Crew"
 }, {
-	"id": "481",
+	"id": "480",
 	"name": "Nami",
 	"color": "Red",
 	"cardType": "Character",
@@ -179,7 +179,7 @@
 	"originalSetId": "OP04",
 	"type": "Alabasta/Straw Hat Crew"
 }, {
-	"id": "482",
+	"id": "481",
 	"name": "Nefeltari Cobra",
 	"color": "Red",
 	"cardType": "Character",
@@ -194,7 +194,7 @@
 	"originalSetId": "OP04",
 	"type": "Alabasta"
 }, {
-	"id": "483",
+	"id": "482",
 	"name": "Pell",
 	"color": "Red",
 	"cardType": "Character",
@@ -209,7 +209,7 @@
 	"originalSetId": "OP04",
 	"type": "Alabasta"
 }, {
-	"id": "484",
+	"id": "483",
 	"name": "Pell",
 	"color": "Red",
 	"cardType": "Character",
@@ -224,7 +224,7 @@
 	"originalSetId": "OP04",
 	"type": "Alabasta"
 }, {
-	"id": "485",
+	"id": "484",
 	"name": "Monkey.D.Luffy",
 	"color": "Red",
 	"cardType": "Character",
@@ -239,7 +239,7 @@
 	"originalSetId": "OP04",
 	"type": "Alabasta/Straw Hat Crew"
 }, {
-	"id": "486",
+	"id": "485",
 	"name": "Roronoa Zoro",
 	"color": "Red",
 	"cardType": "Character",
@@ -254,10 +254,10 @@
 	"originalSetId": "OP04",
 	"type": "Alabasta/Straw Hat Crew"
 }, {
-	"id": "487",
+	"id": "486",
 	"name": "Bad Manners Kick Course",
 	"color": "Red",
-	"cardType": "Character",
+	"cardType": "Event",
 	"effect": "/Counter/ You may trash 1 card from your hand: Up to 1 of your Leader or Character cards gains +3000 power during this battle.@/Trigger/ Give up to 1 of your opponent's Leader or Character cards −3000 power during this turn.",
 	"cost": 0,
 	"power": 0,
@@ -269,7 +269,7 @@
 	"originalSetId": "OP04",
 	"type": "Alabasta/Straw Hat Crew"
 }, {
-	"id": "488",
+	"id": "487",
 	"name": "Happiness Punch",
 	"color": "Red",
 	"cardType": "Event",
@@ -284,7 +284,7 @@
 	"originalSetId": "OP04",
 	"type": "Alabasta/Straw Hat Crew"
 }, {
-	"id": "489",
+	"id": "488",
 	"name": "Enchanting Vertigo Dance",
 	"color": "Red",
 	"cardType": "Event",
@@ -299,10 +299,10 @@
 	"originalSetId": "OP04",
 	"type": "Alabasta"
 }, {
-	"id": "490",
+	"id": "489",
 	"name": "Donquixote Doflamingo",
 	"color": "Green/Purple",
-	"cardType": "Event",
+	"cardType": "Leader",
 	"effect": "/End of Your Turn/ Set up to 2 of your DON!! cards as active.",
 	"cost": 4,
 	"power": 5000,
@@ -314,7 +314,7 @@
 	"originalSetId": "OP04",
 	"type": "The Seven Warlords of the Sea/Donquixote Pirates"
 }, {
-	"id": "491",
+	"id": "490",
 	"name": "Donquixote Doflamingo",
 	"color": "Green/Purple",
 	"cardType": "Leader",
@@ -329,7 +329,7 @@
 	"originalSetId": "OP04",
 	"type": "The Seven Warlords of the Sea/Donquixote Pirates"
 }, {
-	"id": "492",
+	"id": "491",
 	"name": "Issho",
 	"color": "Green/Black",
 	"cardType": "Leader",
@@ -344,7 +344,7 @@
 	"originalSetId": "OP04",
 	"type": "Navy"
 }, {
-	"id": "493",
+	"id": "492",
 	"name": "Issho",
 	"color": "Green/Black",
 	"cardType": "Leader",
@@ -359,10 +359,10 @@
 	"originalSetId": "OP04",
 	"type": "Navy"
 }, {
-	"id": "494",
+	"id": "493",
 	"name": "Viola",
 	"color": "Green",
-	"cardType": "Leader",
+	"cardType": "Character",
 	"effect": "[On Your Opponent's Attack] ➁ (You may rest the specified number of DON!! cards in your cost area.): Rest up to 1 of your opponent's DON!! cards.",
 	"cost": 3,
 	"power": 3000,
@@ -374,7 +374,7 @@
 	"originalSetId": "OP04",
 	"type": "Donquixote Pirates"
 }, {
-	"id": "495",
+	"id": "494",
 	"name": "Eric",
 	"color": "Green",
 	"cardType": "Character",
@@ -389,7 +389,7 @@
 	"originalSetId": "OP04",
 	"type": "East Blue"
 }, {
-	"id": "496",
+	"id": "495",
 	"name": "Kuro",
 	"color": "Green",
 	"cardType": "Character",
@@ -404,7 +404,7 @@
 	"originalSetId": "OP04",
 	"type": "East Blue/Black Cat Pirates"
 }, {
-	"id": "497",
+	"id": "496",
 	"name": "Sugar",
 	"color": "Green",
 	"cardType": "Character",
@@ -419,7 +419,7 @@
 	"originalSetId": "OP04",
 	"type": "Donquixote Pirates"
 }, {
-	"id": "498",
+	"id": "497",
 	"name": "Sugar",
 	"color": "Green",
 	"cardType": "Character",
@@ -434,7 +434,7 @@
 	"originalSetId": "OP04",
 	"type": "Donquixote Pirates"
 }, {
-	"id": "499",
+	"id": "498",
 	"name": "Giolla",
 	"color": "Green",
 	"cardType": "Character",
@@ -449,7 +449,7 @@
 	"originalSetId": "OP04",
 	"type": "Donquixote Pirates"
 }, {
-	"id": "500",
+	"id": "499",
 	"name": "Senor Pink",
 	"color": "Green",
 	"cardType": "Character",
@@ -464,7 +464,7 @@
 	"originalSetId": "OP04",
 	"type": "Donquixote Pirates"
 }, {
-	"id": "501",
+	"id": "500",
 	"name": "Daddy Masterson",
 	"color": "Green",
 	"cardType": "Character",
@@ -479,7 +479,7 @@
 	"originalSetId": "OP04",
 	"type": "East Blue/Former Navy"
 }, {
-	"id": "502",
+	"id": "501",
 	"name": "Diamante",
 	"color": "Green",
 	"cardType": "Character",
@@ -494,7 +494,7 @@
 	"originalSetId": "OP04",
 	"type": "Donquixote Pirates"
 }, {
-	"id": "503",
+	"id": "502",
 	"name": "Diamante",
 	"color": "Green",
 	"cardType": "Character",
@@ -509,7 +509,7 @@
 	"originalSetId": "OP04",
 	"type": "Donquixote Pirates"
 }, {
-	"id": "504",
+	"id": "503",
 	"name": "Dellinger",
 	"color": "Green",
 	"cardType": "Character",
@@ -524,7 +524,7 @@
 	"originalSetId": "OP04",
 	"type": "Donquixote Pirates"
 }, {
-	"id": "505",
+	"id": "504",
 	"name": "Trebol",
 	"color": "Green",
 	"cardType": "Character",
@@ -539,7 +539,7 @@
 	"originalSetId": "OP04",
 	"type": "Donquixote Pirates"
 }, {
-	"id": "506",
+	"id": "505",
 	"name": "Trebol",
 	"color": "Green",
 	"cardType": "Character",
@@ -554,7 +554,7 @@
 	"originalSetId": "OP04",
 	"type": "Donquixote Pirates"
 }, {
-	"id": "507",
+	"id": "506",
 	"name": "Donquixote Doflamingo",
 	"color": "Green",
 	"cardType": "Character",
@@ -569,7 +569,7 @@
 	"originalSetId": "OP04",
 	"type": "The Seven Warlords of the Sea/Donquixote Pirates"
 }, {
-	"id": "508",
+	"id": "507",
 	"name": "Donquixote Doflamingo",
 	"color": "Green",
 	"cardType": "Character",
@@ -584,7 +584,7 @@
 	"originalSetId": "OP04",
 	"type": "The Seven Warlords of the Sea/Donquixote Pirates"
 }, {
-	"id": "509",
+	"id": "508",
 	"name": "Baby 5",
 	"color": "Green",
 	"cardType": "Character",
@@ -599,7 +599,7 @@
 	"originalSetId": "OP04",
 	"type": "Donquixote Pirates"
 }, {
-	"id": "510",
+	"id": "509",
 	"name": "Machvise",
 	"color": "Green",
 	"cardType": "Character",
@@ -614,7 +614,7 @@
 	"originalSetId": "OP04",
 	"type": "Donquixote Pirates"
 }, {
-	"id": "511",
+	"id": "510",
 	"name": "Lao.G",
 	"color": "Green",
 	"cardType": "Character",
@@ -629,10 +629,10 @@
 	"originalSetId": "OP04",
 	"type": "Donquixote Pirates"
 }, {
-	"id": "512",
+	"id": "511",
 	"name": "Spiderweb",
 	"color": "Green",
-	"cardType": "Character",
+	"cardType": "Event",
 	"effect": "/Counter/ Up to 1 of your Leader or Character cards gains +4000 power during this battle. Then, set up to 1 of your Characters as active.@/Trigger/ Up to 1 of your Leader gains +2000 power during this turn.",
 	"cost": 2,
 	"power": 0,
@@ -644,7 +644,7 @@
 	"originalSetId": "OP04",
 	"type": "The Seven Warlords of the Sea/Donquixote Pirates"
 }, {
-	"id": "513",
+	"id": "512",
 	"name": "Donquixote Family",
 	"color": "Green",
 	"cardType": "Event",
@@ -659,7 +659,7 @@
 	"originalSetId": "OP04",
 	"type": "Donquixote Pirates"
 }, {
-	"id": "514",
+	"id": "513",
 	"name": "Flapping Thread",
 	"color": "Green",
 	"cardType": "Event",
@@ -674,7 +674,7 @@
 	"originalSetId": "OP04",
 	"type": "The Seven Warlords of the Sea/Donquixote Pirates"
 }, {
-	"id": "515",
+	"id": "514",
 	"name": "The Weak Do Not Have the Right to Choose How They Die!!!",
 	"color": "Green",
 	"cardType": "Event",
@@ -689,10 +689,10 @@
 	"originalSetId": "OP04",
 	"type": "The Seven Warlords of the Sea/Donquixote Pirates"
 }, {
-	"id": "516",
+	"id": "515",
 	"name": "Rebecca",
 	"color": "Blue/Black",
-	"cardType": "Event",
+	"cardType": "Leader",
 	"effect": "This Leader cannot attack.@/Activate: Main/ /Once Per Turn/ ➀ (You may rest the specified number of DON!! cards in your cost area.): If you have 6 or less cards in your hand, look at 2 cards from the top of your deck; reveal up to 1 {Dressrosa} type card and add it to your hand. Then, trash the rest.",
 	"cost": 5,
 	"power": 5000,
@@ -704,7 +704,7 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa"
 }, {
-	"id": "517",
+	"id": "516",
 	"name": "Rebecca",
 	"color": "Blue/Black",
 	"cardType": "Leader",
@@ -719,7 +719,7 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa"
 }, {
-	"id": "518",
+	"id": "517",
 	"name": "Queen",
 	"color": "Blue/Yellow",
 	"cardType": "Leader",
@@ -734,7 +734,7 @@
 	"originalSetId": "OP04",
 	"type": "Animal Kingdom Pirates"
 }, {
-	"id": "519",
+	"id": "518",
 	"name": "Queen",
 	"color": "Blue/Yellow",
 	"cardType": "Leader",
@@ -749,10 +749,10 @@
 	"originalSetId": "OP04",
 	"type": "Animal Kingdom Pirates"
 }, {
-	"id": "520",
+	"id": "519",
 	"name": "Apis",
 	"color": "Blue",
-	"cardType": "Leader",
+	"cardType": "Character",
 	"effect": "/On Play/ You may trash 2 cards from your hand: Look at 5 cards from the top of your deck; reveal up to 1 {East Blue} type card and add it to your hand. Then, place the rest at the bottom of your deck in any order.",
 	"cost": 1,
 	"power": 0,
@@ -764,11 +764,11 @@
 	"originalSetId": "OP04",
 	"type": "East Blue"
 }, {
-	"id": "521",
+	"id": "520",
 	"name": "Ipponmatsu",
 	"color": "Blue",
 	"cardType": "Character",
-	"effect": "/On Play/ Up to 1 of your &lt;Slash&gt; attribute Characters gains +3000 power during this turn. Then, trash 1 card from the top of your deck.",
+	"effect": "/On Play/ Up to 1 of your <slash> attribute Characters gains +3000 power during this turn. Then, trash 1 card from the top of your deck.</slash>",
 	"cost": 2,
 	"power": 1000,
 	"counter": 1000,
@@ -779,7 +779,7 @@
 	"originalSetId": "OP04",
 	"type": "East Blue"
 }, {
-	"id": "522",
+	"id": "521",
 	"name": "Ulti",
 	"color": "Blue",
 	"cardType": "Character",
@@ -794,7 +794,7 @@
 	"originalSetId": "OP04",
 	"type": "Animal Kingdom Pirates"
 }, {
-	"id": "523",
+	"id": "522",
 	"name": "Kaido",
 	"color": "Blue",
 	"cardType": "Character",
@@ -809,7 +809,7 @@
 	"originalSetId": "OP04",
 	"type": "The Four Emperors/Animal Kingdom Pirates"
 }, {
-	"id": "524",
+	"id": "523",
 	"name": "Kaido",
 	"color": "Blue",
 	"cardType": "Character",
@@ -824,7 +824,7 @@
 	"originalSetId": "OP04",
 	"type": "The Four Emperors/Animal Kingdom Pirates"
 }, {
-	"id": "525",
+	"id": "524",
 	"name": "King",
 	"color": "Blue",
 	"cardType": "Character",
@@ -839,7 +839,7 @@
 	"originalSetId": "OP04",
 	"type": "Animal Kingdom Pirates"
 }, {
-	"id": "526",
+	"id": "525",
 	"name": "Queen",
 	"color": "Blue",
 	"cardType": "Character",
@@ -854,7 +854,7 @@
 	"originalSetId": "OP04",
 	"type": "Animal Kingdom Pirates"
 }, {
-	"id": "527",
+	"id": "526",
 	"name": "Ice Oni",
 	"color": "Blue",
 	"cardType": "Character",
@@ -869,7 +869,7 @@
 	"originalSetId": "OP04",
 	"type": "Plague/Animal Kingdom Pirates"
 }, {
-	"id": "528",
+	"id": "527",
 	"name": "Sasaki",
 	"color": "Blue",
 	"cardType": "Character",
@@ -884,7 +884,7 @@
 	"originalSetId": "OP04",
 	"type": "Animal Kingdom Pirates"
 }, {
-	"id": "529",
+	"id": "528",
 	"name": "Jack",
 	"color": "Blue",
 	"cardType": "Character",
@@ -899,7 +899,7 @@
 	"originalSetId": "OP04",
 	"type": "Animal Kingdom Pirates"
 }, {
-	"id": "530",
+	"id": "529",
 	"name": "Hanger",
 	"color": "Blue",
 	"cardType": "Character",
@@ -914,7 +914,7 @@
 	"originalSetId": "OP04",
 	"type": "East Blue"
 }, {
-	"id": "531",
+	"id": "530",
 	"name": "Who's.Who",
 	"color": "Blue",
 	"cardType": "Character",
@@ -929,7 +929,7 @@
 	"originalSetId": "OP04",
 	"type": "Animal Kingdom Pirates"
 }, {
-	"id": "532",
+	"id": "531",
 	"name": "Who's.Who",
 	"color": "Blue",
 	"cardType": "Character",
@@ -944,7 +944,7 @@
 	"originalSetId": "OP04",
 	"type": "Animal Kingdom Pirates"
 }, {
-	"id": "533",
+	"id": "532",
 	"name": "Black Maria",
 	"color": "Blue",
 	"cardType": "Character",
@@ -959,7 +959,7 @@
 	"originalSetId": "OP04",
 	"type": "Animal Kingdom Pirates"
 }, {
-	"id": "534",
+	"id": "533",
 	"name": "Page One",
 	"color": "Blue",
 	"cardType": "Character",
@@ -974,7 +974,7 @@
 	"originalSetId": "OP04",
 	"type": "Animal Kingdom Pirates"
 }, {
-	"id": "535",
+	"id": "534",
 	"name": "Rokki",
 	"color": "Blue",
 	"cardType": "Character",
@@ -989,10 +989,10 @@
 	"originalSetId": "OP04",
 	"type": "Giant/Animal Kingdom Pirates"
 }, {
-	"id": "536",
+	"id": "535",
 	"name": "Plague Rounds",
 	"color": "Blue",
-	"cardType": "Character",
+	"cardType": "Event",
 	"effect": "/Main/ You may trash 1 [Ice Oni] from your hand and place 1 Character with a cost of 4 or less at the bottom of the owner's deck: Play 1 [Ice Oni] from your trash.@/Trigger/ Activate this card's [Main] effect.",
 	"cost": 2,
 	"power": 0,
@@ -1004,7 +1004,7 @@
 	"originalSetId": "OP04",
 	"type": "Animal Kingdom Pirates"
 }, {
-	"id": "537",
+	"id": "536",
 	"name": "Gum-Gum Red Roc",
 	"color": "Blue",
 	"cardType": "Event",
@@ -1019,7 +1019,7 @@
 	"originalSetId": "OP04",
 	"type": "Straw Hat Crew"
 }, {
-	"id": "538",
+	"id": "537",
 	"name": "Dragon Twister Demolition Breath",
 	"color": "Blue",
 	"cardType": "Event",
@@ -1034,10 +1034,10 @@
 	"originalSetId": "OP04",
 	"type": "The Four Emperors/Animal Kingdom Pirates"
 }, {
-	"id": "539",
+	"id": "538",
 	"name": "Crocodile",
 	"color": "Purple/Yellow",
-	"cardType": "Event",
+	"cardType": "Leader",
 	"effect": "/Opponent's Turn/ /Once Per Turn/ When a DON!! card on your field is returned to your DON!! deck by your effect, add up to 1 DON!! card from your DON!! deck and set it as active.",
 	"cost": 4,
 	"power": 5000,
@@ -1049,7 +1049,7 @@
 	"originalSetId": "OP04",
 	"type": "The Seven Warlords of the Sea/Baroque Works"
 }, {
-	"id": "540",
+	"id": "539",
 	"name": "Crocodile",
 	"color": "Purple/Yellow",
 	"cardType": "Leader",
@@ -1064,10 +1064,10 @@
 	"originalSetId": "OP04",
 	"type": "The Seven Warlords of the Sea/Baroque Works"
 }, {
-	"id": "541",
+	"id": "540",
 	"name": "Iceburg",
 	"color": "Purple",
-	"cardType": "Leader",
+	"cardType": "Character",
 	"effect": "[On Your Opponent's Attack] [DON!! −1] (You may return the specified number of DON!! cards from your field to your DON!! deck.): If your Leader has the {Water Seven} type, this Character gains /Blocker/ during this turn.@(After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
 	"cost": 1,
 	"power": 0,
@@ -1079,7 +1079,7 @@
 	"originalSetId": "OP04",
 	"type": "Water Seven/Galley-La Company"
 }, {
-	"id": "542",
+	"id": "541",
 	"name": "Crocodile",
 	"color": "Purple",
 	"cardType": "Character",
@@ -1094,7 +1094,7 @@
 	"originalSetId": "OP04",
 	"type": "The Seven Warlords of the Sea/Baroque Works"
 }, {
-	"id": "543",
+	"id": "542",
 	"name": "Crocodile",
 	"color": "Purple",
 	"cardType": "Character",
@@ -1109,7 +1109,7 @@
 	"originalSetId": "OP04",
 	"type": "The Seven Warlords of the Sea/Baroque Works"
 }, {
-	"id": "544",
+	"id": "543",
 	"name": "Tom",
 	"color": "Purple",
 	"cardType": "Character",
@@ -1124,7 +1124,7 @@
 	"originalSetId": "OP04",
 	"type": "Fish-Man/Water Seven"
 }, {
-	"id": "545",
+	"id": "544",
 	"name": "Bananagator",
 	"color": "Purple",
 	"cardType": "Character",
@@ -1139,7 +1139,7 @@
 	"originalSetId": "OP04",
 	"type": "Animal"
 }, {
-	"id": "546",
+	"id": "545",
 	"name": "Franky",
 	"color": "Purple",
 	"cardType": "Character",
@@ -1154,7 +1154,7 @@
 	"originalSetId": "OP04",
 	"type": "Water Seven/The Franky Family"
 }, {
-	"id": "547",
+	"id": "546",
 	"name": "Ms. All Sunday",
 	"color": "Purple",
 	"cardType": "Character",
@@ -1169,7 +1169,7 @@
 	"originalSetId": "OP04",
 	"type": "Baroque Works"
 }, {
-	"id": "548",
+	"id": "547",
 	"name": "Ms. All Sunday",
 	"color": "Purple",
 	"cardType": "Character",
@@ -1184,7 +1184,7 @@
 	"originalSetId": "OP04",
 	"type": "Baroque Works"
 }, {
-	"id": "549",
+	"id": "548",
 	"name": "Miss.Goldenweek(Marianne)",
 	"color": "Purple",
 	"cardType": "Character",
@@ -1199,7 +1199,7 @@
 	"originalSetId": "OP04",
 	"type": "Baroque Works"
 }, {
-	"id": "550",
+	"id": "549",
 	"name": "Miss.Valentine(Mikita)",
 	"color": "Purple",
 	"cardType": "Character",
@@ -1214,7 +1214,7 @@
 	"originalSetId": "OP04",
 	"type": "Baroque Works"
 }, {
-	"id": "551",
+	"id": "550",
 	"name": "Miss.MerryChristmas(Drophy)",
 	"color": "Purple",
 	"cardType": "Character",
@@ -1229,7 +1229,7 @@
 	"originalSetId": "OP04",
 	"type": "Baroque Works"
 }, {
-	"id": "552",
+	"id": "551",
 	"name": "Yokozuna",
 	"color": "Purple",
 	"cardType": "Character",
@@ -1244,7 +1244,7 @@
 	"originalSetId": "OP04",
 	"type": "Animal/Water Seven"
 }, {
-	"id": "553",
+	"id": "552",
 	"name": "Mr.2.Bon.Kurei(Bentham)",
 	"color": "Purple",
 	"cardType": "Character",
@@ -1259,7 +1259,7 @@
 	"originalSetId": "OP04",
 	"type": "Baroque Works"
 }, {
-	"id": "554",
+	"id": "553",
 	"name": "Mr.3(Galdino)",
 	"color": "Purple",
 	"cardType": "Character",
@@ -1274,7 +1274,7 @@
 	"originalSetId": "OP04",
 	"type": "Baroque Works"
 }, {
-	"id": "555",
+	"id": "554",
 	"name": "Mr.4(Babe)",
 	"color": "Purple",
 	"cardType": "Character",
@@ -1289,7 +1289,7 @@
 	"originalSetId": "OP04",
 	"type": "Baroque Works"
 }, {
-	"id": "556",
+	"id": "555",
 	"name": "Mr.5(Gem)",
 	"color": "Purple",
 	"cardType": "Character",
@@ -1304,7 +1304,7 @@
 	"originalSetId": "OP04",
 	"type": "Baroque Works"
 }, {
-	"id": "557",
+	"id": "556",
 	"name": "Mr.5(Gem)",
 	"color": "Purple",
 	"cardType": "Character",
@@ -1319,7 +1319,7 @@
 	"originalSetId": "OP04",
 	"type": "Baroque Works"
 }, {
-	"id": "558",
+	"id": "557",
 	"name": "Mr.13 & Ms.Friday",
 	"color": "Purple",
 	"cardType": "Character",
@@ -1334,10 +1334,10 @@
 	"originalSetId": "OP04",
 	"type": "Animal/Baroque Works"
 }, {
-	"id": "559",
+	"id": "558",
 	"name": "Colors Trap",
 	"color": "Purple",
-	"cardType": "Character",
+	"cardType": "Event",
 	"effect": "/Counter/ [DON!! −1] (You may return the specified number of DON!! cards from your field to your DON!! deck.): Up to 1 of your Leader or Character cards gains +1000 power during this battle. Then, rest up to 1 of your opponent's Characters with a cost of 4 or less.@/Trigger/ Add up to 1 DON!! card from your DON!! deck and set it as active.",
 	"cost": 1,
 	"power": 0,
@@ -1349,7 +1349,7 @@
 	"originalSetId": "OP04",
 	"type": "Baroque Works"
 }, {
-	"id": "560",
+	"id": "559",
 	"name": "Nez-Palm Cannon",
 	"color": "Purple",
 	"cardType": "Event",
@@ -1364,7 +1364,7 @@
 	"originalSetId": "OP04",
 	"type": "Baroque Works"
 }, {
-	"id": "561",
+	"id": "560",
 	"name": "Weakness...Is an Unforgivable Sin.",
 	"color": "Purple",
 	"cardType": "Event",
@@ -1379,10 +1379,10 @@
 	"originalSetId": "OP04",
 	"type": "The Seven Warlords of the Sea/Baroque Works"
 }, {
-	"id": "562",
+	"id": "561",
 	"name": "Ideo",
 	"color": "Black",
-	"cardType": "Event",
+	"cardType": "Character",
 	"effect": "/Blocker/ (After your opponent declares an attack, you may rest this card to make it the new target of the attack.)",
 	"cost": 2,
 	"power": 2000,
@@ -1394,7 +1394,7 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa"
 }, {
-	"id": "563",
+	"id": "562",
 	"name": "Oimo & Kashii",
 	"color": "Black",
 	"cardType": "Character",
@@ -1409,7 +1409,7 @@
 	"originalSetId": "OP04",
 	"type": "Giant/World Government"
 }, {
-	"id": "564",
+	"id": "563",
 	"name": "Orlumbus",
 	"color": "Black",
 	"cardType": "Character",
@@ -1424,7 +1424,7 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa/Yonta Maria Fleet"
 }, {
-	"id": "565",
+	"id": "564",
 	"name": "Gyats",
 	"color": "Black",
 	"cardType": "Character",
@@ -1439,7 +1439,7 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa"
 }, {
-	"id": "566",
+	"id": "565",
 	"name": "Cavendish",
 	"color": "Black",
 	"cardType": "Character",
@@ -1454,7 +1454,7 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa/Beautiful Pirates"
 }, {
-	"id": "567",
+	"id": "566",
 	"name": "Kyros",
 	"color": "Black",
 	"cardType": "Character",
@@ -1469,7 +1469,7 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa"
 }, {
-	"id": "568",
+	"id": "567",
 	"name": "Kyros",
 	"color": "Black",
 	"cardType": "Character",
@@ -1484,7 +1484,7 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa"
 }, {
-	"id": "569",
+	"id": "568",
 	"name": "Sabo",
 	"color": "Black",
 	"cardType": "Character",
@@ -1499,7 +1499,7 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa/Revolutionary Army"
 }, {
-	"id": "570",
+	"id": "569",
 	"name": "Sabo",
 	"color": "Black",
 	"cardType": "Character",
@@ -1514,7 +1514,7 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa/Revolutionary Army"
 }, {
-	"id": "571",
+	"id": "570",
 	"name": "Sabo",
 	"color": "Black",
 	"cardType": "Character",
@@ -1529,7 +1529,7 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa/Revolutionary Army"
 }, {
-	"id": "572",
+	"id": "571",
 	"name": "Stussy",
 	"color": "Black",
 	"cardType": "Character",
@@ -1544,7 +1544,7 @@
 	"originalSetId": "OP04",
 	"type": "CP0"
 }, {
-	"id": "573",
+	"id": "572",
 	"name": "Suleiman",
 	"color": "Black",
 	"cardType": "Character",
@@ -1559,7 +1559,7 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa"
 }, {
-	"id": "574",
+	"id": "573",
 	"name": "Chinjao",
 	"color": "Black",
 	"cardType": "Character",
@@ -1574,7 +1574,7 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa/Happosui Army"
 }, {
-	"id": "575",
+	"id": "574",
 	"name": "Trafalgar Law",
 	"color": "Black",
 	"cardType": "Character",
@@ -1589,7 +1589,7 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa/Heart Pirates"
 }, {
-	"id": "576",
+	"id": "575",
 	"name": "Hajrudin",
 	"color": "Black",
 	"cardType": "Character",
@@ -1604,7 +1604,7 @@
 	"originalSetId": "OP04",
 	"type": "Giant/Dressrosa/New Giant Pirates"
 }, {
-	"id": "577",
+	"id": "576",
 	"name": "Bartolomeo",
 	"color": "Black",
 	"cardType": "Character",
@@ -1619,7 +1619,7 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa/Barto Club"
 }, {
-	"id": "578",
+	"id": "577",
 	"name": "Monkey.D.Luffy",
 	"color": "Black",
 	"cardType": "Character",
@@ -1634,7 +1634,7 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa/Straw Hat Crew"
 }, {
-	"id": "579",
+	"id": "578",
 	"name": "Monkey.D.Luffy",
 	"color": "Black",
 	"cardType": "Character",
@@ -1649,7 +1649,7 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa/Straw Hat Crew"
 }, {
-	"id": "580",
+	"id": "579",
 	"name": "Leo",
 	"color": "Black",
 	"cardType": "Character",
@@ -1664,7 +1664,7 @@
 	"originalSetId": "OP04",
 	"type": "The Tontattas/Dressrosa"
 }, {
-	"id": "581",
+	"id": "580",
 	"name": "Rebecca",
 	"color": "Black",
 	"cardType": "Character",
@@ -1679,10 +1679,10 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa"
 }, {
-	"id": "582",
+	"id": "581",
 	"name": "Gum-Gum King Kong Gun",
 	"color": "Black",
-	"cardType": "Character",
+	"cardType": "Event",
 	"effect": "/Main/ Up to 1 of your {Dressrosa} type Characters gains +6000 power during this turn. Then, if you have 15 or more cards in your trash, that card gains /Double Attack/ during this turn.@(This card deals 2 damage.)@/Trigger/ Draw 3 cards and trash 2 cards from your hand.",
 	"cost": 3,
 	"power": 0,
@@ -1694,7 +1694,7 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa/Straw Hat Crew"
 }, {
-	"id": "583",
+	"id": "582",
 	"name": "Trueno Bastardo",
 	"color": "Black",
 	"cardType": "Event",
@@ -1709,7 +1709,7 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa"
 }, {
-	"id": "584",
+	"id": "583",
 	"name": "Barrier!!",
 	"color": "Black",
 	"cardType": "Event",
@@ -1724,10 +1724,10 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa/Barto Club"
 }, {
-	"id": "585",
+	"id": "584",
 	"name": "Corrida Coliseum",
 	"color": "Black",
-	"cardType": "Event",
+	"cardType": "Stage",
 	"effect": "If your Leader has the {Dressrosa} type, your {Dressrosa} type Characters can attack Characters on the turn in which they are played.",
 	"cost": 1,
 	"power": 0,
@@ -1739,10 +1739,10 @@
 	"originalSetId": "OP04",
 	"type": "Dressrosa"
 }, {
-	"id": "586",
+	"id": "585",
 	"name": "Otama",
 	"color": "Yellow",
-	"cardType": "Stage",
+	"cardType": "Character",
 	"effect": "/On Play/ Add up to 1 of your opponent's {Animal} or {SMILE} type Characters with a cost of 3 or less to the top of your opponent's Life cards face-up.",
 	"cost": 1,
 	"power": 0,
@@ -1754,7 +1754,7 @@
 	"originalSetId": "OP04",
 	"type": "Land of Wano"
 }, {
-	"id": "587",
+	"id": "586",
 	"name": "Toko",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -1769,7 +1769,7 @@
 	"originalSetId": "OP04",
 	"type": "Land of Wano"
 }, {
-	"id": "588",
+	"id": "587",
 	"name": "Olin",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -1784,7 +1784,7 @@
 	"originalSetId": "OP04",
 	"type": "Land of Wano/The Four Emperors/Big Mom Pirates"
 }, {
-	"id": "589",
+	"id": "588",
 	"name": "Capone\"Gang\"Bege",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -1799,7 +1799,7 @@
 	"originalSetId": "OP04",
 	"type": "Firetank Pirates"
 }, {
-	"id": "590",
+	"id": "589",
 	"name": "Capone\"Gang\"Bege",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -1814,7 +1814,7 @@
 	"originalSetId": "OP04",
 	"type": "Firetank Pirates"
 }, {
-	"id": "591",
+	"id": "590",
 	"name": "Carmel",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -1829,7 +1829,7 @@
 	"originalSetId": "OP04",
 	"type": "The House of Lambs"
 }, {
-	"id": "592",
+	"id": "591",
 	"name": "Kin'emon",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -1844,7 +1844,7 @@
 	"originalSetId": "OP04",
 	"type": "Land of Wano"
 }, {
-	"id": "593",
+	"id": "592",
 	"name": "Kouzuki Hiyori",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -1859,7 +1859,7 @@
 	"originalSetId": "OP04",
 	"type": "Land of Wano/Kouzuki Clan"
 }, {
-	"id": "594",
+	"id": "593",
 	"name": "Sanji",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -1874,7 +1874,7 @@
 	"originalSetId": "OP04",
 	"type": "The Vinsmoke Family"
 }, {
-	"id": "595",
+	"id": "594",
 	"name": "Sanji",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -1889,7 +1889,7 @@
 	"originalSetId": "OP04",
 	"type": "The Vinsmoke Family"
 }, {
-	"id": "596",
+	"id": "595",
 	"name": "Charlotte Amande",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -1904,7 +1904,7 @@
 	"originalSetId": "OP04",
 	"type": "Big Mom Pirates"
 }, {
-	"id": "597",
+	"id": "596",
 	"name": "Charlotte Bavarois",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -1919,7 +1919,7 @@
 	"originalSetId": "OP04",
 	"type": "Big Mom Pirates"
 }, {
-	"id": "598",
+	"id": "597",
 	"name": "Charlotte Perospero",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -1934,7 +1934,7 @@
 	"originalSetId": "OP04",
 	"type": "Big Mom Pirates"
 }, {
-	"id": "599",
+	"id": "598",
 	"name": "Charlotte Moscato",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -1949,7 +1949,7 @@
 	"originalSetId": "OP04",
 	"type": "Big Mom Pirates"
 }, {
-	"id": "600",
+	"id": "599",
 	"name": "Tonoyasu",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -1964,7 +1964,7 @@
 	"originalSetId": "OP04",
 	"type": "Land of Wano"
 }, {
-	"id": "601",
+	"id": "600",
 	"name": "Pound",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -1979,7 +1979,7 @@
 	"originalSetId": "OP04",
 	"type": "Whole Cake Island"
 }, {
-	"id": "602",
+	"id": "601",
 	"name": "Hera",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -1994,7 +1994,7 @@
 	"originalSetId": "OP04",
 	"type": "Big Mom Pirates/Homies"
 }, {
-	"id": "603",
+	"id": "602",
 	"name": "Yamato",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -2009,7 +2009,7 @@
 	"originalSetId": "OP04",
 	"type": "Land of Wano"
 }, {
-	"id": "604",
+	"id": "603",
 	"name": "Yamato",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -2024,7 +2024,7 @@
 	"originalSetId": "OP04",
 	"type": "Land of Wano"
 }, {
-	"id": "605",
+	"id": "604",
 	"name": "Rabiyan",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -2039,7 +2039,7 @@
 	"originalSetId": "OP04",
 	"type": "Big Mom Pirates/Homies"
 }, {
-	"id": "606",
+	"id": "605",
 	"name": "Randolph",
 	"color": "Yellow",
 	"cardType": "Character",
@@ -2054,10 +2054,10 @@
 	"originalSetId": "OP04",
 	"type": "Big Mom Pirates/Homies"
 }, {
-	"id": "607",
+	"id": "606",
 	"name": "Gun Modoki",
 	"color": "Yellow",
-	"cardType": "Character",
+	"cardType": "Event",
 	"effect": "/Main/ You may add 1 card from the top or bottom of your Life cards to your hand: Up to 1 of your {Land of Wano} type Characters gains /Double Attack/ during this turn.@(This card deals 2 damage.)@/Trigger/ Up to 1 of your Leader or Character cards gains +1000 power during this turn.",
 	"cost": 1,
 	"power": 0,
@@ -2069,7 +2069,7 @@
 	"originalSetId": "OP04",
 	"type": "Land of Wano/Kouzuki Clan"
 }, {
-	"id": "608",
+	"id": "607",
 	"name": "Diable Jambe Joue Shot",
 	"color": "Yellow",
 	"cardType": "Event",
@@ -2084,7 +2084,7 @@
 	"originalSetId": "OP04",
 	"type": "The Vinsmoke Family"
 }, {
-	"id": "609",
+	"id": "608",
 	"name": "Heavenly Fire",
 	"color": "Yellow",
 	"cardType": "Event",
@@ -2099,10 +2099,10 @@
 	"originalSetId": "OP04",
 	"type": "The Four Emperors/Big Mom Pirates"
 }, {
-	"id": "610",
+	"id": "609",
 	"name": "Nefeltari Vivi",
 	"color": "Red",
-	"cardType": "Event",
+	"cardType": "Character",
 	"effect": "All of your red Characters with a cost of 3 or more other than this Character gain /Rush/.@(This card can attack on the turn in which it is played.)",
 	"cost": 7,
 	"power": 4000,
@@ -2114,7 +2114,7 @@
 	"originalSetId": "OP04",
 	"type": "Alabasta"
 }, {
-	"id": "611",
+	"id": "610",
 	"name": "Nefeltari Vivi",
 	"color": "Red",
 	"cardType": "Character",
@@ -2129,7 +2129,7 @@
 	"originalSetId": "OP04",
 	"type": "Alabasta"
 }, {
-	"id": "612",
+	"id": "611",
 	"name": "Donquixote Rosinante",
 	"color": "Green",
 	"cardType": "Character",
@@ -2144,7 +2144,7 @@
 	"originalSetId": "OP04",
 	"type": "Navy/Donquixote Pirates"
 }, {
-	"id": "613",
+	"id": "612",
 	"name": "Donquixote Rosinante",
 	"color": "Green",
 	"cardType": "Character",
@@ -2159,7 +2159,7 @@
 	"originalSetId": "OP04",
 	"type": "Navy/Donquixote Pirates"
 },{
-	"id": "465",
+	"id": "464",
 	"name": "Trafalgar Law",
 	"color": "Green",
 	"cardType": "Character",
@@ -2169,12 +2169,12 @@
 	"counter": 0,
 	"role": "Slash",
 	"number": "OP01-047",
-	"rarity": "undefined",
+	"rarity": "Special Card",
 	"setId": "OP04",
 	"originalSetId": "OP01",
 	"type": "Supernovas/Heart Pirates"
 }, {
-	"id": "466",
+	"id": "465",
 	"name": "Boa Hancock",
 	"color": "Blue",
 	"cardType": "Character",
@@ -2184,12 +2184,12 @@
 	"counter": 1000,
 	"role": "Special",
 	"number": "OP01-078",
-	"rarity": "undefined",
+	"rarity": "Special Card",
 	"setId": "OP04",
 	"originalSetId": "OP01",
 	"type": "The Seven Warlords of the Sea/Kuja Pirates"
 }, {
-	"id": "467",
+	"id": "466",
 	"name": "Edward.Newgate",
 	"color": "Red",
 	"cardType": "Character",
@@ -2199,12 +2199,12 @@
 	"counter": 0,
 	"role": "Special",
 	"number": "OP02-004",
-	"rarity": "undefined",
+	"rarity": "Special Card",
 	"setId": "OP04",
 	"originalSetId": "OP02",
 	"type": "The Four Emperors/Whitebeard Pirates"
 }, {
-	"id": "468",
+	"id": "467",
 	"name": "Magellan",
 	"color": "Purple",
 	"cardType": "Character",
@@ -2214,12 +2214,12 @@
 	"counter": 0,
 	"role": "Special",
 	"number": "OP02-085",
-	"rarity": "undefined",
+	"rarity": "Special Card",
 	"setId": "OP04",
 	"originalSetId": "OP02",
 	"type": "Impel Down"
 }, {
-	"id": "469",
+	"id": "468",
 	"name": "Sakazuki",
 	"color": "Black",
 	"cardType": "Character",
@@ -2229,7 +2229,7 @@
 	"counter": 0,
 	"role": "Special",
 	"number": "OP02-099",
-	"rarity": "undefined",
+	"rarity": "Special Card",
 	"setId": "OP04",
 	"originalSetId": "OP02",
 	"type": "Navy"

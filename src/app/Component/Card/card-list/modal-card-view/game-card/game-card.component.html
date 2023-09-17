@@ -3,7 +3,6 @@
         <img src="assets/Img/{{card.setId}}/{{card.number}}.png" alt="{{card.name}}">
     </div>
     <div class="face front ">
-        <h3 class="text-center text-wrap">{{card.name}}</h3>
         <h5><b>Color: </b> <span> {{card.color}} </span> </h5>
         <h5><b>Card Type: </b>{{card.cardType}}</h5>
         <h5 style="height: auto"><b>Type: </b>{{card.type.replace('/',',')}}</h5>
@@ -16,7 +15,8 @@
             <div *ngIf="card.counter > 0" class="col-5" style="text-align: right;"><b>Counter: </b> {{card.counter}}</div>
         </div>
         <p class="number">
-            <b>{{card.setName}}</b><span>: {{(this.card.number.endsWith('a') || this.card.number.endsWith('b')) ? this.card.number.substring(0,this.card.number.length-1) : this.card.number}}</span>
+            <b>{{card.setId}}</b><span>: {{this.card.number.substring(0,3)}}</span>
         </p>
     </div>
+
 </div>
