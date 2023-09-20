@@ -73,7 +73,6 @@ export class CardListService {
   async getFilteredList(){
     console.log("start");
     await this.getSetCardList();
-    console.log(this.setCardList);
     this.setCardList = this.setCardList.filter(object => {
       // Inserisci qui la tua condizione di filtro, ad esempio:
       // return setCard.someProperty === 'valore desiderato';
@@ -111,8 +110,19 @@ export class CardListService {
       if (userCard != undefined && userCard.cardList.length > i && card.card.id == userCard.cardList[i].id) {
         card.qty = userCard.cardList[i].qty;
         i++;
-        if (card.card.name.toLowerCase().includes('parallel')) {
-          userSetCards.set.parallelOwned++;
+        if (card.card.number.includes('_') || card.card.number.includes('-')) {
+          if(card.card.number.includes('-')){
+            userSetCards.set.parallelOwned++;
+          }else{
+            var n = Number(card.card.number.split('_V')[1]);
+            if(n>1){
+              userSetCards.set.parallelOwned++;
+            }
+            else{
+              userSetCards.set.cardOwned++;
+            }
+          }
+          
         } else {
           userSetCards.set.cardOwned++;
         }
@@ -158,13 +168,42 @@ export class CardListService {
     localStorage.setItem("cardList-" + set, JSON.stringify(userCardSet));
   }
 
-  retriveMissingCard(userSetCards: SetCard){
+  getCardmarketList(userSetCards: SetCard){
     var s : string = "";
     s = s.concat(userSetCards.set.id + " - " + userSetCards.set.name);
     userSetCards.cardList.forEach(card =>{
       if(card.qty == 0){
-        s = s.concat('\n\r');
-        s = s.concat(card.card.number.substring(0,3) + " " + card.card.name)
+        s = s.concat('\r');
+        //s = s.concat(card.card.number.substring(0,3) + " " + card.card.name)
+        var version = "";
+        if(card.card.number.includes('_'))
+          version = card.card.number.split("_")[1];
+        s = s.concat("1x " + card.card.name + " " + card.card.setId + "-" + card.card.number.substring(0,3) + ' (' + version + ')' + " (" + userSetCards.set.name + ")");
+      }
+    })
+    console.log(s);
+    this.clipboard.copy(s);
+  }
+
+
+  getMissingCardList(userSetCards: SetCard){
+    var s : string = "";
+    s = s.concat(userSetCards.set.id + " - " + userSetCards.set.name);
+    userSetCards.cardList.forEach(card =>{
+      if(card.qty == 0){
+        s = s.concat('\r');
+        if(userSetCards.set.id.includes('OP')){
+        //s = s.concat(card.card.number.substring(0,3) + " " + card.card.name)
+        var version = "";
+        if(card.card.number.includes('_V2'))
+          version = "ALT";
+        if(card.card.number.includes('_V3'))
+           version = "Manga"
+        if(card.card.number.includes('-'))
+          version = "Special"
+        s = s.concat("1x " + card.card.name + " " + version);
+        }
+
       }
     })
     console.log(s);
@@ -185,7 +224,6 @@ export class CardListService {
 
     setCardList.forEach(card => {
       let temp: LocalCard = new LocalCard;
-      console.log(card);
       console.log(userCardLocal);
       if (json != null && card.card.id == userCardLocal.cardList[i].id) {
         temp = userCardLocal.cardList[i];
@@ -268,7 +306,6 @@ export class CardListService {
     while (!this.globalService.constCardSetList || this.globalService.constCardSetList.length === 0) {
       await new Promise(resolve => setTimeout(resolve, 100)); // Attendi per 100 millisecondi prima di verificare nuovamente
     }
-    console.log(this.globalService.constCardSetList.length);
 
       var setCardList: any = [];
       var setCard = [];
@@ -285,7 +322,6 @@ export class CardListService {
           setCardList.push(a)
         }
       });
-      console.log(setCardList);
       this.setCardList = setCardList;
   }
 

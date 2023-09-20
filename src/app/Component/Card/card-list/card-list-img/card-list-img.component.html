@@ -6,7 +6,8 @@
 			<h3>Card: {{setCard.set.cardOwned}} / {{setCard.set.nCard}}</h3>
 			<h3 *ngIf="setCard.set.nParallel > 0">Parallel: {{setCard.set.parallelOwned}} / {{setCard.set.nParallel}}</h3>
 			<button (click)="cardService.completeBaseSet(setCard.set.id)"> Auto Complete!</button>
-			<button (click)="cardService.retriveMissingCard(setCard)"> Copy Missing!</button>
+			<button (click)="cardService.getMissingCardList(setCard)"> Copy Missing!</button>
+			<button (click)="cardService.getCardmarketList(setCard)"> Cardmarket List!</button>
 <div class=" card-list-container-img " id="card-list-img">
 
 

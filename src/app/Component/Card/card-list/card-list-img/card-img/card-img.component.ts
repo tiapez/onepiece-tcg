@@ -16,7 +16,6 @@ export class CardImgComponent {
   @Input() cardDet!:CardDetails;
 
 ngOnInit(){
-  console.log('effect: ' +  this.cardDet.card.effect);
 }
 
 }
