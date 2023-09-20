@@ -223,7 +223,7 @@ export class CardListService {
 
   cardIf(cardDet: CardDetails) {
     return cardDet.card.name.toLocaleLowerCase().includes(this.filter.name) && (this.filter.rarity.includes('All') || cardDet.card.rarity == this.filter.rarity)
-      && (this.filter.setId.includes(cardDet.card.setId) || this.filter.setId == 'Any') && cardDet.qtyMax != 0
+      && (this.filter.setId == cardDet.card.setId || this.filter.setId == 'Any') && cardDet.qtyMax != 0
       && (((this.globalService.isDetails) || (this.globalService.isClassic)) && (this.filter.view == 0 || (this.filter.view == 1 && cardDet.qty > 0) || (this.filter.view == 2 && cardDet.qty == 0))
         ||
         (!this.globalService.isUserCard && (this.filter.color.includes('All') || cardDet.card.color.includes(this.filter.color)) && (this.filter.role.includes('All') || cardDet.card.role.includes(this.filter.role))

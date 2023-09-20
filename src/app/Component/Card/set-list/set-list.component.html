@@ -1,8 +1,8 @@
 <div class="app">
-    <img class="loading" src="./assets/Img/loading.gif" alt="loading" *ngIf="this.cardService.setCardList.length == 0">
+    <img class="loading" src="./assets/Img/loading.gif" alt="loading" *ngIf="this.globalService.constCardSetList.length == 0">
 
 
-    <div *ngFor="let setCard of this.cardService.setCardList">
+    <div *ngFor="let setCard of this.globalService.constCardSetList">
 
         <div class="set-container"
             *ngIf="checkSet(setCard.cardList)">
@@ -14,7 +14,7 @@
                 <div class="set-card" *ngFor="let cardDet of setCard.cardList">
                     <img src="./assets/Img/{{cardDet.card.setId}}/{{cardDet.card.number}}.png"
                         (click)="cardService.openView(cardDet.card)" alt="{{cardDet.card.name}}"
-                        >
+                        *ngIf="cardService.cardIf(cardDet)">
                 </div>
             </div>
         </div>

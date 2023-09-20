@@ -6,7 +6,8 @@ import { GlobalService } from 'src/app/Service/global.service';
 import { CardActionService2 } from 'src/app/Service/Offline/CardAction/card-action.service';
 import { lastValueFrom } from 'rxjs';
 import { Set } from '../../../../../../Model/Set/set.model';
-import { makeStateKey } from '@angular/platform-browser';
+import { DomSanitizer, makeStateKey } from '@angular/platform-browser';
+import { HttpClient } from '@angular/common/http';
 
 
 
@@ -19,8 +20,10 @@ import { makeStateKey } from '@angular/platform-browser';
 export class CardButtonComponent{
   @Input() cardDet!:CardDetails;
 
-  constructor(public cardService : CardListService, public deckService : DeckService,public globalService : GlobalService, public offlineAciton : CardActionService2) { }
+  constructor(public cardService : CardListService, public deckService : DeckService,public globalService : GlobalService, public offlineAciton : CardActionService2,
+    private http: HttpClient, private sanitizer: DomSanitizer) { }
 
+    displayHTML : any;
   async getCardMarketUrl(){
     var url2 = "https://www.cardmarket.com/it/OnePiece/Products/Singles/Pillars-of-Strength/PortgasDAce-OP03-001-V1?language=1&minCondition=5";
 
@@ -40,7 +43,13 @@ export class CardButtonComponent{
       cardSet = "-";
     var url = "https://www.cardmarket.com/it/OnePiece/Products/Singles/"+setName+"/"+cardName+cardSet+cardNumber;
 
-    console.log(url);
+
+    this.http.get(url, {responseType: "text"}).subscribe(response => {
+      this.displayHTML = this.sanitizer.bypassSecurityTrustHtml(response);
+    })
+    console.log(this.displayHTML);
     window.open(url, "_blank");
+
+
   }
 }
