@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { CardListService } from 'src/app/Service/Offline/CardList/card-list.service';
-import { DeckService } from 'src/app/Service/Implemented/Deck/deck.service';
+import { DeckService } from 'src/app/Service/Offline/Deck/deck.service';
 import { GlobalService } from 'src/app/Service/global.service';
 import {Title} from "@angular/platform-browser";
 import { SetCard } from 'src/app/Model/SetCard/set-card.model';
@@ -34,13 +34,15 @@ export class CardListComponent {
 
     if (this.globalService.isUserCard || this.globalService.isDeck) {
       this.cardService.filter = new Filter();
+      this.cardService.getUserCardList();
       if (this.globalService.isClassic) {
-        this.cardService.getUserCardList();
         this.titleService.setTitle("Onepiece TCG - Classic")
       }
     } else {
       this.titleService.setTitle("Onepiece TCG - Card List")
     }
+
+    console.log(this.globalService.isDeck);
   }
 
   ngOnDestroy(){

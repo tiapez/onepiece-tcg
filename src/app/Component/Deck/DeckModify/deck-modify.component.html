@@ -12,7 +12,7 @@
     <div class="cardlist"  [ngStyle]="{'margin-top.px': deckService.deckListMargin, 
 'height.px': deckService.deckListHeight}">
 <a href="javascript:void(0)" class="closebtn" (click)="closeDeck()"><i class="fas fa-times-circle"></i></a>
-        <button class="btn btn-success save-btn" (click)="deckService.saveUserDeck()"> SAVE </button>
+        <button class="btn btn-success save-btn" > SAVE </button>
         <h3>{{deckService.deckSelected.deck.name}}</h3>
         <div class="leader"></div>
         <div *ngFor="let userCard of deckService.deckSelected.cardList" class="deck-card-row">

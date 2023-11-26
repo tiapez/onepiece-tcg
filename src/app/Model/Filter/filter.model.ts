@@ -4,8 +4,8 @@ import { Adapter } from "src/app/Adapter/adapter";
 export class Filter {
 
     constructor(
-    public setId : string = 'OP01',
-    public setName : string = "Romance Dawn",
+    public setId : string = 'OP04',
+    public setName : string = "Kingdoms of Intrigue",
     public color : string = "All",
     public role : string = "All",
     public cardType : string = "All",
@@ -19,7 +19,7 @@ export class Filter {
     public condition : number = 0,
     public language : string = "All",
     public view : number = 0,
-    public setOption : string = "OP01/Romance Dawn",
+    public setOption : string = "OP04/Kingdoms of Intrigue",
     ){}
 
 }

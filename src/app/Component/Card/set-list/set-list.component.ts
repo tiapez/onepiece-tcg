@@ -17,8 +17,6 @@ export class SetListComponent implements OnInit {
 
   setCardList: SetCard[] = [];
   async ngOnInit() {
-
-
     this.cardService.filter.setOption = "OP04/Kingdoms of Intrigue";
     this.cardService.filter.setId = "OP04";
     this.cardService.changeFilter();
